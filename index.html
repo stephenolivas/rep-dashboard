@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sales Dashboard</title>
+<title>Sales Performance Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0b0e13;
-    --surface: #131720;
-    --surface-2: #1a2030;
-    --surface-3: #212939;
-    --border: #232d40;
-    --text: #e8ecf4;
-    --text-dim: #8a95ad;
-    --text-faint: #5c6780;
-    --cyan: #38bdf8;
-    --cyan-glow: rgba(56, 189, 248, 0.10);
-    --green: #34d399;
-    --green-dim: rgba(52, 211, 153, 0.10);
-    --amber: #fbbf24;
-    --amber-dim: rgba(251, 191, 36, 0.10);
-    --red: #f87171;
-    --red-dim: rgba(248, 113, 113, 0.08);
-    --purple: #a78bfa;
-    --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --bg: #f5f6f8;
+    --white: #ffffff;
+    --text: #1a1d23;
+    --text-secondary: #5f6b7a;
+    --text-muted: #8c95a4;
+    --text-faint: #b0b8c6;
+    --border: #e5e7ec;
+    --border-light: #eef0f3;
+    --row-hover: #f8f9fb;
+    --green: #10b981;
+    --green-bg: #ecfdf5;
+    --teal: #0d9488;
+    --blue: #3b82f6;
+    --amber: #f59e0b;
+    --amber-bg: #fffbeb;
+    --red: #ef4444;
+    --red-bg: #fef2f2;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --mono: 'JetBrains Mono', 'SF Mono', monospace;
   }
 
@@ -39,210 +39,128 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Ambient glow */
-  body::before {
-    content: '';
-    position: fixed;
-    top: -30%; left: 10%;
-    width: 60%; height: 50%;
-    background: radial-gradient(ellipse, rgba(56,189,248,0.03) 0%, transparent 70%);
-    pointer-events: none; z-index: 0;
-  }
-
   .wrap {
-    position: relative; z-index: 1;
-    max-width: 1320px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 28px 24px 48px;
+    padding: 32px 28px 48px;
   }
 
-  /* ─── Top Bar ─── */
-  .top-bar {
+  /* ─── Header ─── */
+  .header {
     display: flex;
-    align-items: stretch;
-    gap: 16px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
   }
-
-  .info-table {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .info-table table {
-    border-collapse: collapse;
-  }
-  .info-table td {
-    padding: 8px 16px;
-    font-size: 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  .info-table tr:last-child td { border-bottom: none; }
-  .info-table td:first-child {
-    color: var(--text-dim);
-    font-weight: 500;
-    border-right: 1px solid var(--border);
-    white-space: nowrap;
-  }
-  .info-table td:last-child {
-    font-family: var(--mono);
-    font-weight: 600;
-    font-size: 13px;
+  .header-left h1 {
+    font-size: 26px;
+    font-weight: 800;
     color: var(--text);
-    text-align: right;
-  }
-
-  .month-title {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-  }
-  .month-title h1 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    color: var(--text);
-  }
-  .month-title .meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 11px;
-    color: var(--text-dim);
-  }
-  .month-title .meta .dot {
-    width: 5px; height: 5px;
-    border-radius: 50%;
-    background: var(--green);
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
-
-  .kpi-cards {
-    display: flex;
-    gap: 12px;
-    flex-shrink: 0;
-  }
-  .kpi {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px 20px;
-    min-width: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .kpi::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-  }
-  .kpi.today::before { background: linear-gradient(90deg, var(--amber), transparent); }
-  .kpi.mtd::before { background: linear-gradient(90deg, var(--cyan), transparent); }
-  .kpi-label {
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--text-dim);
+    letter-spacing: -0.3px;
     margin-bottom: 4px;
   }
-  .kpi-val {
-    font-family: var(--mono);
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+  .header-left p {
+    font-size: 14px;
+    color: var(--text-secondary);
   }
-  .kpi.today .kpi-val { color: var(--amber); }
-  .kpi.mtd .kpi-val { color: var(--cyan); }
-
-  /* Team quota bar under top bar */
-  .quota-strip {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  .header-right {
+    text-align: right;
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding-top: 4px;
   }
-  .quota-strip-label {
-    font-size: 11px;
+  .header-right .ts {
     font-weight: 600;
+    color: var(--text);
+  }
+
+  /* ─── KPI Row ─── */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .kpi {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 26px;
+  }
+  .kpi-label {
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    color: var(--text-dim);
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .kpi-value {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .kpi-sub {
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  /* Quota bar */
+  .qbar-wrap {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .qbar-cap {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
     white-space: nowrap;
   }
-  .quota-strip-bar {
+  .qbar-track {
     flex: 1;
-    height: 10px;
-    background: var(--surface-3);
-    border-radius: 5px;
+    height: 8px;
+    background: var(--border-light);
+    border-radius: 4px;
     overflow: hidden;
   }
-  .quota-strip-fill {
+  .qbar-fill {
     height: 100%;
-    border-radius: 5px;
-    background: linear-gradient(90deg, var(--cyan), var(--green));
-    transition: width 0.8s ease;
-  }
-  .quota-strip-pct {
-    font-family: var(--mono);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--cyan);
-    white-space: nowrap;
-  }
-  .quota-strip-detail {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--text-dim);
-    white-space: nowrap;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--green), var(--teal));
+    transition: width 0.6s ease;
   }
 
-  /* ─── Leaderboard Grid ─── */
+  /* ─── Three Board Grid ─── */
   .boards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
   }
-
   .board {
-    background: var(--surface);
+    background: var(--white);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
   }
   .board-head {
-    padding: 14px 16px 10px;
+    padding: 16px 20px 12px;
     border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
   }
   .board-title {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--text);
+    margin-bottom: 2px;
   }
-  .board-subtitle {
-    font-size: 10px;
-    color: var(--text-faint);
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
+  .board-sub {
+    font-size: 11px;
+    color: var(--text-muted);
   }
 
   .board table {
@@ -253,91 +171,132 @@
     font-size: 9px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: var(--text-faint);
+    letter-spacing: 0.7px;
+    color: var(--text-muted);
     text-align: right;
-    padding: 8px 12px;
-    background: var(--surface-2);
+    padding: 10px 14px;
+    background: #fafbfc;
     border-bottom: 1px solid var(--border);
   }
-  .board thead th:first-child { text-align: left; }
+  .board thead th:first-child {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .board thead th:last-child { padding-right: 20px; }
 
   .board tbody td {
-    padding: 9px 12px;
-    font-size: 12px;
-    border-bottom: 1px solid rgba(35,45,64,0.4);
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
     text-align: right;
-    font-family: var(--mono);
-    font-size: 11px;
+    border-bottom: 1px solid var(--border-light);
   }
   .board tbody td:first-child {
     text-align: left;
-    font-family: var(--font);
-    font-size: 12px;
+    padding-left: 20px;
   }
-  .board tbody tr:hover { background: var(--surface-2); }
+  .board tbody td:last-child { padding-right: 20px; }
+  .board tbody tr:hover { background: var(--row-hover); }
+  .board tbody tr:last-child td { border-bottom: none; }
 
-  .rank {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 18px; height: 18px;
-    border-radius: 4px;
-    font-size: 9px;
-    font-weight: 800;
-    margin-right: 6px;
-    font-family: var(--mono);
-    background: var(--surface-3);
-    color: var(--text-faint);
-    vertical-align: middle;
-  }
-  .rank-1 { background: var(--cyan-glow); color: var(--cyan); }
-  .rank-2 { background: var(--green-dim); color: var(--green); }
-  .rank-3 { background: var(--green-dim); color: var(--green); }
-
-  .rep-name {
-    font-weight: 500;
-    color: var(--text);
-    vertical-align: middle;
-  }
-
-  /* Colored percentage badges */
-  .pct-badge {
-    font-family: var(--mono);
-    font-size: 10px;
-    font-weight: 700;
-    padding: 2px 6px;
-    border-radius: 4px;
-    display: inline-block;
-  }
-  .pct-green  { background: var(--green-dim); color: var(--green); }
-  .pct-amber  { background: var(--amber-dim); color: var(--amber); }
-  .pct-red    { background: var(--red-dim); color: var(--red); }
-  .pct-cyan   { background: var(--cyan-glow); color: var(--cyan); }
-
-  /* Board footer / totals row */
   .board tfoot td {
-    padding: 10px 12px;
-    font-size: 11px;
+    padding: 12px 14px;
+    font-size: 12px;
     font-weight: 700;
     border-top: 2px solid var(--border);
-    background: var(--surface-2);
+    background: #fafbfc;
     text-align: right;
-    font-family: var(--mono);
+    color: var(--text);
   }
   .board tfoot td:first-child {
     text-align: left;
-    font-family: var(--font);
-    color: var(--text-dim);
+    padding-left: 20px;
+    color: var(--text-secondary);
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
   }
+  .board tfoot td:last-child { padding-right: 20px; }
+
+  /* Rep name in boards */
+  .rep-name { font-weight: 600; color: var(--text); }
+  .rank-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; height: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-right: 8px;
+    font-family: var(--mono);
+    background: var(--border-light);
+    color: var(--text-muted);
+    vertical-align: middle;
+  }
+  .rank-1 { background: #dbeafe; color: var(--blue); }
+  .rank-2 { background: var(--green-bg); color: var(--green); }
+  .rank-3 { background: var(--green-bg); color: var(--green); }
+
+  /* Badges */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .badge-green { background: var(--green-bg); color: var(--green); }
+  .badge-green::before { content: '✓'; font-size: 8px; }
+
+  /* Quota mini bar */
+  .q-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .q-bar {
+    width: 60px;
+    height: 5px;
+    background: var(--border-light);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .q-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease;
+  }
+  .c-green { background: var(--green); color: var(--green); }
+  .c-teal { background: var(--teal); color: var(--teal); }
+  .c-amber { background: var(--amber); color: var(--amber); }
+  .c-red { background: var(--red); color: var(--red); }
+
+  .pct-text {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 42px;
+    text-align: right;
+  }
+
+  /* Rate values */
+  .rv { font-weight: 600; }
+  .rv-good { color: var(--green); }
+  .rv-ok { color: var(--amber); }
+  .rv-low { color: var(--red); }
 
   /* ─── Footer ─── */
   .footer {
     text-align: center;
-    margin-top: 24px;
+    margin-top: 20px;
     font-size: 11px;
     color: var(--text-faint);
   }
@@ -346,40 +305,36 @@
   .loading {
     text-align: center;
     padding: 100px 24px;
-    color: var(--text-dim);
-    font-size: 13px;
+    color: var(--text-secondary);
   }
   .spinner {
-    width: 24px; height: 24px;
+    width: 28px; height: 28px;
     border: 3px solid var(--border);
-    border-top-color: var(--cyan);
+    border-top-color: var(--green);
     border-radius: 50%;
     animation: spin 0.7s linear infinite;
     margin: 0 auto 14px;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ─── Animations ─── */
-  .fade { opacity: 0; transform: translateY(8px); animation: fadeUp 0.4s ease forwards; }
-  .d1 { animation-delay: 0.05s; }
-  .d2 { animation-delay: 0.1s; }
-  .d3 { animation-delay: 0.15s; }
-  .d4 { animation-delay: 0.2s; }
-  @keyframes fadeUp { to { opacity: 1; transform: none; } }
+  .fade { opacity: 0; transform: translateY(6px); animation: up 0.35s ease forwards; }
+  .d1 { animation-delay: 0.04s; }
+  .d2 { animation-delay: 0.08s; }
+  @keyframes up { to { opacity: 1; transform: none; } }
 
   /* ─── Responsive ─── */
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     .boards { grid-template-columns: 1fr; }
-    .top-bar { flex-direction: column; align-items: stretch; }
-    .kpi-cards { justify-content: center; }
-    .month-title { padding: 12px 0; }
+  }
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 600px) {
-    .wrap { padding: 16px 10px 32px; }
-    .kpi-cards { flex-direction: column; }
-    .kpi { min-width: auto; }
-    .month-title h1 { font-size: 22px; }
-    .info-table td { padding: 6px 10px; font-size: 11px; }
+    .wrap { padding: 16px 12px 32px; }
+    .kpi-row { grid-template-columns: 1fr; }
+    .header { flex-direction: column; gap: 8px; }
+    .header-right { text-align: left; }
+    .kpi-value { font-size: 28px; }
   }
 </style>
 </head>
@@ -388,180 +343,192 @@
 <div class="wrap" id="app">
   <div class="loading">
     <div class="spinner"></div>
-    Loading dashboard data&hellip;
+    Loading dashboard&hellip;
   </div>
 </div>
 
 <script>
 (async function() {
   const app = document.getElementById('app');
-
   try {
     const r = await fetch('data.json?' + Date.now());
-    if (!r.ok) throw new Error('Could not load data.json');
+    if (!r.ok) throw new Error('data.json not found');
     const D = await r.json();
     app.innerHTML = '';
     render(D);
-  } catch (err) {
-    app.innerHTML = `<div class="loading" style="color:var(--red)">Failed to load data: ${err.message}</div>`;
+  } catch (e) {
+    app.innerHTML = `<div class="loading" style="color:var(--red)">Failed to load: ${e.message}</div>`;
   }
 
-  function $(n) { return Number(n).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0}); }
-  function fmt$(n) { return '$' + $(n); }
-
-  function pctClass(v, thresholds) {
-    if (!thresholds) thresholds = [80, 40];
-    if (v >= thresholds[0]) return 'pct-green';
-    if (v >= thresholds[1]) return 'pct-amber';
-    return 'pct-red';
+  function fmt$(n) {
+    if (Math.abs(n) >= 1000) return '$' + (n/1000).toFixed(1).replace(/\.0$/,'') + 'K';
+    return '$' + n.toLocaleString('en-US',{maximumFractionDigits:0});
+  }
+  function fmtBig$(n) {
+    if (n >= 1000000) return '$' + (n/1e6).toFixed(2) + 'M';
+    if (n >= 1000) return '$' + (n/1000).toFixed(1) + 'K';
+    return '$' + n.toFixed(0);
   }
 
-  function rankClass(i) {
-    if (i === 0) return 'rank rank-1';
-    if (i < 3) return 'rank rank-2';
-    return 'rank';
+  function toPST(s) {
+    const d = new Date(s.replace(' UTC','Z').replace(' ','T'));
+    return d.toLocaleString('en-US', {
+      timeZone:'America/Los_Angeles',
+      weekday:'long', year:'numeric', month:'long', day:'numeric',
+      hour:'numeric', minute:'2-digit', hour12:true
+    }) + ' PST';
   }
 
-  function boardRows(reps, cols, sortKey) {
-    const sorted = [...reps].sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
-    return sorted.map((r, i) => {
-      const cells = cols.map(c => c.render(r)).join('');
-      return `<tr><td><span class="${rankClass(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>${cells}</tr>`;
-    }).join('');
+  function qColor(p) {
+    if (p >= 100) return 'c-green';
+    if (p >= 70) return 'c-teal';
+    if (p >= 40) return 'c-amber';
+    return 'c-red';
+  }
+  function rvClass(v, g, o) {
+    if (v >= g) return 'rv rv-good';
+    if (v >= o) return 'rv rv-ok';
+    return 'rv rv-low';
+  }
+  function rankCls(i) {
+    if (i === 0) return 'rank-num rank-1';
+    if (i < 3) return 'rank-num rank-2';
+    return 'rank-num';
   }
 
   function render(D) {
     const reps = D.reps || [];
-
-    // --- TOP BAR ---
-    const topBar = `
-      <div class="top-bar fade">
-        <div class="info-table">
-          <table>
-            <tr><td>Day in the month</td><td>${D.day_of_month} / ${D.days_in_month}</td></tr>
-            <tr><td>Working days</td><td>${D.working_days_elapsed} / ${D.working_days_total}</td></tr>
-            <tr><td>% of month left</td><td>${D.pct_month_left}%</td></tr>
-          </table>
-        </div>
-        <div class="month-title">
-          <h1>${D.month_label}</h1>
-          <div class="meta">
-            <span class="dot"></span>
-            <span>Updated ${D.updated_at}</span>
-          </div>
-        </div>
-        <div class="kpi-cards">
-          <div class="kpi today">
-            <div class="kpi-label">Today&rsquo;s Revenue</div>
-            <div class="kpi-val">${fmt$(D.today_revenue)}</div>
-          </div>
-          <div class="kpi mtd">
-            <div class="kpi-label">MTD Revenue</div>
-            <div class="kpi-val">${fmt$(D.total_revenue)}</div>
-          </div>
-        </div>
-      </div>`;
-
-    // --- QUOTA STRIP ---
+    const remaining = Math.max(0, D.team_quota - D.total_revenue);
+    const daysLeft = D.days_in_month - D.day_of_month;
     const qPct = Math.min(D.pct_team_quota, 100);
-    const quotaStrip = `
-      <div class="quota-strip fade d1">
-        <span class="quota-strip-label">Team Quota</span>
-        <div class="quota-strip-bar"><div class="quota-strip-fill" style="width:${qPct}%"></div></div>
-        <span class="quota-strip-pct">${D.pct_team_quota}%</span>
-        <span class="quota-strip-detail">${fmt$(D.total_revenue)} / ${fmt$(D.team_quota)}</span>
+
+    // ── Header
+    const header = `
+      <div class="header fade">
+        <div class="header-left">
+          <h1>Sales Performance Dashboard</h1>
+          <p>${D.month_label} &middot; Month-to-Date Performance</p>
+        </div>
+        <div class="header-right"><span class="ts">${toPST(D.updated_at)}</span></div>
       </div>`;
 
-    // --- LEADERBOARD 1: Revenue Closed ---
-    const revCols = [
-      { hdr: 'Revenue', render: r => `<td>${fmt$(r.revenue)}</td>` },
-      { hdr: '% Quota', render: r => {
-        if (!r.quota) return `<td><span class="pct-badge pct-red" style="opacity:0.4">N/A</span></td>`;
-        return `<td><span class="pct-badge ${pctClass(r.pct_to_quota)}">${r.pct_to_quota}%</span></td>`;
-      }},
-    ];
-    const revRows = boardRows(reps, revCols, 'revenue');
-    const totalPctQuota = D.team_quota > 0 ? D.pct_team_quota : 0;
+    // ── KPIs
+    const kpis = `
+      <div class="kpi-row fade d1">
+        <div class="kpi">
+          <div class="kpi-label">MTD Revenue</div>
+          <div class="kpi-value">${fmtBig$(D.total_revenue)}</div>
+          <div class="kpi-sub">${D.pct_team_quota}% to $${(D.team_quota/1000).toFixed(0)}K goal</div>
+          <div class="qbar-wrap">
+            <span class="qbar-cap">$0</span>
+            <div class="qbar-track"><div class="qbar-fill" style="width:${qPct}%"></div></div>
+            <span class="qbar-cap">$${(D.team_quota/1000).toFixed(0)}K</span>
+          </div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Deals Closed MTD</div>
+          <div class="kpi-value">${D.total_deals}</div>
+          <div class="kpi-sub">${D.team_close_rate||0}% close rate &middot; ${D.total_booked} leads</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Today&rsquo;s Revenue</div>
+          <div class="kpi-value">${fmtBig$(D.today_revenue)}</div>
+          <div class="kpi-sub">${D.today_deals} deal${D.today_deals!==1?'s':''} closed today</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Remaining to Goal</div>
+          <div class="kpi-value">${fmtBig$(remaining)}</div>
+          <div class="kpi-sub">${daysLeft} day${daysLeft!==1?'s':''} left in ${D.month_label.split(' ')[0]}</div>
+        </div>
+      </div>`;
+
+    // ── BOARD 1: Revenue Closed
+    const revSorted = [...reps].sort((a,b) => b.revenue - a.revenue);
+    const revRows = revSorted.map((r,i) => {
+      let qHtml;
+      if (!r.quota) {
+        qHtml = `<span class="pct-text" style="color:var(--text-faint)">&mdash;</span>`;
+      } else {
+        const cc = qColor(r.pct_to_quota);
+        const bw = Math.min(r.pct_to_quota, 100);
+        const badge = r.pct_to_quota >= 100 ? `<span class="badge badge-green">Goal</span>` : '';
+        qHtml = `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill ${cc}" style="width:${bw}%"></div></div><span class="pct-text" style="color:var(--${cc.replace('c-','')});">${r.pct_to_quota}%</span></div>`;
+      }
+      return `<tr>
+        <td><span class="${rankCls(i)}">${i+1}</span><span class="rep-name">${r.name}</span>${r.quota && r.pct_to_quota>=100?'<span class="badge badge-green">Goal</span>':''}</td>
+        <td>${fmt$(r.revenue)}</td>
+        <td>${qHtml}</td>
+      </tr>`;
+    }).join('');
+    const tqPct = D.team_quota > 0 ? D.pct_team_quota : 0;
 
     const board1 = `
       <div class="board fade d2">
         <div class="board-head">
-          <span class="board-title">Revenue Closed</span>
-          <span class="board-subtitle">Per Rep</span>
+          <div class="board-title">Revenue Closed</div>
+          <div class="board-sub">Per rep &middot; % to quota</div>
         </div>
         <table>
           <thead><tr><th>Rep</th><th>Revenue</th><th>% Quota</th></tr></thead>
           <tbody>${revRows}</tbody>
-          <tfoot><tr>
-            <td>Team Total</td>
-            <td>${fmt$(D.total_revenue)}</td>
-            <td><span class="pct-badge ${pctClass(totalPctQuota)}">${totalPctQuota}%</span></td>
-          </tr></tfoot>
+          <tfoot><tr><td>Team Total</td><td>${fmt$(D.total_revenue)}</td><td><span class="pct-text" style="color:var(--${qColor(tqPct).replace('c-','')})">${tqPct}%</span></td></tr></tfoot>
         </table>
       </div>`;
 
-    // --- LEADERBOARD 2: Opps Closed ---
-    const oppCols = [
-      { hdr: 'Deals', render: r => `<td>${r.deals}</td>` },
-      { hdr: 'Close %', render: r => {
-        const v = r.close_rate || 0;
-        return `<td><span class="pct-badge ${pctClass(v, [25, 12])}">${v}%</span></td>`;
-      }},
-    ];
-    const oppRows = boardRows(reps, oppCols, 'deals');
+    // ── BOARD 2: Opps Closed
+    const dealSorted = [...reps].sort((a,b) => b.deals - a.deals);
+    const dealRows = dealSorted.map((r,i) => {
+      const cls = rvClass(r.close_rate, 20, 10);
+      return `<tr>
+        <td><span class="${rankCls(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>
+        <td>${r.deals}</td>
+        <td><span class="${cls}">${r.close_rate}%</span></td>
+      </tr>`;
+    }).join('');
 
     const board2 = `
-      <div class="board fade d3">
+      <div class="board fade d2">
         <div class="board-head">
-          <span class="board-title">Opps Closed</span>
-          <span class="board-subtitle">Close Rate</span>
+          <div class="board-title">Opps Closed</div>
+          <div class="board-sub">Deals closed &middot; close rate</div>
         </div>
         <table>
           <thead><tr><th>Rep</th><th>Deals</th><th>Close %</th></tr></thead>
-          <tbody>${oppRows}</tbody>
-          <tfoot><tr>
-            <td>Team Total</td>
-            <td>${D.total_deals}</td>
-            <td><span class="pct-badge pct-cyan">${D.team_close_rate || 0}%</span></td>
-          </tr></tfoot>
+          <tbody>${dealRows}</tbody>
+          <tfoot><tr><td>Team Total</td><td>${D.total_deals}</td><td><span class="${rvClass(D.team_close_rate||0,20,10)}">${D.team_close_rate||0}%</span></td></tr></tfoot>
         </table>
       </div>`;
 
-    // --- LEADERBOARD 3: Meetings Booked / Shown ---
-    const mtgCols = [
-      { hdr: 'Booked', render: r => `<td>${r.booked}</td>` },
-      { hdr: 'Shown', render: r => `<td>${r.shown}</td>` },
-      { hdr: 'Show %', render: r => {
-        const v = r.show_rate || 0;
-        return `<td><span class="pct-badge ${pctClass(v, [65, 45])}">${v}%</span></td>`;
-      }},
-    ];
-    const mtgRows = boardRows(reps, mtgCols, 'booked');
+    // ── BOARD 3: Meetings Booked / Shown
+    const mtgSorted = [...reps].sort((a,b) => b.booked - a.booked);
+    const mtgRows = mtgSorted.map((r,i) => {
+      const cls = rvClass(r.show_rate, 65, 45);
+      return `<tr>
+        <td><span class="${rankCls(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>
+        <td>${r.booked}</td>
+        <td>${r.shown}</td>
+        <td><span class="${cls}">${r.show_rate}%</span></td>
+      </tr>`;
+    }).join('');
 
     const board3 = `
-      <div class="board fade d4">
+      <div class="board fade d2">
         <div class="board-head">
-          <span class="board-title">Meetings Booked / Shown</span>
-          <span class="board-subtitle">Show Rate</span>
+          <div class="board-title">Meetings Booked / Shown</div>
+          <div class="board-sub">New meetings &middot; show rate</div>
         </div>
         <table>
           <thead><tr><th>Rep</th><th>Booked</th><th>Shown</th><th>Show %</th></tr></thead>
           <tbody>${mtgRows}</tbody>
-          <tfoot><tr>
-            <td>Team Total</td>
-            <td>${D.total_booked}</td>
-            <td>${D.total_shown}</td>
-            <td><span class="pct-badge pct-cyan">${D.team_show_rate || 0}%</span></td>
-          </tr></tfoot>
+          <tfoot><tr><td>Team Total</td><td>${D.total_booked}</td><td>${D.total_shown}</td><td><span class="${rvClass(D.team_show_rate||0,65,45)}">${D.team_show_rate||0}%</span></td></tr></tfoot>
         </table>
       </div>`;
 
-    // --- ASSEMBLE ---
-    app.innerHTML = topBar + quotaStrip + `<div class="boards">${board1}${board2}${board3}</div>`
-      + `<div class="footer fade d4">Data from Close CRM &middot; Auto-updates hourly Mon&ndash;Fri 7 AM &ndash; 5 PM PST</div>`;
+    const footer = `<div class="footer fade d2">Data from Close CRM &middot; Auto-updates hourly Mon&ndash;Fri 7 AM &ndash; 5 PM PST</div>`;
+
+    app.innerHTML = header + kpis + `<div class="boards">${board1}${board2}${board3}</div>` + footer;
   }
 
-  // Auto-refresh every 5 min
   setInterval(() => location.reload(), 5 * 60 * 1000);
 })();
 </script>
