@@ -50,7 +50,7 @@ REP_QUOTAS = {
     "Robin Perkins": 75_000,
     "William Chase": 75_000,
     "Ryan Jones": 50_000,
-    "John Kirk": 50_000,
+    "John Kirk": 75_000,
 }
 
 EXCLUDE_USERS = {"Kristin Nelson", "Mallory Kent", "Unknown"}
