@@ -445,7 +445,7 @@
           <table>
             <tr><td>Day in the month</td><td>${D.day_of_month} / ${D.days_in_month}</td></tr>
             <tr><td>Working days</td><td>${D.working_days_elapsed} / ${D.working_days_total}</td></tr>
-            <tr><td>% of month left</td><td>${D.pct_month_left}%</td></tr>
+            <tr><td>% of month passed</td><td>${Math.round(D.working_days_elapsed / D.working_days_total * 100)}%</td></tr>
           </table>
         </div>
         <div class="month-center">
