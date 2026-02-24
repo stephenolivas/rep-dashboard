@@ -157,10 +157,31 @@ def fetch_leads_with_calls_booked(year, month):
         skip += limit
 
     results = []
+    # Debug: print custom field keys from first lead
+    if all_leads:
+        first_custom = all_leads[0].get("custom", {})
+        print(f"  DEBUG custom field keys (first lead): {list(first_custom.keys())[:10]}")
+        # Also check for Lead Owner specifically
+        for k, v in first_custom.items():
+            if "owner" in k.lower() or "lead owner" in k.lower() or k == CF_LEAD_OWNER:
+                print(f"  DEBUG found owner field: key='{k}' value='{v}'")
+            if "show" in k.lower() and "call" in k.lower():
+                print(f"  DEBUG found show field: key='{k}' value='{v}'")
+
     for lead in all_leads:
         custom = lead.get("custom", {})
-        owner_raw = custom.get(CF_LEAD_OWNER, "")
-        show_up = custom.get(CF_FIRST_CALL_SHOW, "")
+        # Close API returns custom fields by display name in the custom dict
+        # Try display name first, fall back to field ID
+        owner_raw = (
+            custom.get("Lead Owner")
+            or custom.get(CF_LEAD_OWNER)
+            or ""
+        )
+        show_up = (
+            custom.get("First Call Show Up (Opp)")
+            or custom.get(CF_FIRST_CALL_SHOW)
+            or ""
+        )
         results.append({
             "lead_id": lead.get("id", ""),
             "owner_raw": owner_raw,
@@ -241,6 +262,19 @@ def build_dashboard_data():
 
     rep_booked = {}
     rep_shown = {}
+
+    # Debug: print first lead's custom field keys to understand structure
+    if meeting_leads:
+        first = meeting_leads[0]
+        print(f"  DEBUG first lead owner_raw: '{first['owner_raw']}' (type: {type(first['owner_raw']).__name__})")
+        print(f"  DEBUG first lead show_up: '{first['show_up']}'")
+
+    # Count unique owner values for debugging
+    owner_counts = {}
+    for ml in meeting_leads:
+        ov = str(ml["owner_raw"])[:40]
+        owner_counts[ov] = owner_counts.get(ov, 0) + 1
+    print(f"  DEBUG owner value distribution (top 5): {dict(sorted(owner_counts.items(), key=lambda x: -x[1])[:5])}")
 
     for ml in meeting_leads:
         owner_raw = ml["owner_raw"]
