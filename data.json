@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24 22:20:28 UTC",
+  "updated_at": "2026-02-24 22:44:52 UTC",
   "month_label": "February 2026",
   "day_of_month": 24,
   "days_in_month": 28,
@@ -10,7 +10,7 @@
   "pct_team_quota": 79.9,
   "total_revenue": 718727.3,
   "total_deals": 93,
-  "total_booked": 679,
+  "total_booked": 680,
   "total_shown": 371,
   "team_close_rate": 13.7,
   "team_show_rate": 54.6,
@@ -45,10 +45,10 @@
       "deals": 10,
       "quota": 100000,
       "pct_to_quota": 75.0,
-      "booked": 45,
+      "booked": 46,
       "shown": 29,
-      "close_rate": 22.2,
-      "show_rate": 64.4
+      "close_rate": 21.7,
+      "show_rate": 63.0
     },
     {
       "name": "Eric Piccione",
@@ -78,17 +78,17 @@
       "deals": 6,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 78,
-      "shown": 43,
-      "close_rate": 7.7,
-      "show_rate": 55.1
+      "booked": 77,
+      "shown": 42,
+      "close_rate": 7.8,
+      "show_rate": 54.5
     },
     {
       "name": "John Kirk",
       "revenue": 49979.0,
       "deals": 7,
-      "quota": 50000,
-      "pct_to_quota": 100.0,
+      "quota": 75000,
+      "pct_to_quota": 66.6,
       "booked": 38,
       "shown": 23,
       "close_rate": 18.4,
@@ -123,9 +123,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 60,
-      "shown": 27,
+      "shown": 28,
       "close_rate": 8.3,
-      "show_rate": 45.0
+      "show_rate": 46.7
     },
     {
       "name": "Joe Dysert",
@@ -166,10 +166,10 @@
       "deals": 2,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 32,
+      "booked": 33,
       "shown": 13,
-      "close_rate": 6.2,
-      "show_rate": 40.6
+      "close_rate": 6.1,
+      "show_rate": 39.4
     },
     {
       "name": "Vince Bartolini",
@@ -183,17 +183,6 @@
       "show_rate": 50.0
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 2,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 7,
       "close_rate": 0.0,
       "show_rate": 15.2
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 2,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
