@@ -49,7 +49,7 @@ REP_QUOTAS = {
     "Jason Aaron": 75_000,
     "Robin Perkins": 75_000,
     "William Chase": 75_000,
-    "Ryan Jones": 50_000,
+    "Ryan Jones": 75_000,
     "John Kirk": 75_000,
 }
 
