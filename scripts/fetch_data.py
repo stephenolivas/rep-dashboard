@@ -7,9 +7,6 @@ Data collected:
   2. Leads with "First Call Booked Date" in current month -> meetings booked per rep
   3. Leads with "First Call Show Up (Opp)" = "Yes" -> meetings shown per rep
   4. Close rate = deals closed / meetings booked
-
-Usage:
-    CLOSE_API_KEY=your_key python3 scripts/fetch_data.py
 """
 
 import json
@@ -30,14 +27,18 @@ BASE_URL = "https://api.close.com/api/v1"
 PIPELINE_ID = "pipe_78hyBUVS7IKikGEmstObu1"
 CLOSED_WON_STATUS_ID = "stat_WnFc0uhjcjV0cc3bVzdFVqDz7av6rbsOmOvHUsO6s03"
 
-# Custom field IDs (on lead object)
-CF_FIRST_CALL_BOOKED = "cf_JsJZIVh7QDcFQBXr4cTRBxf1AkREpLdsKiZB4AEJ8Xh"
-CF_FIRST_CALL_SHOW   = "cf_OPyvpU45RdvjLqfm8V1VWwNxrGKogEH2IBJmfCj0Uhq"
-CF_LEAD_OWNER        = "cf_gOfS9pFwext58oberEegLyix8hZzeHrxhCZOVh3P3rd"
+# Custom field IDs and display names (lead object)
+CF_FIRST_CALL_BOOKED_ID   = "cf_JsJZIVh7QDcFQBXr4cTRBxf1AkREpLdsKiZB4AEJ8Xh"
+CF_FIRST_CALL_BOOKED_NAME = "First Call Booked Date"
+
+CF_FIRST_CALL_SHOW_ID     = "cf_OPyvpU45RdvjLqfm8V1VWwNxrGKogEH2IBJmfCj0Uhq"
+CF_FIRST_CALL_SHOW_NAME   = "First Call Show Up (Opp)"
+
+CF_LEAD_OWNER_ID           = "cf_gOfS9pFwext58oberEegLyix8hZzeHrxhCZOVh3P3rd"
+CF_LEAD_OWNER_NAME         = "Lead Owner"
 
 TEAM_QUOTA = 900_000
 
-# Monthly quotas per rep
 REP_QUOTAS = {
     "Christian Hartwell": 100_000,
     "Lyle Hubbard": 100_000,
@@ -58,7 +59,6 @@ EXCLUDE_USERS = {"Kristin Nelson"}
 # --- API helpers ---
 
 def api_get(endpoint, params=None):
-    """Make an authenticated GET request to the Close API."""
     url = f"{BASE_URL}{endpoint}"
     if params:
         url = f"{url}?{urlencode(params)}"
@@ -78,8 +78,26 @@ def api_get(endpoint, params=None):
         raise
 
 
+def api_post(endpoint, body):
+    url = f"{BASE_URL}{endpoint}"
+    auth = b64encode(f"{CLOSE_API_KEY}:".encode()).decode()
+    data = json.dumps(body).encode()
+    req = Request(url, data=data, method="POST", headers={
+        "Authorization": f"Basic {auth}",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+    })
+
+    try:
+        with urlopen(req) as resp:
+            return json.loads(resp.read().decode())
+    except HTTPError as e:
+        body_text = e.read().decode() if e.fp else ""
+        print(f"API POST error {e.code} for {url}: {body_text}", file=sys.stderr)
+        raise
+
+
 def fetch_org_users():
-    """Fetch all org users -> dict of user_id: full_name."""
     data = api_get("/user/")
     users = {}
     for u in data.get("data", []):
@@ -90,10 +108,9 @@ def fetch_org_users():
     return users
 
 
-# --- Opportunity data (revenue + deals) ---
+# --- Opportunity data ---
 
 def fetch_closed_won_opportunities(year, month):
-    """Fetch all Closed/Won opportunities in the given month from Sales Pipeline."""
     _, last_day = monthrange(year, month)
     date_gte = f"{year}-{month:02d}-01"
     date_lte = f"{year}-{month:02d}-{last_day:02d}"
@@ -113,7 +130,6 @@ def fetch_closed_won_opportunities(year, month):
         data = api_get("/opportunity/", params)
         opps = data.get("data", [])
         all_opps.extend(opps)
-
         if not data.get("has_more", False):
             break
         skip += limit
@@ -121,20 +137,65 @@ def fetch_closed_won_opportunities(year, month):
     return [o for o in all_opps if o.get("pipeline_id") == PIPELINE_ID]
 
 
-# --- Meeting data (booked + shown) ---
+# --- Meeting data using lead search ---
 
-def fetch_leads_with_calls_booked(year, month):
-    """
-    Fetch leads where 'First Call Booked Date' is in the given month.
-    Returns list of dicts with lead_owner info and show_up value.
-    """
+def get_custom_value(custom_dict, field_id, field_name):
+    """Try multiple key formats to get a custom field value from a lead."""
+    # Try display name (most common)
+    val = custom_dict.get(field_name)
+    if val is not None:
+        return val
+    # Try field ID
+    val = custom_dict.get(field_id)
+    if val is not None:
+        return val
+    # Try with "custom." prefix
+    val = custom_dict.get(f"custom.{field_id}")
+    if val is not None:
+        return val
+    return ""
+
+
+def resolve_owner_to_name(owner_raw, user_map, name_to_id):
+    """Resolve a Lead Owner value (could be user_id, name, or dict) to a rep name."""
+    if not owner_raw:
+        return "Unknown"
+
+    # If it's a dict (some Close fields return objects)
+    if isinstance(owner_raw, dict):
+        # Try id field
+        uid = owner_raw.get("id", "")
+        if uid in user_map:
+            return user_map[uid]
+        return owner_raw.get("name", "Unknown")
+
+    owner_str = str(owner_raw).strip()
+
+    # If it's a user_id like "user_xxxx"
+    if owner_str in user_map:
+        return user_map[owner_str]
+
+    # If it's already a display name like "Ryan Jones"
+    if owner_str in name_to_id:
+        return owner_str
+
+    # If it's in the quota list (partial match safety)
+    for rep_name in REP_QUOTAS:
+        if owner_str == rep_name:
+            return rep_name
+
+    return owner_str if owner_str else "Unknown"
+
+
+def fetch_leads_with_calls_booked(year, month, user_map, name_to_id):
+    """Fetch leads with First Call Booked Date in the given month."""
     _, last_day = monthrange(year, month)
     date_gte = f"{year}-{month:02d}-01"
     date_lte = f"{year}-{month:02d}-{last_day:02d}"
 
     query_str = (
-        f'"First Call Booked Date" >= "{date_gte}" '
-        f'"First Call Booked Date" <= "{date_lte}"'
+        f'"{CF_FIRST_CALL_BOOKED_NAME}" >= "{date_gte}" '
+        f'"{CF_FIRST_CALL_BOOKED_NAME}" <= "{date_lte}"'
     )
 
     all_leads = []
@@ -144,57 +205,118 @@ def fetch_leads_with_calls_booked(year, month):
     while True:
         params = {
             "query": query_str,
-            "_fields": "id,custom",
             "_skip": str(skip),
             "_limit": str(limit),
         }
         data = api_get("/lead/", params)
         leads = data.get("data", [])
         all_leads.extend(leads)
-
         if not data.get("has_more", False):
             break
         skip += limit
 
-    results = []
-    # Debug: print custom field keys from first lead
+    print(f"  Raw leads returned: {len(all_leads)}")
+
+    # === EXTENSIVE DEBUG: inspect first lead ===
     if all_leads:
-        first_custom = all_leads[0].get("custom", {})
-        print(f"  DEBUG custom field keys (first lead): {list(first_custom.keys())[:10]}")
-        # Also check for Lead Owner specifically
-        for k, v in first_custom.items():
-            if "owner" in k.lower() or "lead owner" in k.lower() or k == CF_LEAD_OWNER:
-                print(f"  DEBUG found owner field: key='{k}' value='{v}'")
-            if "show" in k.lower() and "call" in k.lower():
-                print(f"  DEBUG found show field: key='{k}' value='{v}'")
+        first = all_leads[0]
+
+        # Check if custom fields are at top level or nested
+        print(f"  DEBUG: Top-level keys of first lead: {[k for k in first.keys() if k.startswith('c') or k == 'custom']}")
+
+        custom = first.get("custom", {})
+        print(f"  DEBUG: Number of custom field keys: {len(custom)}")
+        if custom:
+            # Print ALL keys to see format
+            all_keys = list(custom.keys())
+            print(f"  DEBUG: First 15 custom keys: {all_keys[:15]}")
+            # Look specifically for our fields
+            for k in all_keys:
+                kl = k.lower()
+                if "owner" in kl or "lead owner" in kl:
+                    print(f"  DEBUG MATCH owner: key='{k}' val='{custom[k]}' type={type(custom[k]).__name__}")
+                if "show" in kl and "call" in kl:
+                    print(f"  DEBUG MATCH show: key='{k}' val='{custom[k]}' type={type(custom[k]).__name__}")
+                if "booked" in kl and "call" in kl:
+                    print(f"  DEBUG MATCH booked: key='{k}' val='{custom[k]}' type={type(custom[k]).__name__}")
+
+        # Also check if custom fields are at the top level (not nested)
+        for k in first.keys():
+            if CF_LEAD_OWNER_ID in str(k):
+                print(f"  DEBUG: Found owner field at top level: key='{k}' val='{first[k]}'")
+            if "custom." in str(k):
+                print(f"  DEBUG: Found dotted custom field: key='{k}'")
+
+    # === END DEBUG ===
+
+    rep_booked = {}
+    rep_shown = {}
+    unknown_vals = set()
 
     for lead in all_leads:
         custom = lead.get("custom", {})
-        # Close API returns custom fields by display name in the custom dict
-        # Try display name first, fall back to field ID
-        owner_raw = (
-            custom.get("Lead Owner")
-            or custom.get(CF_LEAD_OWNER)
-            or ""
-        )
-        show_up = (
-            custom.get("First Call Show Up (Opp)")
-            or custom.get(CF_FIRST_CALL_SHOW)
-            or ""
-        )
-        results.append({
-            "lead_id": lead.get("id", ""),
-            "owner_raw": owner_raw,
-            "show_up": show_up,
-        })
 
-    return results
+        # Also check top-level fields (some API versions put custom fields at root)
+        merged = {}
+        merged.update(custom)
+        # Check for custom.cf_xxx style keys at top level
+        for k, v in lead.items():
+            if k.startswith("custom."):
+                merged[k] = v
+                merged[k.replace("custom.", "")] = v
+
+        owner_raw = get_custom_value(merged, CF_LEAD_OWNER_ID, CF_LEAD_OWNER_NAME)
+        show_up = get_custom_value(merged, CF_FIRST_CALL_SHOW_ID, CF_FIRST_CALL_SHOW_NAME)
+
+        rep_name = resolve_owner_to_name(owner_raw, user_map, name_to_id)
+
+        if rep_name == "Unknown" and owner_raw:
+            unknown_vals.add(str(owner_raw)[:60])
+
+        if rep_name in EXCLUDE_USERS:
+            continue
+
+        rep_booked[rep_name] = rep_booked.get(rep_name, 0) + 1
+        if str(show_up).strip().lower() == "yes":
+            rep_shown[rep_name] = rep_shown.get(rep_name, 0) + 1
+
+    if unknown_vals:
+        print(f"  DEBUG: Unknown owner values (sample): {list(unknown_vals)[:5]}")
+    print(f"  DEBUG: rep_booked result: {dict(sorted(rep_booked.items(), key=lambda x: -x[1])[:5])}")
+
+    return rep_booked, rep_shown
 
 
-# --- Working days calculation ---
+# --- Close rate from opportunities ---
+
+def compute_close_rates(opps, user_map, rep_booked):
+    """Close rate = deals per rep / meetings booked per rep."""
+    rep_deals = {}
+    seen_leads = set()
+
+    for opp in opps:
+        user_id = opp.get("user_id")
+        rep_name = user_map.get(user_id, "Unknown")
+        if rep_name in EXCLUDE_USERS:
+            continue
+        lead_id = opp.get("lead_id", "")
+        lead_key = f"{rep_name}:{lead_id}"
+        if lead_key not in seen_leads:
+            rep_deals[rep_name] = rep_deals.get(rep_name, 0) + 1
+            seen_leads.add(lead_key)
+
+    close_rates = {}
+    for name in set(list(rep_deals.keys()) + list(rep_booked.keys())):
+        deals = rep_deals.get(name, 0)
+        booked = rep_booked.get(name, 0)
+        close_rates[name] = round(deals / booked * 100, 1) if booked > 0 else 0
+
+    return close_rates
+
+
+# --- Working days ---
 
 def count_working_days(year, month, up_to_day=None):
-    """Count working days (Mon-Fri) in a month, optionally up to a specific day."""
     _, last_day = monthrange(year, month)
     end_day = min(up_to_day, last_day) if up_to_day else last_day
     count = 0
@@ -222,6 +344,7 @@ def build_dashboard_data():
     print("  Fetching org users...")
     user_map = fetch_org_users()
     name_to_id = {v: k for k, v in user_map.items()}
+    print(f"  Found {len(user_map)} users. Sample: {list(user_map.items())[:3]}")
 
     # Step 2: Closed/Won opportunities
     print("  Fetching Closed/Won opportunities...")
@@ -257,41 +380,8 @@ def build_dashboard_data():
 
     # Step 3: Meetings booked / shown
     print("  Fetching meetings booked/shown...")
-    meeting_leads = fetch_leads_with_calls_booked(year, month)
-    print(f"  Found {len(meeting_leads)} leads with calls booked this month.")
-
-    rep_booked = {}
-    rep_shown = {}
-
-    # Debug: print first lead's custom field keys to understand structure
-    if meeting_leads:
-        first = meeting_leads[0]
-        print(f"  DEBUG first lead owner_raw: '{first['owner_raw']}' (type: {type(first['owner_raw']).__name__})")
-        print(f"  DEBUG first lead show_up: '{first['show_up']}'")
-
-    # Count unique owner values for debugging
-    owner_counts = {}
-    for ml in meeting_leads:
-        ov = str(ml["owner_raw"])[:40]
-        owner_counts[ov] = owner_counts.get(ov, 0) + 1
-    print(f"  DEBUG owner value distribution (top 5): {dict(sorted(owner_counts.items(), key=lambda x: -x[1])[:5])}")
-
-    for ml in meeting_leads:
-        owner_raw = ml["owner_raw"]
-        # Lead Owner field (user type) can return user_id or display name
-        if owner_raw in user_map:
-            rep_name = user_map[owner_raw]
-        elif owner_raw in name_to_id:
-            rep_name = owner_raw
-        else:
-            rep_name = str(owner_raw) if owner_raw else "Unknown"
-
-        if rep_name in EXCLUDE_USERS:
-            continue
-
-        rep_booked[rep_name] = rep_booked.get(rep_name, 0) + 1
-        if str(ml["show_up"]).strip().lower() == "yes":
-            rep_shown[rep_name] = rep_shown.get(rep_name, 0) + 1
+    rep_booked, rep_shown = fetch_leads_with_calls_booked(year, month, user_map, name_to_id)
+    print(f"  Meetings booked by {len(rep_booked)} reps, shown by {len(rep_shown)} reps.")
 
     # Step 4: Build per-rep data
     all_rep_names = set()
@@ -373,7 +463,7 @@ if __name__ == "__main__":
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
 
-    print(f"\n✅ Dashboard data written to {output_path}")
+    print(f"\n=== Dashboard data written to {output_path} ===")
     print(f"   Month: {data['month_label']} (day {data['day_of_month']})")
     print(f"   Total Revenue: ${data['total_revenue']:,.2f}")
     print(f"   Today Revenue: ${data['today_revenue']:,.2f}")
