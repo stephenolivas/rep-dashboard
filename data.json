@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24 21:14:20 UTC",
+  "updated_at": "2026-02-24 22:20:28 UTC",
   "month_label": "February 2026",
   "day_of_month": 24,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 17,
   "pct_month_left": 14.3,
   "team_quota": 900000,
-  "pct_team_quota": 79.2,
-  "total_revenue": 712730.3,
-  "total_deals": 92,
-  "total_booked": 677,
-  "total_shown": 367,
-  "team_close_rate": 13.6,
-  "team_show_rate": 54.2,
-  "today_revenue": 23988.0,
-  "today_deals": 4,
+  "pct_team_quota": 79.9,
+  "total_revenue": 718727.3,
+  "total_deals": 93,
+  "total_booked": 679,
+  "total_shown": 371,
+  "team_close_rate": 13.7,
+  "team_show_rate": 54.6,
+  "today_revenue": 29985.0,
+  "today_deals": 5,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -41,13 +41,13 @@
     },
     {
       "name": "Scott Seymour",
-      "revenue": 68973.0,
-      "deals": 9,
+      "revenue": 74970.0,
+      "deals": 10,
       "quota": 100000,
-      "pct_to_quota": 69.0,
+      "pct_to_quota": 75.0,
       "booked": 45,
       "shown": 29,
-      "close_rate": 20.0,
+      "close_rate": 22.2,
       "show_rate": 64.4
     },
     {
@@ -78,10 +78,10 @@
       "deals": 6,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 76,
-      "shown": 42,
-      "close_rate": 7.9,
-      "show_rate": 55.3
+      "booked": 78,
+      "shown": 43,
+      "close_rate": 7.7,
+      "show_rate": 55.1
     },
     {
       "name": "John Kirk",
@@ -89,10 +89,10 @@
       "deals": 7,
       "quota": 50000,
       "pct_to_quota": 100.0,
-      "booked": 37,
+      "booked": 38,
       "shown": 23,
-      "close_rate": 18.9,
-      "show_rate": 62.2
+      "close_rate": 18.4,
+      "show_rate": 60.5
     },
     {
       "name": "William Chase",
@@ -101,9 +101,9 @@
       "quota": 75000,
       "pct_to_quota": 58.6,
       "booked": 35,
-      "shown": 18,
+      "shown": 19,
       "close_rate": 17.1,
-      "show_rate": 51.4
+      "show_rate": 54.3
     },
     {
       "name": "Jason Aaron",
@@ -156,9 +156,9 @@
       "quota": 100000,
       "pct_to_quota": 29.0,
       "booked": 45,
-      "shown": 22,
+      "shown": 24,
       "close_rate": 11.1,
-      "show_rate": 48.9
+      "show_rate": 53.3
     },
     {
       "name": "Julia Scaroni",
@@ -166,10 +166,10 @@
       "deals": 2,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 33,
+      "booked": 32,
       "shown": 13,
-      "close_rate": 6.1,
-      "show_rate": 39.4
+      "close_rate": 6.2,
+      "show_rate": 40.6
     },
     {
       "name": "Vince Bartolini",
@@ -183,17 +183,6 @@
       "show_rate": 50.0
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 15.2
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 15.2
     }
   ]
 }
