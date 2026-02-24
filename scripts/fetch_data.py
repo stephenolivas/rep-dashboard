@@ -53,7 +53,7 @@ REP_QUOTAS = {
     "John Kirk": 50_000,
 }
 
-EXCLUDE_USERS = {"Kristin Nelson"}
+EXCLUDE_USERS = {"Kristin Nelson", "Mallory Kent", "Unknown"}
 
 
 # --- API helpers ---
