@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24 22:44:52 UTC",
+  "updated_at": "2026-02-24 23:02:50 UTC",
   "month_label": "February 2026",
   "day_of_month": 24,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 718727.3,
   "total_deals": 93,
   "total_booked": 680,
-  "total_shown": 371,
+  "total_shown": 373,
   "team_close_rate": 13.7,
-  "team_show_rate": 54.6,
+  "team_show_rate": 54.9,
   "today_revenue": 29985.0,
   "today_deals": 5,
   "reps": [
@@ -79,9 +79,9 @@
       "quota": 75000,
       "pct_to_quota": 66.6,
       "booked": 77,
-      "shown": 42,
+      "shown": 43,
       "close_rate": 7.8,
-      "show_rate": 54.5
+      "show_rate": 55.8
     },
     {
       "name": "John Kirk",
@@ -101,9 +101,9 @@
       "quota": 75000,
       "pct_to_quota": 58.6,
       "booked": 35,
-      "shown": 19,
+      "shown": 20,
       "close_rate": 17.1,
-      "show_rate": 54.3
+      "show_rate": 57.1
     },
     {
       "name": "Jason Aaron",
@@ -172,17 +172,6 @@
       "show_rate": 39.4
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 2,
-      "shown": 1,
-      "close_rate": 0.0,
-      "show_rate": 50.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 2,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 50.0
     }
   ]
 }
