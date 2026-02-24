@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-02-24 00:00:00 UTC",
+  "month_label": "February 2026",
+  "total_revenue": 0,
+  "total_deals": 0,
+  "reps": [
+    {"name": "Christian Hartwell", "deals": 0, "revenue": 0, "quota": 100000, "pct_to_quota": 0},
+    {"name": "Lyle Hubbard", "deals": 0, "revenue": 0, "quota": 100000, "pct_to_quota": 0},
+    {"name": "Ategeka Musinguzi", "deals": 0, "revenue": 0, "quota": 100000, "pct_to_quota": 0},
+    {"name": "Scott Seymour", "deals": 0, "revenue": 0, "quota": 100000, "pct_to_quota": 0},
+    {"name": "Eric Piccione", "deals": 0, "revenue": 0, "quota": 100000, "pct_to_quota": 0},
+    {"name": "Jordan Humphrey", "deals": 0, "revenue": 0, "quota": 75000, "pct_to_quota": 0},
+    {"name": "Jason Aaron", "deals": 0, "revenue": 0, "quota": 75000, "pct_to_quota": 0},
+    {"name": "Robin Perkins", "deals": 0, "revenue": 0, "quota": 75000, "pct_to_quota": 0},
+    {"name": "William Chase", "deals": 0, "revenue": 0, "quota": 75000, "pct_to_quota": 0},
+    {"name": "Ryan Jones", "deals": 0, "revenue": 0, "quota": 50000, "pct_to_quota": 0},
+    {"name": "John Kirk", "deals": 0, "revenue": 0, "quota": 50000, "pct_to_quota": 0}
+  ]
+}

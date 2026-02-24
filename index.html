@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c0f14;
+    --surface: #151921;
+    --surface-2: #1c2230;
+    --border: #252d3d;
+    --text: #e4e8f1;
+    --text-muted: #8892a6;
+    --accent: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.12);
+    --green: #34d399;
+    --green-dim: rgba(52, 211, 153, 0.12);
+    --amber: #fbbf24;
+    --amber-dim: rgba(251, 191, 36, 0.12);
+    --red: #f87171;
+    --red-dim: rgba(248, 113, 113, 0.10);
+    --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'JetBrains Mono', 'SF Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── Ambient background ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -40%; left: -20%;
+    width: 80%; height: 80%;
+    background: radial-gradient(ellipse, rgba(56,189,248,0.04) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+
+  /* ─── Header ─── */
+  .header {
+    margin-bottom: 40px;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .header .meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .header .meta .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ─── KPI Cards ─── */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .kpi-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    opacity: 0.6;
+  }
+  .kpi-card.deals::after {
+    background: linear-gradient(90deg, var(--green), transparent);
+  }
+  .kpi-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .kpi-value {
+    font-family: var(--mono);
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--text);
+  }
+  .kpi-value.revenue { color: var(--accent); }
+  .kpi-value.deals-count { color: var(--green); }
+
+  /* ─── Table ─── */
+  .table-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .table-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead th {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+  }
+  thead th:nth-child(n+2) { text-align: right; }
+
+  tbody tr {
+    transition: background 0.15s ease;
+  }
+  tbody tr:hover {
+    background: var(--surface-2);
+  }
+  tbody td {
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(37, 45, 61, 0.5);
+    font-size: 14px;
+  }
+  tbody td:nth-child(n+2) {
+    text-align: right;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+
+  .rep-name {
+    font-weight: 500;
+    color: var(--text);
+  }
+  .rep-rank {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 10px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    font-family: var(--mono);
+  }
+  tbody tr:nth-child(1) .rep-rank {
+    background: var(--accent-glow);
+    color: var(--accent);
+  }
+  tbody tr:nth-child(2) .rep-rank,
+  tbody tr:nth-child(3) .rep-rank {
+    background: var(--green-dim);
+    color: var(--green);
+  }
+
+  /* ─── Quota bar ─── */
+  .quota-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .quota-bar-bg {
+    width: 72px;
+    height: 6px;
+    background: var(--surface-2);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .quota-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+  .quota-pct {
+    min-width: 48px;
+    text-align: right;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .q-green  { color: var(--green); }
+  .q-green .quota-bar-fill { background: var(--green); }
+  .q-amber  { color: var(--amber); }
+  .q-amber .quota-bar-fill { background: var(--amber); }
+  .q-red    { color: var(--red); }
+  .q-red .quota-bar-fill   { background: var(--red); }
+
+  /* ─── Loading / Error ─── */
+  .loading {
+    text-align: center;
+    padding: 80px 24px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .loading .spinner {
+    width: 28px; height: 28px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .error-msg {
+    text-align: center;
+    padding: 60px 24px;
+    color: var(--red);
+    font-size: 14px;
+  }
+
+  /* ─── Footer ─── */
+  .footer {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+    opacity: 0.6;
+  }
+
+  /* ─── Fade-in animation ─── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeUp 0.5s ease forwards;
+  }
+  .fade-in:nth-child(2) { animation-delay: 0.08s; }
+  .fade-in:nth-child(3) { animation-delay: 0.16s; }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 600px) {
+    .container { padding: 32px 16px 48px; }
+    .kpi-row { grid-template-columns: 1fr; }
+    .kpi-value { font-size: 28px; }
+    thead th, tbody td { padding: 12px 14px; }
+    .quota-bar-bg { width: 48px; }
+    .header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    Loading dashboard data&hellip;
+  </div>
+</div>
+
+<script>
+(async function() {
+  const app = document.getElementById('app');
+  const loading = document.getElementById('loading');
+
+  try {
+    const resp = await fetch('data.json?' + Date.now());
+    if (!resp.ok) throw new Error('Could not load data.json');
+    const data = await resp.json();
+    loading.remove();
+    render(data);
+  } catch (err) {
+    loading.innerHTML = `<div class="error-msg">⚠ Could not load dashboard data.<br><small>${err.message}</small></div>`;
+  }
+
+  function fmt$(n) {
+    return '$' + Number(n).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  }
+
+  function quotaColor(pct) {
+    if (pct >= 80) return 'q-green';
+    if (pct >= 40) return 'q-amber';
+    return 'q-red';
+  }
+
+  function render(data) {
+    const repRows = data.reps.map((r, i) => {
+      const qc = quotaColor(r.pct_to_quota);
+      const barW = Math.min(r.pct_to_quota, 100);
+      return `
+        <tr>
+          <td><span class="rep-rank">${i + 1}</span><span class="rep-name">${r.name}</span></td>
+          <td>${r.deals}</td>
+          <td>${fmt$(r.revenue)}</td>
+          <td>
+            <div class="quota-cell ${qc}">
+              <div class="quota-bar-bg"><div class="quota-bar-fill" style="width:${barW}%"></div></div>
+              <span class="quota-pct">${r.pct_to_quota}%</span>
+            </div>
+          </td>
+        </tr>`;
+    }).join('');
+
+    app.innerHTML = `
+      <div class="header fade-in">
+        <h1>Sales Dashboard &mdash; ${data.month_label}</h1>
+        <div class="meta">
+          <span class="dot"></span>
+          <span>Last updated ${data.updated_at}</span>
+          <span>&middot;</span>
+          <span>Auto-refreshes hourly</span>
+        </div>
+      </div>
+
+      <div class="kpi-row fade-in">
+        <div class="kpi-card">
+          <div class="kpi-label">MTD Revenue</div>
+          <div class="kpi-value revenue">${fmt$(data.total_revenue)}</div>
+        </div>
+        <div class="kpi-card deals">
+          <div class="kpi-label">MTD Deals Closed</div>
+          <div class="kpi-value deals-count">${data.total_deals}</div>
+        </div>
+      </div>
+
+      <div class="table-section fade-in">
+        <div class="table-header">Rep Breakdown</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Rep</th>
+              <th>Deals</th>
+              <th>Revenue</th>
+              <th>% to Quota</th>
+            </tr>
+          </thead>
+          <tbody>${repRows}</tbody>
+        </table>
+      </div>
+
+      <div class="footer fade-in">Data sourced from Close CRM &middot; Updates every hour Mon–Fri 7 AM – 5 PM PST</div>
+    `;
+  }
+
+  // Auto-refresh every 5 minutes
+  setInterval(() => location.reload(), 5 * 60 * 1000);
+})();
+</script>
+</body>
+</html>
