@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24 16:26:46 PST",
+  "updated_at": "2026-02-24 16:33:33 PST",
   "month_label": "February 2026",
   "day_of_month": 24,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 17,
   "pct_month_left": 14.3,
   "team_quota": 900000,
-  "pct_team_quota": 79.9,
-  "total_revenue": 718727.3,
-  "total_deals": 93,
-  "total_booked": 683,
+  "pct_team_quota": 80.5,
+  "total_revenue": 724724.3,
+  "total_deals": 94,
+  "total_booked": 684,
   "total_shown": 378,
-  "team_close_rate": 13.6,
+  "team_close_rate": 13.7,
   "team_show_rate": 55.3,
-  "today_revenue": 17991.0,
-  "today_deals": 3,
+  "today_revenue": 23988.0,
+  "today_deals": 4,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -56,10 +56,10 @@
       "deals": 8,
       "quota": 100000,
       "pct_to_quota": 61.0,
-      "booked": 50,
+      "booked": 51,
       "shown": 24,
-      "close_rate": 16.0,
-      "show_rate": 48.0
+      "close_rate": 15.7,
+      "show_rate": 47.1
     },
     {
       "name": "Lyle Hubbard",
@@ -162,13 +162,13 @@
     },
     {
       "name": "Julia Scaroni",
-      "revenue": 18994.0,
-      "deals": 2,
+      "revenue": 24991.0,
+      "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 33,
       "shown": 15,
-      "close_rate": 6.1,
+      "close_rate": 9.1,
       "show_rate": 45.5
     },
     {
@@ -183,17 +183,6 @@
       "show_rate": 50.0
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 2,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 7,
       "close_rate": 0.0,
       "show_rate": 15.2
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 2,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
