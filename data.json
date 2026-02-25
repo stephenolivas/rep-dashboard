@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 11:32:43 PST",
+  "updated_at": "2026-02-25 11:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -7,26 +7,26 @@
   "working_days_elapsed": 18,
   "pct_month_left": 10.7,
   "team_quota": 900000,
-  "pct_team_quota": 80.5,
-  "total_revenue": 724724.3,
-  "total_deals": 95,
+  "pct_team_quota": 81.2,
+  "total_revenue": 730721.3,
+  "total_deals": 96,
   "total_booked": 727,
-  "total_shown": 393,
-  "team_close_rate": 13.1,
-  "team_show_rate": 54.1,
-  "today_revenue": 0.0,
-  "today_deals": 1,
+  "total_shown": 395,
+  "team_close_rate": 13.2,
+  "team_show_rate": 54.3,
+  "today_revenue": 5997.0,
+  "today_deals": 2,
   "reps": [
     {
       "name": "Ryan Jones",
-      "revenue": 96767.3,
-      "deals": 11,
+      "revenue": 102764.3,
+      "deals": 12,
       "quota": 75000,
-      "pct_to_quota": 129.0,
+      "pct_to_quota": 137.0,
       "booked": 48,
-      "shown": 24,
-      "close_rate": 22.9,
-      "show_rate": 50.0
+      "shown": 25,
+      "close_rate": 25.0,
+      "show_rate": 52.1
     },
     {
       "name": "Christian Hartwell",
@@ -46,9 +46,9 @@
       "quota": 100000,
       "pct_to_quota": 75.0,
       "booked": 49,
-      "shown": 30,
+      "shown": 31,
       "close_rate": 20.4,
-      "show_rate": 61.2
+      "show_rate": 63.3
     },
     {
       "name": "Eric Piccione",
@@ -183,17 +183,6 @@
       "show_rate": 0.0
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 9,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 33.3
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 16.3
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 9,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 33.3
     }
   ]
 }
