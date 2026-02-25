@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 15:00:11 PST",
+  "updated_at": "2026-02-25 15:15:09 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 83.6,
   "total_revenue": 752712.3,
   "total_deals": 98,
-  "total_booked": 702,
-  "total_shown": 386,
-  "team_close_rate": 14.0,
-  "team_show_rate": 55.0,
+  "total_booked": 704,
+  "total_shown": 388,
+  "team_close_rate": 13.9,
+  "team_show_rate": 55.1,
   "today_revenue": 33985.0,
   "today_deals": 5,
   "reps": [
@@ -23,10 +23,10 @@
       "deals": 12,
       "quota": 75000,
       "pct_to_quota": 137.0,
-      "booked": 44,
+      "booked": 43,
       "shown": 24,
-      "close_rate": 27.3,
-      "show_rate": 54.5
+      "close_rate": 27.9,
+      "show_rate": 55.8
     },
     {
       "name": "Christian Hartwell",
@@ -34,10 +34,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 63,
+      "booked": 64,
       "shown": 47,
-      "close_rate": 17.5,
-      "show_rate": 74.6
+      "close_rate": 17.2,
+      "show_rate": 73.4
     },
     {
       "name": "Scott Seymour",
@@ -89,10 +89,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 36,
+      "booked": 37,
       "shown": 21,
-      "close_rate": 19.4,
-      "show_rate": 58.3
+      "close_rate": 18.9,
+      "show_rate": 56.8
     },
     {
       "name": "William Chase",
@@ -100,10 +100,10 @@
       "deals": 6,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 36,
-      "shown": 20,
-      "close_rate": 16.7,
-      "show_rate": 55.6
+      "booked": 37,
+      "shown": 21,
+      "close_rate": 16.2,
+      "show_rate": 56.8
     },
     {
       "name": "Jason Aaron",
@@ -112,9 +112,9 @@
       "quota": 75000,
       "pct_to_quota": 58.6,
       "booked": 59,
-      "shown": 40,
+      "shown": 41,
       "close_rate": 11.9,
-      "show_rate": 67.8
+      "show_rate": 69.5
     },
     {
       "name": "Chris Wanke",
@@ -172,17 +172,6 @@
       "show_rate": 40.5
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.4
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -192,6 +181,17 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 37.5
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.4
     },
     {
       "name": "Andrea Shoop",
