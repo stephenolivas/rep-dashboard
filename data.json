@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 14:45:08 PST",
+  "updated_at": "2026-02-25 15:00:11 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 83.6,
   "total_revenue": 752712.3,
   "total_deals": 98,
-  "total_booked": 701,
-  "total_shown": 385,
+  "total_booked": 702,
+  "total_shown": 386,
   "team_close_rate": 14.0,
-  "team_show_rate": 54.9,
+  "team_show_rate": 55.0,
   "today_revenue": 33985.0,
   "today_deals": 5,
   "reps": [
@@ -155,10 +155,10 @@
       "deals": 5,
       "quota": 100000,
       "pct_to_quota": 29.0,
-      "booked": 46,
+      "booked": 47,
       "shown": 25,
-      "close_rate": 10.9,
-      "show_rate": 54.3
+      "close_rate": 10.6,
+      "show_rate": 53.2
     },
     {
       "name": "Julia Scaroni",
@@ -170,17 +170,6 @@
       "shown": 15,
       "close_rate": 8.1,
       "show_rate": 40.5
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
     },
     {
       "name": "Elvis Ellis",
@@ -200,9 +189,20 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 8,
-      "shown": 2,
+      "shown": 3,
       "close_rate": 0.0,
-      "show_rate": 25.0
+      "show_rate": 37.5
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
