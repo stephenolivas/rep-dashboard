@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-02-24 23:14:55 UTC",
+  "updated_at": "2026-02-25 00:02:35 UTC",
   "month_label": "February 2026",
-  "day_of_month": 24,
+  "day_of_month": 25,
   "days_in_month": 28,
   "working_days_total": 20,
-  "working_days_elapsed": 17,
-  "pct_month_left": 14.3,
+  "working_days_elapsed": 18,
+  "pct_month_left": 10.7,
   "team_quota": 900000,
   "pct_team_quota": 79.9,
   "total_revenue": 718727.3,
   "total_deals": 93,
-  "total_booked": 680,
-  "total_shown": 375,
-  "team_close_rate": 13.7,
-  "team_show_rate": 55.1,
-  "today_revenue": 29985.0,
-  "today_deals": 5,
+  "total_booked": 682,
+  "total_shown": 377,
+  "team_close_rate": 13.6,
+  "team_show_rate": 55.3,
+  "today_revenue": 0.0,
+  "today_deals": 0,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -34,10 +34,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 58,
+      "booked": 59,
       "shown": 43,
-      "close_rate": 19.0,
-      "show_rate": 74.1
+      "close_rate": 18.6,
+      "show_rate": 72.9
     },
     {
       "name": "Scott Seymour",
@@ -123,9 +123,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 60,
-      "shown": 28,
+      "shown": 30,
       "close_rate": 8.3,
-      "show_rate": 46.7
+      "show_rate": 50.0
     },
     {
       "name": "Joe Dysert",
@@ -172,26 +172,15 @@
       "show_rate": 45.5
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 15.2
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 2,
+      "booked": 3,
       "shown": 1,
       "close_rate": 0.0,
-      "show_rate": 50.0
+      "show_rate": 33.3
     },
     {
       "name": "Andrea Shoop",
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 15.2
     }
   ]
 }
