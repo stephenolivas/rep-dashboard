@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 15:30:09 PST",
+  "updated_at": "2026-02-25 15:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 18,
   "pct_month_passed": 90.0,
   "team_quota": 900000,
-  "pct_team_quota": 83.6,
-  "total_revenue": 752712.3,
-  "total_deals": 98,
+  "pct_team_quota": 84.9,
+  "total_revenue": 763709.3,
+  "total_deals": 99,
   "total_booked": 704,
   "total_shown": 390,
-  "team_close_rate": 13.9,
+  "team_close_rate": 14.1,
   "team_show_rate": 55.4,
-  "today_revenue": 33985.0,
-  "today_deals": 5,
+  "today_revenue": 44982.0,
+  "today_deals": 6,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -128,6 +128,17 @@
       "show_rate": 49.2
     },
     {
+      "name": "Ategeka Musinguzi",
+      "revenue": 39982.0,
+      "deals": 6,
+      "quota": 100000,
+      "pct_to_quota": 40.0,
+      "booked": 47,
+      "shown": 26,
+      "close_rate": 12.8,
+      "show_rate": 55.3
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 30194.0,
       "deals": 3,
@@ -150,17 +161,6 @@
       "show_rate": 65.9
     },
     {
-      "name": "Ategeka Musinguzi",
-      "revenue": 28985.0,
-      "deals": 5,
-      "quota": 100000,
-      "pct_to_quota": 29.0,
-      "booked": 47,
-      "shown": 26,
-      "close_rate": 10.6,
-      "show_rate": 55.3
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 24991.0,
       "deals": 3,
@@ -170,6 +170,17 @@
       "shown": 15,
       "close_rate": 8.1,
       "show_rate": 40.5
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.4
     },
     {
       "name": "Vince Bartolini",
@@ -192,17 +203,6 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.4
     }
   ]
 }
