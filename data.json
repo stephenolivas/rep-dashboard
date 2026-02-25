@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 11:45:10 PST",
+  "updated_at": "2026-02-25 12:00:12 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 18,
   "pct_month_left": 10.7,
   "team_quota": 900000,
-  "pct_team_quota": 81.2,
-  "total_revenue": 730721.3,
-  "total_deals": 96,
-  "total_booked": 727,
+  "pct_team_quota": 82.4,
+  "total_revenue": 741718.3,
+  "total_deals": 97,
+  "total_booked": 728,
   "total_shown": 395,
-  "team_close_rate": 13.2,
+  "team_close_rate": 13.3,
   "team_show_rate": 54.3,
-  "today_revenue": 5997.0,
-  "today_deals": 2,
+  "today_revenue": 16994.0,
+  "today_deals": 3,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -41,13 +41,13 @@
     },
     {
       "name": "Scott Seymour",
-      "revenue": 74970.0,
-      "deals": 10,
+      "revenue": 85967.0,
+      "deals": 11,
       "quota": 100000,
-      "pct_to_quota": 75.0,
+      "pct_to_quota": 86.0,
       "booked": 49,
       "shown": 31,
-      "close_rate": 20.4,
+      "close_rate": 22.4,
       "show_rate": 63.3
     },
     {
@@ -166,10 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 37,
+      "booked": 38,
       "shown": 17,
-      "close_rate": 8.1,
-      "show_rate": 45.9
+      "close_rate": 7.9,
+      "show_rate": 44.7
     },
     {
       "name": "Andrea Shoop",
