@@ -333,7 +333,15 @@ def build_dashboard_data():
         print("ERROR: CLOSE_API_KEY environment variable not set.", file=sys.stderr)
         sys.exit(1)
 
-    now = datetime.now(timezone.utc)
+    now_utc = datetime.now(timezone.utc)
+    # Use America/Los_Angeles for all date calculations (handles PST/PDT automatically)
+    try:
+        from zoneinfo import ZoneInfo
+        pst = ZoneInfo("America/Los_Angeles")
+    except ImportError:
+        # Fallback for older Python: UTC-8
+        pst = timezone(timedelta(hours=-8))
+    now = now_utc.astimezone(pst)
     year, month, today_day = now.year, now.month, now.day
     today_str = now.strftime("%Y-%m-%d")
     _, last_day = monthrange(year, month)
@@ -432,7 +440,7 @@ def build_dashboard_data():
     reps.sort(key=lambda r: r["revenue"], reverse=True)
 
     return {
-        "updated_at": now.strftime("%Y-%m-%d %H:%M:%S UTC"),
+        "updated_at": now.strftime("%Y-%m-%d %H:%M:%S PST"),
         "month_label": now.strftime("%B %Y"),
         "day_of_month": today_day,
         "days_in_month": last_day,
