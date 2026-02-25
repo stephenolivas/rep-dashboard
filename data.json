@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 10:30:10 PST",
+  "updated_at": "2026-02-25 10:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 80.5,
   "total_revenue": 724724.3,
   "total_deals": 95,
-  "total_booked": 722,
+  "total_booked": 725,
   "total_shown": 385,
-  "team_close_rate": 13.2,
-  "team_show_rate": 53.3,
+  "team_close_rate": 13.1,
+  "team_show_rate": 53.1,
   "today_revenue": 0.0,
   "today_deals": 1,
   "reps": [
@@ -23,10 +23,10 @@
       "deals": 11,
       "quota": 75000,
       "pct_to_quota": 129.0,
-      "booked": 47,
+      "booked": 48,
       "shown": 24,
-      "close_rate": 23.4,
-      "show_rate": 51.1
+      "close_rate": 22.9,
+      "show_rate": 50.0
     },
     {
       "name": "Christian Hartwell",
@@ -144,10 +144,10 @@
       "deals": 4,
       "quota": 75000,
       "pct_to_quota": 40.0,
-      "booked": 40,
+      "booked": 41,
       "shown": 27,
-      "close_rate": 10.0,
-      "show_rate": 67.5
+      "close_rate": 9.8,
+      "show_rate": 65.9
     },
     {
       "name": "Ategeka Musinguzi",
@@ -172,17 +172,6 @@
       "show_rate": 43.2
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 48,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 14.6
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 49,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 14.3
     }
   ]
 }
