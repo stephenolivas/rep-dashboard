@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 14:15:09 PST",
+  "updated_at": "2026-02-25 14:30:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -34,10 +34,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 62,
-      "shown": 46,
-      "close_rate": 17.7,
-      "show_rate": 74.2
+      "booked": 63,
+      "shown": 47,
+      "close_rate": 17.5,
+      "show_rate": 74.6
     },
     {
       "name": "Scott Seymour",
@@ -67,10 +67,10 @@
       "deals": 8,
       "quota": 100000,
       "pct_to_quota": 61.0,
-      "booked": 45,
+      "booked": 46,
       "shown": 23,
-      "close_rate": 17.8,
-      "show_rate": 51.1
+      "close_rate": 17.4,
+      "show_rate": 50.0
     },
     {
       "name": "Robin Perkins",
@@ -78,10 +78,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 73.3,
-      "booked": 80,
-      "shown": 45,
-      "close_rate": 8.8,
-      "show_rate": 56.2
+      "booked": 79,
+      "shown": 44,
+      "close_rate": 8.9,
+      "show_rate": 55.7
     },
     {
       "name": "John Kirk",
@@ -89,10 +89,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 37,
+      "booked": 36,
       "shown": 21,
-      "close_rate": 18.9,
-      "show_rate": 56.8
+      "close_rate": 19.4,
+      "show_rate": 58.3
     },
     {
       "name": "William Chase",
@@ -172,17 +172,6 @@
       "show_rate": 40.5
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.4
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -192,6 +181,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.4
     },
     {
       "name": "Vince Bartolini",
