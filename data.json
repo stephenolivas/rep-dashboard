@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 10:15:10 PST",
+  "updated_at": "2026-02-25 10:30:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,8 +10,8 @@
   "pct_team_quota": 80.5,
   "total_revenue": 724724.3,
   "total_deals": 95,
-  "total_booked": 720,
-  "total_shown": 384,
+  "total_booked": 722,
+  "total_shown": 385,
   "team_close_rate": 13.2,
   "team_show_rate": 53.3,
   "today_revenue": 0.0,
@@ -111,10 +111,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 61,
+      "booked": 62,
       "shown": 39,
-      "close_rate": 11.5,
-      "show_rate": 63.9
+      "close_rate": 11.3,
+      "show_rate": 62.9
     },
     {
       "name": "Chris Wanke",
@@ -172,28 +172,6 @@
       "show_rate": 43.2
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 8,
-      "shown": 2,
-      "close_rate": 0.0,
-      "show_rate": 25.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +181,28 @@
       "shown": 7,
       "close_rate": 0.0,
       "show_rate": 14.6
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 9,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 33.3
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
