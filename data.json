@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 09:15:10 PST",
+  "updated_at": "2026-02-25 09:30:12 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 80.5,
   "total_revenue": 724724.3,
   "total_deals": 95,
-  "total_booked": 703,
-  "total_shown": 381,
-  "team_close_rate": 13.5,
-  "team_show_rate": 54.2,
+  "total_booked": 710,
+  "total_shown": 382,
+  "team_close_rate": 13.4,
+  "team_show_rate": 53.8,
   "today_revenue": 0.0,
   "today_deals": 1,
   "reps": [
@@ -34,10 +34,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 61,
+      "booked": 62,
       "shown": 43,
-      "close_rate": 18.0,
-      "show_rate": 70.5
+      "close_rate": 17.7,
+      "show_rate": 69.4
     },
     {
       "name": "Scott Seymour",
@@ -156,9 +156,9 @@
       "quota": 100000,
       "pct_to_quota": 29.0,
       "booked": 45,
-      "shown": 24,
+      "shown": 25,
       "close_rate": 11.1,
-      "show_rate": 53.3
+      "show_rate": 55.6
     },
     {
       "name": "Julia Scaroni",
@@ -166,21 +166,21 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 35,
+      "booked": 37,
       "shown": 15,
-      "close_rate": 8.6,
-      "show_rate": 42.9
+      "close_rate": 8.1,
+      "show_rate": 40.5
     },
     {
-      "name": "Vince Bartolini",
+      "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 4,
-      "shown": 2,
+      "booked": 6,
+      "shown": 0,
       "close_rate": 0.0,
-      "show_rate": 50.0
+      "show_rate": 0.0
     },
     {
       "name": "Elvis Ellis",
@@ -194,15 +194,15 @@
       "show_rate": 14.9
     },
     {
-      "name": "Andrea Shoop",
+      "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 2,
-      "shown": 0,
+      "booked": 4,
+      "shown": 2,
       "close_rate": 0.0,
-      "show_rate": 0.0
+      "show_rate": 50.0
     }
   ]
 }
