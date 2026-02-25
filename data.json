@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 09:30:12 PST",
+  "updated_at": "2026-02-25 09:45:16 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 80.5,
   "total_revenue": 724724.3,
   "total_deals": 95,
-  "total_booked": 710,
+  "total_booked": 715,
   "total_shown": 382,
-  "team_close_rate": 13.4,
-  "team_show_rate": 53.8,
+  "team_close_rate": 13.3,
+  "team_show_rate": 53.4,
   "today_revenue": 0.0,
   "today_deals": 1,
   "reps": [
@@ -111,10 +111,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 61,
+      "booked": 60,
       "shown": 39,
-      "close_rate": 11.5,
-      "show_rate": 63.9
+      "close_rate": 11.7,
+      "show_rate": 65.0
     },
     {
       "name": "Chris Wanke",
@@ -122,10 +122,10 @@
       "deals": 5,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 59,
+      "booked": 60,
       "shown": 30,
-      "close_rate": 8.5,
-      "show_rate": 50.8
+      "close_rate": 8.3,
+      "show_rate": 50.0
     },
     {
       "name": "Joe Dysert",
@@ -155,10 +155,10 @@
       "deals": 5,
       "quota": 100000,
       "pct_to_quota": 29.0,
-      "booked": 45,
+      "booked": 46,
       "shown": 25,
-      "close_rate": 11.1,
-      "show_rate": 55.6
+      "close_rate": 10.9,
+      "show_rate": 54.3
     },
     {
       "name": "Julia Scaroni",
@@ -166,21 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 37,
+      "booked": 36,
       "shown": 15,
-      "close_rate": 8.1,
-      "show_rate": 40.5
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 6,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
+      "close_rate": 8.3,
+      "show_rate": 41.7
     },
     {
       "name": "Elvis Ellis",
@@ -188,10 +177,21 @@
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 47,
+      "booked": 48,
       "shown": 7,
       "close_rate": 0.0,
-      "show_rate": 14.9
+      "show_rate": 14.6
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     },
     {
       "name": "Vince Bartolini",
@@ -199,10 +199,10 @@
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 4,
+      "booked": 7,
       "shown": 2,
       "close_rate": 0.0,
-      "show_rate": 50.0
+      "show_rate": 28.6
     }
   ]
 }
