@@ -407,7 +407,9 @@
   }
 
   function toPST(s) {
-    const d = new Date(s.replace(' UTC','Z').replace(' ','T'));
+    // Handle both "UTC" and "PST" suffixed timestamps
+    const cleaned = s.replace(' UTC','Z').replace(' PST','-08:00').replace(' ','T');
+    const d = new Date(cleaned);
     return d.toLocaleString('en-US', {
       timeZone:'America/Los_Angeles',
       weekday:'long', year:'numeric', month:'long', day:'numeric',
