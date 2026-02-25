@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24 16:23:18 PST",
+  "updated_at": "2026-02-24 16:26:46 PST",
   "month_label": "February 2026",
   "day_of_month": 24,
   "days_in_month": 28,
@@ -14,8 +14,8 @@
   "total_shown": 378,
   "team_close_rate": 13.6,
   "team_show_rate": 55.3,
-  "today_revenue": 29985.0,
-  "today_deals": 5,
+  "today_revenue": 17991.0,
+  "today_deals": 3,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -183,17 +183,6 @@
       "show_rate": 50.0
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 15.2
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 15.2
     }
   ]
 }
