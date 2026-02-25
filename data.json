@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-02-25 00:02:35 UTC",
+  "updated_at": "2026-02-24 16:23:18 PST",
   "month_label": "February 2026",
-  "day_of_month": 25,
+  "day_of_month": 24,
   "days_in_month": 28,
   "working_days_total": 20,
-  "working_days_elapsed": 18,
-  "pct_month_left": 10.7,
+  "working_days_elapsed": 17,
+  "pct_month_left": 14.3,
   "team_quota": 900000,
   "pct_team_quota": 79.9,
   "total_revenue": 718727.3,
   "total_deals": 93,
-  "total_booked": 682,
-  "total_shown": 377,
+  "total_booked": 683,
+  "total_shown": 378,
   "team_close_rate": 13.6,
   "team_show_rate": 55.3,
-  "today_revenue": 0.0,
-  "today_deals": 0,
+  "today_revenue": 29985.0,
+  "today_deals": 5,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -45,10 +45,10 @@
       "deals": 10,
       "quota": 100000,
       "pct_to_quota": 75.0,
-      "booked": 46,
+      "booked": 47,
       "shown": 29,
-      "close_rate": 21.7,
-      "show_rate": 63.0
+      "close_rate": 21.3,
+      "show_rate": 61.7
     },
     {
       "name": "Eric Piccione",
@@ -122,10 +122,10 @@
       "deals": 5,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 60,
+      "booked": 59,
       "shown": 30,
-      "close_rate": 8.3,
-      "show_rate": 50.0
+      "close_rate": 8.5,
+      "show_rate": 50.8
     },
     {
       "name": "Joe Dysert",
@@ -177,21 +177,10 @@
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 3,
-      "shown": 1,
+      "booked": 4,
+      "shown": 2,
       "close_rate": 0.0,
-      "show_rate": 33.3
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 2,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
+      "show_rate": 50.0
     },
     {
       "name": "Elvis Ellis",
@@ -203,6 +192,17 @@
       "shown": 7,
       "close_rate": 0.0,
       "show_rate": 15.2
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 2,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
