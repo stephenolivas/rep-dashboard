@@ -7,6 +7,10 @@ Data collected:
   2. Leads with "First Call Booked Date" in current month -> meetings booked per rep
   3. Leads with "First Call Show Up (Opp)" = "Yes" -> meetings shown per rep
   4. Close rate = deals closed / meetings booked
+
+Excluded from meeting counts:
+  - Leads in "Canceled (by Lead)" status
+  - Leads in "Outside the US" status
 """
 
 import json
@@ -26,6 +30,12 @@ BASE_URL = "https://api.close.com/api/v1"
 
 PIPELINE_ID = "pipe_78hyBUVS7IKikGEmstObu1"
 CLOSED_WON_STATUS_ID = "stat_WnFc0uhjcjV0cc3bVzdFVqDz7av6rbsOmOvHUsO6s03"
+
+# Lead statuses to EXCLUDE from meeting counts (rep can't control these)
+EXCLUDED_LEAD_STATUSES = {
+    "stat_hWIGHjzyNpl4YjIFSFz3VK4fp2ny10SFJLKAihmo4KT",  # Canceled (by Lead)
+    "stat_YV4ZngDB4IGjLjlOf0YTFEWuKZJ6fhNxVkzQkvKYfdB",  # Outside the US
+}
 
 # Custom field IDs and display names (lead object)
 CF_FIRST_CALL_BOOKED_ID   = "cf_JsJZIVh7QDcFQBXr4cTRBxf1AkREpLdsKiZB4AEJ8Xh"
@@ -141,15 +151,12 @@ def fetch_closed_won_opportunities(year, month):
 
 def get_custom_value(custom_dict, field_id, field_name):
     """Try multiple key formats to get a custom field value from a lead."""
-    # Try display name (most common)
     val = custom_dict.get(field_name)
     if val is not None:
         return val
-    # Try field ID
     val = custom_dict.get(field_id)
     if val is not None:
         return val
-    # Try with "custom." prefix
     val = custom_dict.get(f"custom.{field_id}")
     if val is not None:
         return val
@@ -161,9 +168,7 @@ def resolve_owner_to_name(owner_raw, user_map, name_to_id):
     if not owner_raw:
         return "Unknown"
 
-    # If it's a dict (some Close fields return objects)
     if isinstance(owner_raw, dict):
-        # Try id field
         uid = owner_raw.get("id", "")
         if uid in user_map:
             return user_map[uid]
@@ -171,15 +176,12 @@ def resolve_owner_to_name(owner_raw, user_map, name_to_id):
 
     owner_str = str(owner_raw).strip()
 
-    # If it's a user_id like "user_xxxx"
     if owner_str in user_map:
         return user_map[owner_str]
 
-    # If it's already a display name like "Ryan Jones"
     if owner_str in name_to_id:
         return owner_str
 
-    # If it's in the quota list (partial match safety)
     for rep_name in REP_QUOTAS:
         if owner_str == rep_name:
             return rep_name
@@ -188,14 +190,17 @@ def resolve_owner_to_name(owner_raw, user_map, name_to_id):
 
 
 def fetch_leads_with_calls_booked(year, month, user_map, name_to_id):
-    """Fetch leads with First Call Booked Date in the given month."""
+    """Fetch leads with First Call Booked Date in the given month.
+    
+    Excludes leads in Canceled (by Lead) or Outside the US status.
+    """
     _, last_day = monthrange(year, month)
     date_gte = f"{year}-{month:02d}-01"
     date_lte = f"{year}-{month:02d}-{last_day:02d}"
 
     query_str = (
-        f'"{CF_FIRST_CALL_BOOKED_NAME}" >= "{date_gte}" '
-        f'"{CF_FIRST_CALL_BOOKED_NAME}" <= "{date_lte}"'
+        f'"First Call Booked Date" >= "{date_gte}" '
+        f'"First Call Booked Date" <= "{date_lte}"'
     )
 
     all_leads = []
@@ -217,49 +222,22 @@ def fetch_leads_with_calls_booked(year, month, user_map, name_to_id):
 
     print(f"  Raw leads returned: {len(all_leads)}")
 
-    # === EXTENSIVE DEBUG: inspect first lead ===
-    if all_leads:
-        first = all_leads[0]
-
-        # Check if custom fields are at top level or nested
-        print(f"  DEBUG: Top-level keys of first lead: {[k for k in first.keys() if k.startswith('c') or k == 'custom']}")
-
-        custom = first.get("custom", {})
-        print(f"  DEBUG: Number of custom field keys: {len(custom)}")
-        if custom:
-            # Print ALL keys to see format
-            all_keys = list(custom.keys())
-            print(f"  DEBUG: First 15 custom keys: {all_keys[:15]}")
-            # Look specifically for our fields
-            for k in all_keys:
-                kl = k.lower()
-                if "owner" in kl or "lead owner" in kl:
-                    print(f"  DEBUG MATCH owner: key='{k}' val='{custom[k]}' type={type(custom[k]).__name__}")
-                if "show" in kl and "call" in kl:
-                    print(f"  DEBUG MATCH show: key='{k}' val='{custom[k]}' type={type(custom[k]).__name__}")
-                if "booked" in kl and "call" in kl:
-                    print(f"  DEBUG MATCH booked: key='{k}' val='{custom[k]}' type={type(custom[k]).__name__}")
-
-        # Also check if custom fields are at the top level (not nested)
-        for k in first.keys():
-            if CF_LEAD_OWNER_ID in str(k):
-                print(f"  DEBUG: Found owner field at top level: key='{k}' val='{first[k]}'")
-            if "custom." in str(k):
-                print(f"  DEBUG: Found dotted custom field: key='{k}'")
-
-    # === END DEBUG ===
-
     rep_booked = {}
     rep_shown = {}
-    unknown_vals = set()
+    excluded_count = 0
 
     for lead in all_leads:
+        # --- EXCLUDE leads in Canceled or Outside US status ---
+        lead_status_id = lead.get("status_id", "")
+        if lead_status_id in EXCLUDED_LEAD_STATUSES:
+            excluded_count += 1
+            continue
+
         custom = lead.get("custom", {})
 
-        # Also check top-level fields (some API versions put custom fields at root)
+        # Merge any top-level custom.cf_xxx keys
         merged = {}
         merged.update(custom)
-        # Check for custom.cf_xxx style keys at top level
         for k, v in lead.items():
             if k.startswith("custom."):
                 merged[k] = v
@@ -270,9 +248,6 @@ def fetch_leads_with_calls_booked(year, month, user_map, name_to_id):
 
         rep_name = resolve_owner_to_name(owner_raw, user_map, name_to_id)
 
-        if rep_name == "Unknown" and owner_raw:
-            unknown_vals.add(str(owner_raw)[:60])
-
         if rep_name in EXCLUDE_USERS:
             continue
 
@@ -280,38 +255,10 @@ def fetch_leads_with_calls_booked(year, month, user_map, name_to_id):
         if str(show_up).strip().lower() == "yes":
             rep_shown[rep_name] = rep_shown.get(rep_name, 0) + 1
 
-    if unknown_vals:
-        print(f"  DEBUG: Unknown owner values (sample): {list(unknown_vals)[:5]}")
-    print(f"  DEBUG: rep_booked result: {dict(sorted(rep_booked.items(), key=lambda x: -x[1])[:5])}")
+    print(f"  Excluded {excluded_count} leads (Canceled/Outside US)")
+    print(f"  Counting {len(all_leads) - excluded_count} leads after exclusions")
 
     return rep_booked, rep_shown
-
-
-# --- Close rate from opportunities ---
-
-def compute_close_rates(opps, user_map, rep_booked):
-    """Close rate = deals per rep / meetings booked per rep."""
-    rep_deals = {}
-    seen_leads = set()
-
-    for opp in opps:
-        user_id = opp.get("user_id")
-        rep_name = user_map.get(user_id, "Unknown")
-        if rep_name in EXCLUDE_USERS:
-            continue
-        lead_id = opp.get("lead_id", "")
-        lead_key = f"{rep_name}:{lead_id}"
-        if lead_key not in seen_leads:
-            rep_deals[rep_name] = rep_deals.get(rep_name, 0) + 1
-            seen_leads.add(lead_key)
-
-    close_rates = {}
-    for name in set(list(rep_deals.keys()) + list(rep_booked.keys())):
-        deals = rep_deals.get(name, 0)
-        booked = rep_booked.get(name, 0)
-        close_rates[name] = round(deals / booked * 100, 1) if booked > 0 else 0
-
-    return close_rates
 
 
 # --- Working days ---
@@ -342,17 +289,18 @@ def build_dashboard_data():
         # Fallback for older Python: UTC-8
         pst = timezone(timedelta(hours=-8))
     now = now_utc.astimezone(pst)
+
     year, month, today_day = now.year, now.month, now.day
     today_str = now.strftime("%Y-%m-%d")
     _, last_day = monthrange(year, month)
 
-    print(f"Fetching data for {year}-{month:02d} (day {today_day})...")
+    print(f"Fetching data for {year}-{month:02d} (day {today_day}, PST)...")
 
     # Step 1: User map
     print("  Fetching org users...")
     user_map = fetch_org_users()
     name_to_id = {v: k for k, v in user_map.items()}
-    print(f"  Found {len(user_map)} users. Sample: {list(user_map.items())[:3]}")
+    print(f"  Found {len(user_map)} users.")
 
     # Step 2: Closed/Won opportunities
     print("  Fetching Closed/Won opportunities...")
@@ -395,7 +343,7 @@ def build_dashboard_data():
             except (ValueError, TypeError):
                 pass
 
-    # Step 3: Meetings booked / shown
+    # Step 3: Meetings booked / shown (excludes Canceled & Outside US leads)
     print("  Fetching meetings booked/shown...")
     rep_booked, rep_shown = fetch_leads_with_calls_booked(year, month, user_map, name_to_id)
     print(f"  Meetings booked by {len(rep_booked)} reps, shown by {len(rep_shown)} reps.")
@@ -443,7 +391,7 @@ def build_dashboard_data():
     # Step 6: Time context
     working_days_total = count_working_days(year, month)
     working_days_elapsed = count_working_days(year, month, today_day)
-    pct_month_left = round((1 - today_day / last_day) * 100, 1)
+    pct_month_passed = round(working_days_elapsed / working_days_total * 100, 1) if working_days_total > 0 else 0
     pct_team_quota = round(total_revenue / TEAM_QUOTA * 100, 1) if TEAM_QUOTA > 0 else 0
 
     reps.sort(key=lambda r: r["revenue"], reverse=True)
@@ -455,7 +403,7 @@ def build_dashboard_data():
         "days_in_month": last_day,
         "working_days_total": working_days_total,
         "working_days_elapsed": working_days_elapsed,
-        "pct_month_left": pct_month_left,
+        "pct_month_passed": pct_month_passed,
         "team_quota": TEAM_QUOTA,
         "pct_team_quota": pct_team_quota,
         "total_revenue": round(total_revenue, 2),
@@ -485,6 +433,6 @@ if __name__ == "__main__":
     print(f"   Total Revenue: ${data['total_revenue']:,.2f}")
     print(f"   Today Revenue: ${data['today_revenue']:,.2f}")
     print(f"   Total Deals: {data['total_deals']}")
-    print(f"   Meetings Booked: {data['total_booked']}")
+    print(f"   Meetings Booked: {data['total_booked']} (after exclusions)")
     print(f"   Meetings Shown: {data['total_shown']}")
     print(f"   Reps tracked: {len(data['reps'])}")
