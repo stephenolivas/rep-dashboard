@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 07:25:54 PST",
+  "updated_at": "2026-02-25 09:15:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -9,13 +9,13 @@
   "team_quota": 900000,
   "pct_team_quota": 80.5,
   "total_revenue": 724724.3,
-  "total_deals": 94,
-  "total_booked": 700,
-  "total_shown": 380,
-  "team_close_rate": 13.4,
-  "team_show_rate": 54.3,
+  "total_deals": 95,
+  "total_booked": 703,
+  "total_shown": 381,
+  "team_close_rate": 13.5,
+  "team_show_rate": 54.2,
   "today_revenue": 0.0,
-  "today_deals": 0,
+  "today_deals": 1,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -57,9 +57,9 @@
       "quota": 100000,
       "pct_to_quota": 61.0,
       "booked": 52,
-      "shown": 26,
+      "shown": 27,
       "close_rate": 15.4,
-      "show_rate": 50.0
+      "show_rate": 51.9
     },
     {
       "name": "Lyle Hubbard",
@@ -75,13 +75,13 @@
     {
       "name": "Robin Perkins",
       "revenue": 49982.0,
-      "deals": 6,
+      "deals": 7,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 79,
+      "booked": 80,
       "shown": 43,
-      "close_rate": 7.6,
-      "show_rate": 54.4
+      "close_rate": 8.8,
+      "show_rate": 53.8
     },
     {
       "name": "John Kirk",
@@ -89,10 +89,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 39,
+      "booked": 40,
       "shown": 23,
-      "close_rate": 17.9,
-      "show_rate": 59.0
+      "close_rate": 17.5,
+      "show_rate": 57.5
     },
     {
       "name": "William Chase",
@@ -166,10 +166,21 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 34,
+      "booked": 35,
       "shown": 15,
-      "close_rate": 8.8,
-      "show_rate": 44.1
+      "close_rate": 8.6,
+      "show_rate": 42.9
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 4,
+      "shown": 2,
+      "close_rate": 0.0,
+      "show_rate": 50.0
     },
     {
       "name": "Elvis Ellis",
@@ -192,17 +203,6 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 4,
-      "shown": 2,
-      "close_rate": 0.0,
-      "show_rate": 50.0
     }
   ]
 }
