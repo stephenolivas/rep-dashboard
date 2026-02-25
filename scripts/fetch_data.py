@@ -382,9 +382,18 @@ def build_dashboard_data():
             rep_deals[rep_name] = rep_deals.get(rep_name, 0) + 1
             seen_leads.add(lead_key)
 
-        if date_won == today_str:
-            today_revenue += value_dollars
-            today_deals += 1
+        # Today's revenue: use date_updated (full datetime) converted to PST
+        # instead of date_won (which Close may store in UTC)
+        date_updated_str = opp.get("date_updated", "")
+        if date_updated_str:
+            try:
+                opp_dt = datetime.fromisoformat(date_updated_str.replace("Z", "+00:00"))
+                opp_pst = opp_dt.astimezone(pst)
+                if opp_pst.strftime("%Y-%m-%d") == today_str:
+                    today_revenue += value_dollars
+                    today_deals += 1
+            except (ValueError, TypeError):
+                pass
 
     # Step 3: Meetings booked / shown
     print("  Fetching meetings booked/shown...")
