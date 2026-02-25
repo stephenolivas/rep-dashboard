@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 12:30:10 PST",
+  "updated_at": "2026-02-25 12:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -7,14 +7,14 @@
   "working_days_elapsed": 18,
   "pct_month_left": 10.7,
   "team_quota": 900000,
-  "pct_team_quota": 83.1,
-  "total_revenue": 747715.3,
+  "pct_team_quota": 83.6,
+  "total_revenue": 752712.3,
   "total_deals": 98,
   "total_booked": 734,
   "total_shown": 397,
   "team_close_rate": 13.4,
   "team_show_rate": 54.1,
-  "today_revenue": 22991.0,
+  "today_revenue": 27988.0,
   "today_deals": 4,
   "reps": [
     {
@@ -74,10 +74,10 @@
     },
     {
       "name": "Robin Perkins",
-      "revenue": 49982.0,
+      "revenue": 54979.0,
       "deals": 7,
       "quota": 75000,
-      "pct_to_quota": 66.6,
+      "pct_to_quota": 73.3,
       "booked": 81,
       "shown": 45,
       "close_rate": 8.6,
@@ -172,17 +172,6 @@
       "show_rate": 42.5
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 49,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 16.3
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -192,6 +181,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 49,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 16.3
     },
     {
       "name": "Vince Bartolini",
