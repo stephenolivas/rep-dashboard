@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 18:45:09 PST",
+  "updated_at": "2026-02-25 19:00:11 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 84.9,
   "total_revenue": 763709.3,
   "total_deals": 100,
-  "total_booked": 706,
+  "total_booked": 707,
   "total_shown": 396,
-  "team_close_rate": 14.2,
-  "team_show_rate": 56.1,
+  "team_close_rate": 14.1,
+  "team_show_rate": 56.0,
   "today_revenue": 44982.0,
   "today_deals": 7,
   "reps": [
@@ -100,10 +100,10 @@
       "deals": 6,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 37,
+      "booked": 38,
       "shown": 21,
-      "close_rate": 16.2,
-      "show_rate": 56.8
+      "close_rate": 15.8,
+      "show_rate": 55.3
     },
     {
       "name": "Jason Aaron",
@@ -172,17 +172,6 @@
       "show_rate": 39.5
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -192,6 +181,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 17.8
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     },
     {
       "name": "Vince Bartolini",
