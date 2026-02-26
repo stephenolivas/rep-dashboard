@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 20:00:11 PST",
+  "updated_at": "2026-02-25 20:15:10 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,7 +10,7 @@
   "pct_team_quota": 84.9,
   "total_revenue": 763709.3,
   "total_deals": 100,
-  "total_booked": 708,
+  "total_booked": 709,
   "total_shown": 396,
   "team_close_rate": 14.1,
   "team_show_rate": 55.9,
@@ -122,10 +122,10 @@
       "deals": 6,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 61,
+      "booked": 62,
       "shown": 30,
-      "close_rate": 9.8,
-      "show_rate": 49.2
+      "close_rate": 9.7,
+      "show_rate": 48.4
     },
     {
       "name": "Ategeka Musinguzi",
