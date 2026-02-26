@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 15:45:10 PST",
+  "updated_at": "2026-02-26 15:59:32 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 803694.3,
   "total_deals": 104,
   "total_booked": 751,
-  "total_shown": 422,
+  "total_shown": 424,
   "team_close_rate": 13.8,
-  "team_show_rate": 56.2,
+  "team_show_rate": 56.5,
   "today_revenue": 32988.0,
   "today_deals": 4,
   "reps": [
@@ -167,9 +167,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 41,
-      "shown": 16,
+      "shown": 17,
       "close_rate": 7.3,
-      "show_rate": 39.0
+      "show_rate": 41.5
     },
     {
       "name": "Vince Bartolini",
@@ -178,9 +178,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 11,
-      "shown": 3,
+      "shown": 4,
       "close_rate": 9.1,
-      "show_rate": 27.3
+      "show_rate": 36.4
     },
     {
       "name": "Andrea Shoop",
