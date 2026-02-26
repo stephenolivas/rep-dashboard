@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 11:00:18 PST",
+  "updated_at": "2026-02-26 11:15:16 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 85.6,
   "total_revenue": 770706.3,
   "total_deals": 101,
-  "total_booked": 716,
+  "total_booked": 719,
   "total_shown": 403,
-  "team_close_rate": 14.1,
-  "team_show_rate": 56.3,
+  "team_close_rate": 14.0,
+  "team_show_rate": 56.1,
   "today_revenue": 5997.0,
   "today_deals": 1,
   "reps": [
@@ -45,10 +45,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 86.0,
-      "booked": 46,
+      "booked": 47,
       "shown": 32,
-      "close_rate": 23.9,
-      "show_rate": 69.6
+      "close_rate": 23.4,
+      "show_rate": 68.1
     },
     {
       "name": "Lyle Hubbard",
@@ -122,10 +122,10 @@
       "deals": 6,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 62,
+      "booked": 63,
       "shown": 30,
-      "close_rate": 9.7,
-      "show_rate": 48.4
+      "close_rate": 9.5,
+      "show_rate": 47.6
     },
     {
       "name": "Ategeka Musinguzi",
@@ -166,10 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 38,
+      "booked": 39,
       "shown": 15,
-      "close_rate": 7.9,
-      "show_rate": 39.5
+      "close_rate": 7.7,
+      "show_rate": 38.5
     },
     {
       "name": "Vince Bartolini",
@@ -183,17 +183,6 @@
       "show_rate": 33.3
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 17.4
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
