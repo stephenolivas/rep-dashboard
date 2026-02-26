@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 17:30:09 PST",
+  "updated_at": "2026-02-25 17:45:08 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 84.9,
   "total_revenue": 763709.3,
   "total_deals": 100,
-  "total_booked": 705,
+  "total_booked": 706,
   "total_shown": 396,
   "team_close_rate": 14.2,
-  "team_show_rate": 56.2,
+  "team_show_rate": 56.1,
   "today_revenue": 44982.0,
   "today_deals": 7,
   "reps": [
@@ -78,10 +78,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 73.3,
-      "booked": 79,
+      "booked": 80,
       "shown": 44,
-      "close_rate": 8.9,
-      "show_rate": 55.7
+      "close_rate": 8.8,
+      "show_rate": 55.0
     },
     {
       "name": "John Kirk",
@@ -172,17 +172,6 @@
       "show_rate": 39.5
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 37.5
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
