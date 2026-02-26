@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 05:30:10 PST",
+  "updated_at": "2026-02-26 05:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -172,17 +172,6 @@
       "show_rate": 39.5
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 17.8
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
