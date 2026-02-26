@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 08:30:13 PST",
+  "updated_at": "2026-02-26 08:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,8 +10,8 @@
   "pct_team_quota": 84.3,
   "total_revenue": 758712.3,
   "total_deals": 99,
-  "total_booked": 712,
-  "total_shown": 399,
+  "total_booked": 711,
+  "total_shown": 398,
   "team_close_rate": 13.9,
   "team_show_rate": 56.0,
   "today_revenue": 5997.0,
@@ -34,10 +34,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 63,
+      "booked": 64,
       "shown": 47,
-      "close_rate": 17.5,
-      "show_rate": 74.6
+      "close_rate": 17.2,
+      "show_rate": 73.4
     },
     {
       "name": "Scott Seymour",
@@ -45,10 +45,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 86.0,
-      "booked": 47,
+      "booked": 46,
       "shown": 32,
-      "close_rate": 23.4,
-      "show_rate": 68.1
+      "close_rate": 23.9,
+      "show_rate": 69.6
     },
     {
       "name": "Lyle Hubbard",
@@ -133,10 +133,10 @@
       "deals": 6,
       "quota": 100000,
       "pct_to_quota": 40.0,
-      "booked": 48,
-      "shown": 27,
-      "close_rate": 12.5,
-      "show_rate": 56.2
+      "booked": 47,
+      "shown": 26,
+      "close_rate": 12.8,
+      "show_rate": 55.3
     },
     {
       "name": "Joe Dysert",
@@ -172,17 +172,6 @@
       "show_rate": 39.5
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 7,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -192,6 +181,17 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 37.5
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 7,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     },
     {
       "name": "Elvis Ellis",
