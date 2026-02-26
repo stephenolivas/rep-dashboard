@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 11:15:16 PST",
+  "updated_at": "2026-02-26 11:24:30 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -9,13 +9,13 @@
   "team_quota": 900000,
   "pct_team_quota": 85.6,
   "total_revenue": 770706.3,
-  "total_deals": 101,
-  "total_booked": 719,
-  "total_shown": 403,
-  "team_close_rate": 14.0,
-  "team_show_rate": 56.1,
-  "today_revenue": 5997.0,
-  "today_deals": 1,
+  "total_deals": 100,
+  "total_booked": 720,
+  "total_shown": 405,
+  "team_close_rate": 13.9,
+  "team_show_rate": 56.2,
+  "today_revenue": 0.0,
+  "today_deals": 0,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -30,13 +30,13 @@
     },
     {
       "name": "Christian Hartwell",
-      "revenue": 98967.0,
-      "deals": 12,
+      "revenue": 92970.0,
+      "deals": 11,
       "quota": 100000,
-      "pct_to_quota": 99.0,
+      "pct_to_quota": 93.0,
       "booked": 65,
       "shown": 48,
-      "close_rate": 18.5,
+      "close_rate": 16.9,
       "show_rate": 73.8
     },
     {
@@ -79,9 +79,9 @@
       "quota": 75000,
       "pct_to_quota": 74.6,
       "booked": 79,
-      "shown": 44,
+      "shown": 45,
       "close_rate": 8.9,
-      "show_rate": 55.7
+      "show_rate": 57.0
     },
     {
       "name": "John Kirk",
@@ -93,6 +93,17 @@
       "shown": 22,
       "close_rate": 18.9,
       "show_rate": 59.5
+    },
+    {
+      "name": "Chris Wanke",
+      "revenue": 46982.0,
+      "deals": 6,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 63,
+      "shown": 30,
+      "close_rate": 9.5,
+      "show_rate": 47.6
     },
     {
       "name": "William Chase",
@@ -115,17 +126,6 @@
       "shown": 43,
       "close_rate": 11.1,
       "show_rate": 68.3
-    },
-    {
-      "name": "Chris Wanke",
-      "revenue": 40985.0,
-      "deals": 6,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 63,
-      "shown": 30,
-      "close_rate": 9.5,
-      "show_rate": 47.6
     },
     {
       "name": "Ategeka Musinguzi",
@@ -166,10 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 39,
-      "shown": 15,
-      "close_rate": 7.7,
-      "show_rate": 38.5
+      "booked": 40,
+      "shown": 16,
+      "close_rate": 7.5,
+      "show_rate": 40.0
     },
     {
       "name": "Vince Bartolini",
