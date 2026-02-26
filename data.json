@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 11:30:21 PST",
+  "updated_at": "2026-02-26 11:45:15 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -111,10 +111,10 @@
       "deals": 6,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 39,
+      "booked": 40,
       "shown": 23,
-      "close_rate": 15.4,
-      "show_rate": 59.0
+      "close_rate": 15.0,
+      "show_rate": 57.5
     },
     {
       "name": "Jason Aaron",
@@ -166,10 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 40,
+      "booked": 39,
       "shown": 16,
-      "close_rate": 7.5,
-      "show_rate": 40.0
+      "close_rate": 7.7,
+      "show_rate": 41.0
     },
     {
       "name": "Andrea Shoop",
@@ -183,17 +183,6 @@
       "show_rate": 0.0
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.4
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 33.3
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.4
     }
   ]
 }
