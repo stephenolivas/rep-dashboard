@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 09:52:59 PST",
+  "updated_at": "2026-02-26 10:00:11 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -78,10 +78,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 74.6,
-      "booked": 80,
+      "booked": 79,
       "shown": 44,
-      "close_rate": 8.8,
-      "show_rate": 55.0
+      "close_rate": 8.9,
+      "show_rate": 55.7
     },
     {
       "name": "John Kirk",
@@ -133,10 +133,10 @@
       "deals": 6,
       "quota": 100000,
       "pct_to_quota": 40.0,
-      "booked": 47,
+      "booked": 48,
       "shown": 26,
-      "close_rate": 12.8,
-      "show_rate": 55.3
+      "close_rate": 12.5,
+      "show_rate": 54.2
     },
     {
       "name": "Joe Dysert",
@@ -172,6 +172,17 @@
       "show_rate": 39.5
     },
     {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.4
+    },
+    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -192,17 +203,6 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 33.3
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.4
     }
   ]
 }
