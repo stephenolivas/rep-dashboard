@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 09:33:02 PST",
+  "updated_at": "2026-02-26 09:42:47 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 19,
   "pct_month_passed": 95.0,
   "team_quota": 900000,
-  "pct_team_quota": 84.3,
-  "total_revenue": 758712.3,
-  "total_deals": 99,
+  "pct_team_quota": 85.0,
+  "total_revenue": 764709.3,
+  "total_deals": 100,
   "total_booked": 712,
-  "total_shown": 399,
-  "team_close_rate": 13.9,
-  "team_show_rate": 56.0,
-  "today_revenue": 5997.0,
-  "today_deals": 1,
+  "total_shown": 400,
+  "team_close_rate": 14.0,
+  "team_show_rate": 56.2,
+  "today_revenue": 11994.0,
+  "today_deals": 2,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -74,13 +74,13 @@
     },
     {
       "name": "Robin Perkins",
-      "revenue": 49982.0,
-      "deals": 6,
+      "revenue": 55979.0,
+      "deals": 7,
       "quota": 75000,
-      "pct_to_quota": 66.6,
+      "pct_to_quota": 74.6,
       "booked": 80,
       "shown": 44,
-      "close_rate": 7.5,
+      "close_rate": 8.8,
       "show_rate": 55.0
     },
     {
@@ -90,9 +90,9 @@
       "quota": 75000,
       "pct_to_quota": 66.6,
       "booked": 37,
-      "shown": 21,
+      "shown": 22,
       "close_rate": 18.9,
-      "show_rate": 56.8
+      "show_rate": 59.5
     },
     {
       "name": "William Chase",
@@ -172,15 +172,15 @@
       "show_rate": 39.5
     },
     {
-      "name": "Elvis Ellis",
+      "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
+      "booked": 9,
+      "shown": 3,
       "close_rate": 0.0,
-      "show_rate": 17.4
+      "show_rate": 33.3
     },
     {
       "name": "Andrea Shoop",
@@ -194,15 +194,15 @@
       "show_rate": 0.0
     },
     {
-      "name": "Vince Bartolini",
+      "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 9,
-      "shown": 3,
+      "booked": 46,
+      "shown": 8,
       "close_rate": 0.0,
-      "show_rate": 33.3
+      "show_rate": 17.4
     }
   ]
 }
