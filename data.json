@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 08:15:12 PST",
+  "updated_at": "2026-02-26 08:30:13 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 84.3,
   "total_revenue": 758712.3,
   "total_deals": 99,
-  "total_booked": 713,
-  "total_shown": 398,
+  "total_booked": 712,
+  "total_shown": 399,
   "team_close_rate": 13.9,
-  "team_show_rate": 55.8,
+  "team_show_rate": 56.0,
   "today_revenue": 5997.0,
   "today_deals": 1,
   "reps": [
@@ -34,10 +34,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 64,
+      "booked": 63,
       "shown": 47,
-      "close_rate": 17.2,
-      "show_rate": 73.4
+      "close_rate": 17.5,
+      "show_rate": 74.6
     },
     {
       "name": "Scott Seymour",
@@ -134,9 +134,9 @@
       "quota": 100000,
       "pct_to_quota": 40.0,
       "booked": 48,
-      "shown": 26,
+      "shown": 27,
       "close_rate": 12.5,
-      "show_rate": 54.2
+      "show_rate": 56.2
     },
     {
       "name": "Joe Dysert",
