@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 15:30:10 PST",
+  "updated_at": "2026-02-26 15:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 89.3,
   "total_revenue": 803694.3,
   "total_deals": 104,
-  "total_booked": 750,
-  "total_shown": 421,
-  "team_close_rate": 13.9,
-  "team_show_rate": 56.1,
+  "total_booked": 751,
+  "total_shown": 422,
+  "team_close_rate": 13.8,
+  "team_show_rate": 56.2,
   "today_revenue": 32988.0,
   "today_deals": 4,
   "reps": [
@@ -112,9 +112,9 @@
       "quota": 75000,
       "pct_to_quota": 58.6,
       "booked": 40,
-      "shown": 23,
+      "shown": 24,
       "close_rate": 15.0,
-      "show_rate": 57.5
+      "show_rate": 60.0
     },
     {
       "name": "Jason Aaron",
@@ -122,10 +122,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 63,
+      "booked": 64,
       "shown": 44,
-      "close_rate": 11.1,
-      "show_rate": 69.8
+      "close_rate": 10.9,
+      "show_rate": 68.8
     },
     {
       "name": "Ategeka Musinguzi",
@@ -183,17 +183,6 @@
       "show_rate": 27.3
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 47,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.0
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 47,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.0
     }
   ]
 }
