@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 15:04:07 PST",
+  "updated_at": "2026-02-26 15:15:08 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 89.3,
   "total_revenue": 803694.3,
   "total_deals": 104,
-  "total_booked": 747,
+  "total_booked": 749,
   "total_shown": 420,
   "team_close_rate": 13.9,
-  "team_show_rate": 56.2,
+  "team_show_rate": 56.1,
   "today_revenue": 32988.0,
   "today_deals": 4,
   "reps": [
@@ -89,10 +89,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 39,
+      "booked": 40,
       "shown": 23,
-      "close_rate": 17.9,
-      "show_rate": 59.0
+      "close_rate": 17.5,
+      "show_rate": 57.5
     },
     {
       "name": "Chris Wanke",
@@ -144,10 +144,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 7,
+      "booked": 8,
       "shown": 2,
-      "close_rate": 42.9,
-      "show_rate": 28.6
+      "close_rate": 37.5,
+      "show_rate": 25.0
     },
     {
       "name": "Jordan Humphrey",
@@ -183,17 +183,6 @@
       "show_rate": 27.3
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 12,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 17.0
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 12,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
