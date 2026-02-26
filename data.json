@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 12:15:09 PST",
+  "updated_at": "2026-02-26 12:30:11 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 86.6,
   "total_revenue": 779703.3,
   "total_deals": 101,
-  "total_booked": 723,
-  "total_shown": 407,
-  "team_close_rate": 14.0,
-  "team_show_rate": 56.3,
+  "total_booked": 730,
+  "total_shown": 408,
+  "team_close_rate": 13.8,
+  "team_show_rate": 55.9,
   "today_revenue": 8997.0,
   "today_deals": 1,
   "reps": [
@@ -89,10 +89,10 @@
       "deals": 7,
       "quota": 75000,
       "pct_to_quota": 66.6,
-      "booked": 37,
+      "booked": 38,
       "shown": 22,
-      "close_rate": 18.9,
-      "show_rate": 59.5
+      "close_rate": 18.4,
+      "show_rate": 57.9
     },
     {
       "name": "Chris Wanke",
@@ -156,9 +156,9 @@
       "quota": 75000,
       "pct_to_quota": 40.0,
       "booked": 42,
-      "shown": 30,
+      "shown": 31,
       "close_rate": 9.5,
-      "show_rate": 71.4
+      "show_rate": 73.8
     },
     {
       "name": "Julia Scaroni",
@@ -166,10 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 39,
+      "booked": 40,
       "shown": 16,
-      "close_rate": 7.7,
-      "show_rate": 41.0
+      "close_rate": 7.5,
+      "show_rate": 40.0
     },
     {
       "name": "Vince Bartolini",
@@ -188,7 +188,7 @@
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 8,
+      "booked": 12,
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
@@ -199,10 +199,10 @@
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 46,
+      "booked": 47,
       "shown": 8,
       "close_rate": 0.0,
-      "show_rate": 17.4
+      "show_rate": 17.0
     }
   ]
 }
