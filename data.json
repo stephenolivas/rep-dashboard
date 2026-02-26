@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 15:15:08 PST",
+  "updated_at": "2026-02-26 15:30:10 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,8 +10,8 @@
   "pct_team_quota": 89.3,
   "total_revenue": 803694.3,
   "total_deals": 104,
-  "total_booked": 749,
-  "total_shown": 420,
+  "total_booked": 750,
+  "total_shown": 421,
   "team_close_rate": 13.9,
   "team_show_rate": 56.1,
   "today_revenue": 32988.0,
@@ -133,10 +133,10 @@
       "deals": 6,
       "quota": 100000,
       "pct_to_quota": 40.0,
-      "booked": 48,
-      "shown": 26,
-      "close_rate": 12.5,
-      "show_rate": 54.2
+      "booked": 49,
+      "shown": 27,
+      "close_rate": 12.2,
+      "show_rate": 55.1
     },
     {
       "name": "Joe Dysert",
