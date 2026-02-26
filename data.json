@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25 21:00:10 PST",
+  "updated_at": "2026-02-25 21:13:00 PST",
   "month_label": "February 2026",
   "day_of_month": 25,
   "days_in_month": 28,
@@ -172,6 +172,17 @@
       "show_rate": 39.5
     },
     {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 8,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 37.5
+    },
+    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -192,17 +203,6 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 8,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 37.5
     }
   ]
 }
