@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 09:42:47 PST",
+  "updated_at": "2026-02-26 09:43:31 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 764709.3,
   "total_deals": 100,
   "total_booked": 712,
-  "total_shown": 400,
+  "total_shown": 401,
   "team_close_rate": 14.0,
-  "team_show_rate": 56.2,
+  "team_show_rate": 56.3,
   "today_revenue": 11994.0,
   "today_deals": 2,
   "reps": [
@@ -35,9 +35,9 @@
       "quota": 100000,
       "pct_to_quota": 93.0,
       "booked": 64,
-      "shown": 47,
+      "shown": 48,
       "close_rate": 17.2,
-      "show_rate": 73.4
+      "show_rate": 75.0
     },
     {
       "name": "Scott Seymour",
@@ -172,6 +172,17 @@
       "show_rate": 39.5
     },
     {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 46,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 17.4
+    },
+    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -192,17 +203,6 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 46,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 17.4
     }
   ]
 }
