@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 14:00:10 PST",
+  "updated_at": "2026-02-26 14:15:20 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 794697.3,
   "total_deals": 103,
   "total_booked": 744,
-  "total_shown": 414,
+  "total_shown": 417,
   "team_close_rate": 13.8,
-  "team_show_rate": 55.6,
+  "team_show_rate": 56.0,
   "today_revenue": 23991.0,
   "today_deals": 3,
   "reps": [
@@ -24,9 +24,9 @@
       "quota": 75000,
       "pct_to_quota": 137.0,
       "booked": 43,
-      "shown": 26,
+      "shown": 27,
       "close_rate": 27.9,
-      "show_rate": 60.5
+      "show_rate": 62.8
     },
     {
       "name": "Christian Hartwell",
@@ -35,9 +35,9 @@
       "quota": 100000,
       "pct_to_quota": 93.0,
       "booked": 68,
-      "shown": 49,
+      "shown": 50,
       "close_rate": 16.2,
-      "show_rate": 72.1
+      "show_rate": 73.5
     },
     {
       "name": "Scott Seymour",
@@ -101,9 +101,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 65,
-      "shown": 32,
+      "shown": 33,
       "close_rate": 9.2,
-      "show_rate": 49.2
+      "show_rate": 50.8
     },
     {
       "name": "William Chase",
