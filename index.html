@@ -481,14 +481,18 @@
     const revSorted = [...reps].sort((a,b) => b.revenue - a.revenue);
     const b1Rows = revSorted.map((r,i) => {
       let qH;
-      if (!r.quota) {
-        qH = `<span class="pv" style="color:var(--text-faint)">&mdash;</span>`;
+if (!r.quota) {
+        if (r.deals > 0) {
+          qH = `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill bg-green" style="width:100%"></div></div><span class="pv t-green">N/A</span></div>`;
+        } else {
+          qH = `<span class="pv" style="color:var(--amber)">● Ramping</span>`;
+        }
       } else {
         const [bg,tc] = qCol(r.pct_to_quota);
         const bw = Math.min(r.pct_to_quota, 100);
         qH = `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill ${bg}" style="width:${bw}%"></div></div><span class="pv ${tc}">${r.pct_to_quota}%</span></div>`;
       }
-      const badge = (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : '';
+      const badge = (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : (!r.quota && r.deals > 0) ? '<span class="goal-badge">Closing</span>' : '';
       return `<tr>
         <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span>${badge}</td>
         <td>${fmt$(r.revenue)}</td>
