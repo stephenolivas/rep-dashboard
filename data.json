@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 16:45:08 PST",
+  "updated_at": "2026-02-26 17:00:10 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,9 +10,9 @@
   "pct_team_quota": 90.9,
   "total_revenue": 817691.3,
   "total_deals": 105,
-  "total_booked": 752,
+  "total_booked": 753,
   "total_shown": 426,
-  "team_close_rate": 14.0,
+  "team_close_rate": 13.9,
   "team_show_rate": 56.6,
   "today_revenue": 32988.0,
   "today_deals": 4,
@@ -67,10 +67,10 @@
       "deals": 9,
       "quota": 100000,
       "pct_to_quota": 67.0,
-      "booked": 48,
+      "booked": 49,
       "shown": 25,
-      "close_rate": 18.8,
-      "show_rate": 52.1
+      "close_rate": 18.4,
+      "show_rate": 51.0
     },
     {
       "name": "Lyle Hubbard",
