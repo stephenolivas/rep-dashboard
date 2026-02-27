@@ -492,7 +492,7 @@ if (!r.quota) {
         const bw = Math.min(r.pct_to_quota, 100);
         qH = `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill ${bg}" style="width:${bw}%"></div></div><span class="pv ${tc}">${r.pct_to_quota}%</span></div>`;
       }
-      const badge = (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : (!r.quota && r.deals > 0) ? '<span class="goal-badge">Closing</span>' : '';
+      const badge = (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : '';
       return `<tr>
         <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span>${badge}</td>
         <td>${fmt$(r.revenue)}</td>
