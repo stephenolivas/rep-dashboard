@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 03:00:10 PST",
+  "updated_at": "2026-02-27 03:15:11 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 817691.3,
   "total_deals": 105,
   "total_booked": 756,
-  "total_shown": 426,
+  "total_shown": 427,
   "team_close_rate": 13.9,
-  "team_show_rate": 56.3,
+  "team_show_rate": 56.5,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -67,10 +67,10 @@
       "deals": 9,
       "quota": 100000,
       "pct_to_quota": 67.0,
-      "booked": 49,
-      "shown": 24,
-      "close_rate": 18.4,
-      "show_rate": 49.0
+      "booked": 50,
+      "shown": 25,
+      "close_rate": 18.0,
+      "show_rate": 50.0
     },
     {
       "name": "Lyle Hubbard",
@@ -188,10 +188,10 @@
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 50,
+      "booked": 49,
       "shown": 8,
       "close_rate": 0.0,
-      "show_rate": 16.0
+      "show_rate": 16.3
     },
     {
       "name": "Andrea Shoop",
