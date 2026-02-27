@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 07:50:34 PST",
+  "updated_at": "2026-02-27 07:54:03 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 92.5,
   "total_revenue": 832685.3,
   "total_deals": 107,
-  "total_booked": 757,
+  "total_booked": 758,
   "total_shown": 430,
   "team_close_rate": 14.1,
-  "team_show_rate": 56.8,
+  "team_show_rate": 56.7,
   "today_revenue": 14994.0,
   "today_deals": 2,
   "reps": [
@@ -155,10 +155,10 @@
       "deals": 4,
       "quota": 75000,
       "pct_to_quota": 40.0,
-      "booked": 43,
+      "booked": 44,
       "shown": 31,
-      "close_rate": 9.3,
-      "show_rate": 72.1
+      "close_rate": 9.1,
+      "show_rate": 70.5
     },
     {
       "name": "Julia Scaroni",
