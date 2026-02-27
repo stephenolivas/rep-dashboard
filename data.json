@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 11:47:56 PST",
+  "updated_at": "2026-02-27 12:00:10 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -7,16 +7,27 @@
   "working_days_elapsed": 20,
   "pct_month_passed": 100.0,
   "team_quota": 900000,
-  "pct_team_quota": 94.4,
-  "total_revenue": 849779.3,
-  "total_deals": 109,
-  "total_booked": 761,
-  "total_shown": 440,
-  "team_close_rate": 14.3,
-  "team_show_rate": 57.8,
-  "today_revenue": 32088.0,
-  "today_deals": 4,
+  "pct_team_quota": 96.1,
+  "total_revenue": 864773.3,
+  "total_deals": 111,
+  "total_booked": 762,
+  "total_shown": 439,
+  "team_close_rate": 14.6,
+  "team_show_rate": 57.6,
+  "today_revenue": 47082.0,
+  "today_deals": 6,
   "reps": [
+    {
+      "name": "Scott Seymour",
+      "revenue": 105961.0,
+      "deals": 13,
+      "quota": 100000,
+      "pct_to_quota": 106.0,
+      "booked": 48,
+      "shown": 34,
+      "close_rate": 27.1,
+      "show_rate": 70.8
+    },
     {
       "name": "Ryan Jones",
       "revenue": 102764.3,
@@ -29,26 +40,15 @@
       "show_rate": 65.1
     },
     {
-      "name": "Scott Seymour",
-      "revenue": 99964.0,
-      "deals": 12,
-      "quota": 100000,
-      "pct_to_quota": 100.0,
-      "booked": 48,
-      "shown": 34,
-      "close_rate": 25.0,
-      "show_rate": 70.8
-    },
-    {
       "name": "Christian Hartwell",
       "revenue": 92970.0,
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
       "booked": 69,
-      "shown": 53,
+      "shown": 52,
       "close_rate": 15.9,
-      "show_rate": 76.8
+      "show_rate": 75.4
     },
     {
       "name": "Eric Piccione",
@@ -111,10 +111,10 @@
       "deals": 6,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 65,
+      "booked": 66,
       "shown": 34,
-      "close_rate": 9.2,
-      "show_rate": 52.3
+      "close_rate": 9.1,
+      "show_rate": 51.5
     },
     {
       "name": "William Chase",
@@ -173,8 +173,8 @@
     },
     {
       "name": "Ahmad Bukhari",
-      "revenue": 8997.0,
-      "deals": 1,
+      "revenue": 17994.0,
+      "deals": 2,
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 0,
