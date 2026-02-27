@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 06:30:10 PST",
+  "updated_at": "2026-02-27 06:45:09 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 90.9,
   "total_revenue": 817691.3,
   "total_deals": 105,
-  "total_booked": 756,
-  "total_shown": 429,
+  "total_booked": 757,
+  "total_shown": 430,
   "team_close_rate": 13.9,
-  "team_show_rate": 56.7,
+  "team_show_rate": 56.8,
   "today_revenue": 10997.0,
   "today_deals": 1,
   "reps": [
@@ -68,9 +68,9 @@
       "quota": 100000,
       "pct_to_quota": 67.0,
       "booked": 50,
-      "shown": 27,
+      "shown": 28,
       "close_rate": 18.0,
-      "show_rate": 54.0
+      "show_rate": 56.0
     },
     {
       "name": "Lyle Hubbard",
@@ -155,10 +155,10 @@
       "deals": 4,
       "quota": 75000,
       "pct_to_quota": 40.0,
-      "booked": 43,
+      "booked": 44,
       "shown": 31,
-      "close_rate": 9.3,
-      "show_rate": 72.1
+      "close_rate": 9.1,
+      "show_rate": 70.5
     },
     {
       "name": "Julia Scaroni",
