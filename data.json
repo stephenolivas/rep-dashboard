@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 14:54:07 PST",
+  "updated_at": "2026-02-27 15:00:10 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 96.4,
   "total_revenue": 867770.3,
   "total_deals": 112,
-  "total_booked": 760,
+  "total_booked": 759,
   "total_shown": 444,
-  "team_close_rate": 14.7,
-  "team_show_rate": 58.4,
+  "team_close_rate": 14.8,
+  "team_show_rate": 58.5,
   "today_revenue": 50079.0,
   "today_deals": 7,
   "reps": [
@@ -45,10 +45,10 @@
       "deals": 11,
       "quota": 100000,
       "pct_to_quota": 93.0,
-      "booked": 69,
+      "booked": 68,
       "shown": 53,
-      "close_rate": 15.9,
-      "show_rate": 76.8
+      "close_rate": 16.2,
+      "show_rate": 77.9
     },
     {
       "name": "Eric Piccione",
