@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 11:30:09 PST",
+  "updated_at": "2026-02-27 11:45:08 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 20,
   "pct_month_passed": 100.0,
   "team_quota": 900000,
-  "pct_team_quota": 92.5,
-  "total_revenue": 832685.3,
-  "total_deals": 107,
+  "pct_team_quota": 94.4,
+  "total_revenue": 849779.3,
+  "total_deals": 109,
   "total_booked": 761,
-  "total_shown": 439,
-  "team_close_rate": 14.1,
-  "team_show_rate": 57.7,
-  "today_revenue": 14994.0,
-  "today_deals": 2,
+  "total_shown": 440,
+  "team_close_rate": 14.3,
+  "team_show_rate": 57.8,
+  "today_revenue": 32088.0,
+  "today_deals": 4,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -46,9 +46,9 @@
       "quota": 100000,
       "pct_to_quota": 93.0,
       "booked": 69,
-      "shown": 52,
+      "shown": 53,
       "close_rate": 15.9,
-      "show_rate": 75.4
+      "show_rate": 76.8
     },
     {
       "name": "Eric Piccione",
@@ -84,6 +84,17 @@
       "show_rate": 67.5
     },
     {
+      "name": "Jason Aaron",
+      "revenue": 52076.0,
+      "deals": 8,
+      "quota": 75000,
+      "pct_to_quota": 69.4,
+      "booked": 64,
+      "shown": 45,
+      "close_rate": 12.5,
+      "show_rate": 70.3
+    },
+    {
       "name": "John Kirk",
       "revenue": 49979.0,
       "deals": 7,
@@ -115,17 +126,6 @@
       "shown": 25,
       "close_rate": 14.6,
       "show_rate": 61.0
-    },
-    {
-      "name": "Jason Aaron",
-      "revenue": 43979.0,
-      "deals": 7,
-      "quota": 75000,
-      "pct_to_quota": 58.6,
-      "booked": 64,
-      "shown": 45,
-      "close_rate": 10.9,
-      "show_rate": 70.3
     },
     {
       "name": "Ategeka Musinguzi",
@@ -181,6 +181,17 @@
       "shown": 5,
       "close_rate": 8.3,
       "show_rate": 41.7
+    },
+    {
+      "name": "Ahmad Bukhari",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0
     },
     {
       "name": "Andrea Shoop",
