@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 18:45:08 PST",
+  "updated_at": "2026-02-26 19:00:09 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 90.9,
   "total_revenue": 817691.3,
   "total_deals": 105,
-  "total_booked": 755,
-  "total_shown": 426,
+  "total_booked": 756,
+  "total_shown": 427,
   "team_close_rate": 13.9,
-  "team_show_rate": 56.4,
+  "team_show_rate": 56.5,
   "today_revenue": 32988.0,
   "today_deals": 4,
   "reps": [
@@ -56,10 +56,10 @@
       "deals": 9,
       "quota": 75000,
       "pct_to_quota": 98.6,
-      "booked": 79,
-      "shown": 45,
-      "close_rate": 11.4,
-      "show_rate": 57.0
+      "booked": 80,
+      "shown": 46,
+      "close_rate": 11.2,
+      "show_rate": 57.5
     },
     {
       "name": "Eric Piccione",
@@ -183,17 +183,6 @@
       "show_rate": 36.4
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 49,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 16.3
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 49,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 16.3
     }
   ]
 }
