@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 07:30:11 PST",
+  "updated_at": "2026-02-27 07:45:10 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 20,
   "pct_month_passed": 100.0,
   "team_quota": 900000,
-  "pct_team_quota": 91.9,
-  "total_revenue": 826688.3,
-  "total_deals": 106,
-  "total_booked": 756,
+  "pct_team_quota": 92.5,
+  "total_revenue": 832685.3,
+  "total_deals": 107,
+  "total_booked": 757,
   "total_shown": 430,
-  "team_close_rate": 14.0,
-  "team_show_rate": 56.9,
-  "today_revenue": 19994.0,
-  "today_deals": 2,
+  "team_close_rate": 14.1,
+  "team_show_rate": 56.8,
+  "today_revenue": 25991.0,
+  "today_deals": 3,
   "reps": [
     {
       "name": "Ryan Jones",
@@ -74,13 +74,13 @@
     },
     {
       "name": "Lyle Hubbard",
-      "revenue": 61973.0,
-      "deals": 9,
+      "revenue": 67970.0,
+      "deals": 10,
       "quota": 100000,
-      "pct_to_quota": 62.0,
+      "pct_to_quota": 68.0,
       "booked": 40,
       "shown": 27,
-      "close_rate": 22.5,
+      "close_rate": 25.0,
       "show_rate": 67.5
     },
     {
@@ -166,10 +166,10 @@
       "deals": 3,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 41,
+      "booked": 42,
       "shown": 18,
-      "close_rate": 7.3,
-      "show_rate": 43.9
+      "close_rate": 7.1,
+      "show_rate": 42.9
     },
     {
       "name": "Vince Bartolini",
