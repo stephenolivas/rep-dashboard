@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 12:15:09 PST",
+  "updated_at": "2026-02-27 12:30:08 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 20,
   "pct_month_passed": 100.0,
   "team_quota": 900000,
-  "pct_team_quota": 94.1,
-  "total_revenue": 846779.3,
-  "total_deals": 111,
+  "pct_team_quota": 96.1,
+  "total_revenue": 864773.3,
+  "total_deals": 112,
   "total_booked": 762,
   "total_shown": 439,
-  "team_close_rate": 14.6,
+  "team_close_rate": 14.7,
   "team_show_rate": 57.6,
-  "today_revenue": 29088.0,
-  "today_deals": 6,
+  "today_revenue": 47082.0,
+  "today_deals": 7,
   "reps": [
     {
       "name": "Scott Seymour",
@@ -172,6 +172,17 @@
       "show_rate": 42.9
     },
     {
+      "name": "Ahmad Bukhari",
+      "revenue": 17994.0,
+      "deals": 3,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0
+    },
+    {
       "name": "Vince Bartolini",
       "revenue": 8997.0,
       "deals": 1,
@@ -192,17 +203,6 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
-    },
-    {
-      "name": "Ahmad Bukhari",
-      "revenue": 0.0,
-      "deals": 2,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0
     },
     {
       "name": "Elvis Ellis",
