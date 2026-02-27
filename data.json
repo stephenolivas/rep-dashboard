@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 06:00:10 PST",
+  "updated_at": "2026-02-27 06:15:08 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -14,8 +14,8 @@
   "total_shown": 428,
   "team_close_rate": 13.9,
   "team_show_rate": 56.6,
-  "today_revenue": 0.0,
-  "today_deals": 0,
+  "today_revenue": 10997.0,
+  "today_deals": 1,
   "reps": [
     {
       "name": "Ryan Jones",
