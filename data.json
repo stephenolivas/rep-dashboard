@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26 16:30:09 PST",
+  "updated_at": "2026-02-26 16:45:08 PST",
   "month_label": "February 2026",
   "day_of_month": 26,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 817691.3,
   "total_deals": 105,
   "total_booked": 752,
-  "total_shown": 425,
+  "total_shown": 426,
   "team_close_rate": 14.0,
-  "team_show_rate": 56.5,
+  "team_show_rate": 56.6,
   "today_revenue": 32988.0,
   "today_deals": 4,
   "reps": [
@@ -167,9 +167,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 41,
-      "shown": 17,
+      "shown": 18,
       "close_rate": 7.3,
-      "show_rate": 41.5
+      "show_rate": 43.9
     },
     {
       "name": "Vince Bartolini",
