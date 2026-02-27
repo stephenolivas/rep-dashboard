@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 11:00:11 PST",
+  "updated_at": "2026-02-27 11:15:09 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 92.5,
   "total_revenue": 832685.3,
   "total_deals": 107,
-  "total_booked": 760,
-  "total_shown": 438,
+  "total_booked": 761,
+  "total_shown": 439,
   "team_close_rate": 14.1,
-  "team_show_rate": 57.6,
+  "team_show_rate": 57.7,
   "today_revenue": 14994.0,
   "today_deals": 2,
   "reps": [
@@ -24,9 +24,9 @@
       "quota": 75000,
       "pct_to_quota": 137.0,
       "booked": 43,
-      "shown": 27,
+      "shown": 28,
       "close_rate": 27.9,
-      "show_rate": 62.8
+      "show_rate": 65.1
     },
     {
       "name": "Scott Seymour",
@@ -133,10 +133,10 @@
       "deals": 6,
       "quota": 100000,
       "pct_to_quota": 40.0,
-      "booked": 50,
+      "booked": 51,
       "shown": 27,
-      "close_rate": 12.0,
-      "show_rate": 54.0
+      "close_rate": 11.8,
+      "show_rate": 52.9
     },
     {
       "name": "Joe Dysert",
@@ -183,17 +183,6 @@
       "show_rate": 41.7
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 12,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 15.7
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 12,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     }
   ]
 }
