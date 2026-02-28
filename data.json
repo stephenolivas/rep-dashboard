@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 16:15:07 PST",
+  "updated_at": "2026-02-27 16:22:02 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -7,12 +7,12 @@
   "working_days_elapsed": 20,
   "pct_month_passed": 100.0,
   "team_quota": 900000,
-  "pct_team_quota": 96.4,
-  "total_revenue": 867770.3,
-  "total_deals": 112,
+  "pct_team_quota": 97.1,
+  "total_revenue": 873767.3,
+  "total_deals": 113,
   "total_booked": 760,
   "total_shown": 447,
-  "team_close_rate": 14.7,
+  "team_close_rate": 14.9,
   "team_show_rate": 58.8,
   "today_revenue": 50079.0,
   "today_deals": 7,
@@ -51,6 +51,17 @@
       "show_rate": 77.9
     },
     {
+      "name": "Robin Perkins",
+      "revenue": 79970.0,
+      "deals": 10,
+      "quota": 75000,
+      "pct_to_quota": 106.6,
+      "booked": 80,
+      "shown": 48,
+      "close_rate": 12.5,
+      "show_rate": 60.0
+    },
+    {
       "name": "Eric Piccione",
       "revenue": 75970.0,
       "deals": 10,
@@ -60,17 +71,6 @@
       "shown": 29,
       "close_rate": 19.6,
       "show_rate": 56.9
-    },
-    {
-      "name": "Robin Perkins",
-      "revenue": 73973.0,
-      "deals": 9,
-      "quota": 75000,
-      "pct_to_quota": 98.6,
-      "booked": 80,
-      "shown": 48,
-      "close_rate": 11.2,
-      "show_rate": 60.0
     },
     {
       "name": "Lyle Hubbard",
