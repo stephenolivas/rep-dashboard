@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 16:45:08 PST",
+  "updated_at": "2026-02-27 17:00:10 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 873767.3,
   "total_deals": 113,
   "total_booked": 760,
-  "total_shown": 447,
+  "total_shown": 448,
   "team_close_rate": 14.9,
-  "team_show_rate": 58.8,
+  "team_show_rate": 58.9,
   "today_revenue": 50079.0,
   "today_deals": 7,
   "reps": [
@@ -112,9 +112,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 65,
-      "shown": 34,
+      "shown": 35,
       "close_rate": 9.2,
-      "show_rate": 52.3
+      "show_rate": 53.8
     },
     {
       "name": "William Chase",
@@ -122,10 +122,10 @@
       "deals": 6,
       "quota": 75000,
       "pct_to_quota": 58.6,
-      "booked": 41,
-      "shown": 25,
-      "close_rate": 14.6,
-      "show_rate": 61.0
+      "booked": 40,
+      "shown": 24,
+      "close_rate": 15.0,
+      "show_rate": 60.0
     },
     {
       "name": "Ategeka Musinguzi",
@@ -155,10 +155,10 @@
       "deals": 4,
       "quota": 75000,
       "pct_to_quota": 40.0,
-      "booked": 44,
-      "shown": 34,
-      "close_rate": 9.1,
-      "show_rate": 77.3
+      "booked": 45,
+      "shown": 35,
+      "close_rate": 8.9,
+      "show_rate": 77.8
     },
     {
       "name": "Julia Scaroni",
@@ -183,17 +183,6 @@
       "show_rate": 33.3
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 50,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 16.0
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 1,
       "close_rate": 0.0,
       "show_rate": 8.3
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 50,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 16.0
     }
   ]
 }
