@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28 06:00:11 PST",
+  "updated_at": "2026-02-28 06:15:10 PST",
   "month_label": "February 2026",
   "day_of_month": 28,
   "days_in_month": 28,
@@ -11,9 +11,9 @@
   "total_revenue": 881864.3,
   "total_deals": 114,
   "total_booked": 761,
-  "total_shown": 450,
+  "total_shown": 451,
   "team_close_rate": 15.0,
-  "team_show_rate": 59.1,
+  "team_show_rate": 59.3,
   "today_revenue": 14094.0,
   "today_deals": 2,
   "reps": [
@@ -145,9 +145,9 @@
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 8,
-      "shown": 2,
+      "shown": 3,
       "close_rate": 37.5,
-      "show_rate": 25.0
+      "show_rate": 37.5
     },
     {
       "name": "Jordan Humphrey",
