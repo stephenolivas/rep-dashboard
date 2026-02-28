@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28 14:00:09 PST",
+  "updated_at": "2026-02-28 14:15:08 PST",
   "month_label": "February 2026",
   "day_of_month": 28,
   "days_in_month": 28,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 20,
   "pct_month_passed": 100.0,
   "team_quota": 900000,
-  "pct_team_quota": 98.7,
-  "total_revenue": 887861.3,
-  "total_deals": 115,
+  "pct_team_quota": 99.3,
+  "total_revenue": 893858.3,
+  "total_deals": 116,
   "total_booked": 762,
   "total_shown": 452,
-  "team_close_rate": 15.1,
+  "team_close_rate": 15.2,
   "team_show_rate": 59.3,
-  "today_revenue": 20091.0,
-  "today_deals": 3,
+  "today_revenue": 26088.0,
+  "today_deals": 4,
   "reps": [
     {
       "name": "Scott Seymour",
@@ -29,6 +29,17 @@
       "show_rate": 75.0
     },
     {
+      "name": "Christian Hartwell",
+      "revenue": 104964.0,
+      "deals": 13,
+      "quota": 100000,
+      "pct_to_quota": 105.0,
+      "booked": 68,
+      "shown": 53,
+      "close_rate": 19.1,
+      "show_rate": 77.9
+    },
+    {
       "name": "Ryan Jones",
       "revenue": 102764.3,
       "deals": 12,
@@ -38,17 +49,6 @@
       "shown": 28,
       "close_rate": 27.3,
       "show_rate": 63.6
-    },
-    {
-      "name": "Christian Hartwell",
-      "revenue": 98967.0,
-      "deals": 12,
-      "quota": 100000,
-      "pct_to_quota": 99.0,
-      "booked": 68,
-      "shown": 53,
-      "close_rate": 17.6,
-      "show_rate": 77.9
     },
     {
       "name": "Robin Perkins",
