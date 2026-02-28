@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-02-27 23:45:09 PST",
+  "updated_at": "2026-02-28 00:00:10 PST",
   "month_label": "February 2026",
-  "day_of_month": 27,
+  "day_of_month": 28,
   "days_in_month": 28,
   "working_days_total": 20,
   "working_days_elapsed": 20,
@@ -14,8 +14,8 @@
   "total_shown": 450,
   "team_close_rate": 15.0,
   "team_show_rate": 59.1,
-  "today_revenue": 50079.0,
-  "today_deals": 7,
+  "today_revenue": 14094.0,
+  "today_deals": 2,
   "reps": [
     {
       "name": "Scott Seymour",
