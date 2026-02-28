@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28 15:00:10 PST",
+  "updated_at": "2026-02-28 15:04:04 PST",
   "month_label": "February 2026",
   "day_of_month": 28,
   "days_in_month": 28,
@@ -14,8 +14,8 @@
   "total_shown": 452,
   "team_close_rate": 15.2,
   "team_show_rate": 59.3,
-  "today_revenue": 26088.0,
-  "today_deals": 4,
+  "today_revenue": 11994.0,
+  "today_deals": 2,
   "reps": [
     {
       "name": "Scott Seymour",
@@ -183,17 +183,6 @@
       "show_rate": 33.3
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 50,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 16.0
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 1,
       "close_rate": 0.0,
       "show_rate": 7.7
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 50,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 16.0
     }
   ]
 }
