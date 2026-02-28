@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27 17:00:10 PST",
+  "updated_at": "2026-02-27 17:15:09 PST",
   "month_label": "February 2026",
   "day_of_month": 27,
   "days_in_month": 28,
@@ -10,10 +10,10 @@
   "pct_team_quota": 97.1,
   "total_revenue": 873767.3,
   "total_deals": 113,
-  "total_booked": 760,
-  "total_shown": 448,
-  "team_close_rate": 14.9,
-  "team_show_rate": 58.9,
+  "total_booked": 761,
+  "total_shown": 450,
+  "team_close_rate": 14.8,
+  "team_show_rate": 59.1,
   "today_revenue": 50079.0,
   "today_deals": 7,
   "reps": [
@@ -24,9 +24,9 @@
       "quota": 100000,
       "pct_to_quota": 115.0,
       "booked": 48,
-      "shown": 34,
+      "shown": 36,
       "close_rate": 29.2,
-      "show_rate": 70.8
+      "show_rate": 75.0
     },
     {
       "name": "Ryan Jones",
@@ -111,10 +111,10 @@
       "deals": 6,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 65,
+      "booked": 66,
       "shown": 35,
-      "close_rate": 9.2,
-      "show_rate": 53.8
+      "close_rate": 9.1,
+      "show_rate": 53.0
     },
     {
       "name": "William Chase",
@@ -183,17 +183,6 @@
       "show_rate": 33.3
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 12,
-      "shown": 1,
-      "close_rate": 0.0,
-      "show_rate": 8.3
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
@@ -203,6 +192,17 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 16.0
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 12,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 8.3
     }
   ]
 }
