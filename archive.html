@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Dashboard — Monthly Archives</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #1a1d23;
+    --text-dim: #6b7280;
+    --text-faint: #9ca3af;
+    --green: #10b981;
+    --green-bg: rgba(16, 185, 129, 0.08);
+    --amber: #f59e0b;
+    --amber-bg: rgba(245, 158, 11, 0.08);
+    --red: #ef4444;
+    --accent: #0ea5e9;
+    --border: #e5e7eb;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px 28px 32px;
+    min-height: 100vh;
+  }
+
+  .wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  /* ─── Archive picker ─── */
+  .picker-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .picker-bar .label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .picker-bar select {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 32px 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  .picker-bar select:hover { border-color: var(--accent); }
+  .picker-bar .back-link {
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .picker-bar .back-link:hover { text-decoration: underline; }
+
+  .loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  .error-msg {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--red);
+    font-size: 14px;
+  }
+
+  /* ─── Info table ─── */
+  .info-strip {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  .info-strip table { border-collapse: collapse; }
+  .info-strip td { padding: 4px 16px; font-size: 14px; }
+  .info-strip td:first-child { color: var(--text-dim); font-weight: 500; }
+  .info-strip td:last-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600; font-size: 15px;
+  }
+
+  /* ─── Month title ─── */
+  .month-block { text-align: center; margin-bottom: 16px; }
+  .month-block h1 {
+    font-size: 30px; font-weight: 700; letter-spacing: -0.02em;
+  }
+  .month-block .ts {
+    color: var(--text-dim); font-size: 13px; margin-top: 2px;
+  }
+  .month-block .snapshot-badge {
+    display: inline-block;
+    background: var(--amber-bg);
+    color: var(--amber);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-top: 6px;
+  }
+
+  /* ─── KPI cards ─── */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .kpi {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 16px 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+  }
+  .kpi .label {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--green); margin-bottom: 4px;
+  }
+  .kpi .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px; font-weight: 700; letter-spacing: -0.02em;
+  }
+  .kpi .detail {
+    font-size: 12px; color: var(--text-dim); margin-top: 1px;
+  }
+
+  /* ─── Quota strip ─── */
+  .quota-strip {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 8px 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .quota-strip .ql {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-dim); white-space: nowrap;
+  }
+  .quota-strip .bar-wrap {
+    flex: 1; height: 8px; background: #e5e7eb;
+    border-radius: 99px; overflow: hidden;
+  }
+  .quota-strip .bar-fill { height: 100%; border-radius: 99px; }
+  .quota-strip .qv {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 700; white-space: nowrap;
+  }
+  .quota-strip .qd {
+    font-size: 11px; color: var(--text-dim); white-space: nowrap;
+  }
+
+  /* ─── Boards ─── */
+  .boards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .board {
+    background: var(--card);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .board-header {
+    padding: 12px 16px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .board-title { font-size: 13px; font-weight: 700; }
+  .board-sub { font-size: 10px; color: var(--text-dim); }
+
+  table.bt { width: 100%; border-collapse: collapse; }
+  table.bt thead th {
+    font-size: 9px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-dim);
+    padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border);
+  }
+  table.bt thead th.r { text-align: right; }
+  table.bt tbody td {
+    padding: 7px 12px; font-size: 12px; border-bottom: 1px solid #f3f4f6;
+  }
+  table.bt tbody tr:last-child td { border-bottom: none; }
+  table.bt tbody td.r {
+    text-align: right; font-family: 'JetBrains Mono', monospace;
+    font-weight: 600; font-size: 11px;
+  }
+  table.bt tfoot td {
+    padding: 10px 12px; font-size: 12px; font-weight: 700;
+    border-top: 2px solid var(--border);
+  }
+  table.bt tfoot td.r {
+    text-align: right; font-family: 'JetBrains Mono', monospace;
+  }
+
+  .rank {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 5px;
+    font-size: 9px; font-weight: 700; margin-right: 6px; color: white;
+  }
+  .rank.r1 { background: var(--green); }
+  .rank.r2 { background: var(--accent); }
+  .rank.r3 { background: var(--amber); }
+  .rank.rn { background: #d1d5db; color: #6b7280; }
+
+  .q-cell { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
+  .q-bar { width: 70px; height: 5px; background: #e5e7eb; border-radius: 99px; overflow: hidden; }
+  .q-bar-fill { height: 100%; border-radius: 99px; }
+  .bg-green { background: var(--green); }
+  .bg-amber { background: var(--amber); }
+  .bg-red { background: var(--red); }
+  .t-green { color: var(--green); }
+  .t-amber { color: var(--amber); }
+  .t-red { color: var(--red); }
+  .pv {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    font-weight: 700; min-width: 32px; text-align: right;
+  }
+  .goal-badge {
+    display: inline-flex; align-items: center; gap: 2px;
+    background: var(--green-bg); color: var(--green);
+    font-size: 8px; font-weight: 700; padding: 1px 5px;
+    border-radius: 3px; margin-left: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .goal-badge::before { content: '✓'; font-size: 7px; }
+
+  .footer {
+    text-align: center; color: var(--text-dim); font-size: 10px; margin-top: 12px;
+  }
+
+  @media (max-width: 900px) {
+    .boards { grid-template-columns: 1fr; }
+    .kpi-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="picker-bar">
+    <a href="index.html" class="back-link">← Live Dashboard</a>
+    <span class="label">Monthly Archive</span>
+    <select id="monthPicker">
+      <option value="">Loading...</option>
+    </select>
+  </div>
+
+  <div id="dashboard">
+    <div class="loading">Loading archive index...</div>
+  </div>
+
+  <div class="footer">
+    Sales Dashboard Monthly Archives · Data from Close CRM
+  </div>
+
+</div>
+
+<script>
+  // ─── Helpers ───
+  function fmt(n) {
+    if (n >= 1000) return '$' + (n/1000).toFixed(1) + 'K';
+    return '$' + n.toFixed(0);
+  }
+  function rc(i) { return i===0?'r1':i===1?'r2':i===2?'r3':'rn'; }
+
+  function toPST(s) {
+    const cleaned = s.replace(' UTC','Z').replace(' PST','-08:00').replace(' PDT','-07:00').replace(' ','T');
+    const d = new Date(cleaned);
+    return d.toLocaleString('en-US', {
+      timeZone:'America/Los_Angeles',
+      weekday:'long', year:'numeric', month:'long', day:'numeric',
+      hour:'numeric', minute:'2-digit', hour12:true
+    }) + ' PST';
+  }
+
+  function monthLabel(key) {
+    const [y, m] = key.split('-');
+    const names = ['','January','February','March','April','May','June',
+                   'July','August','September','October','November','December'];
+    return names[parseInt(m)] + ' ' + y;
+  }
+
+  function quotaHTML(r) {
+    if (!r.quota) {
+      if (r.deals > 0) {
+        return `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill bg-green" style="width:100%"></div></div><span class="pv t-green">N/A</span></div>`;
+      } else {
+        return `<span class="pv" style="color:var(--amber)">● Ramping</span>`;
+      }
+    }
+    const p = r.pct_to_quota, bw = Math.min(p, 100);
+    const bg = p >= 100 ? 'bg-green' : p >= 70 ? 'bg-amber' : 'bg-red';
+    const tc = p >= 100 ? 't-green' : p >= 70 ? 't-amber' : 't-red';
+    return `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill ${bg}" style="width:${bw}%"></div></div><span class="pv ${tc}">${p}%</span></div>`;
+  }
+
+  function badge(r) {
+    return (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : '';
+  }
+
+  // ─── Render dashboard from data.json ───
+  function renderDashboard(D) {
+    const el = document.getElementById('dashboard');
+    const reps = D.reps || [];
+
+    const pctTeam = D.pct_team_quota || 0;
+    const teamBarColor = pctTeam >= 100 ? 'var(--green)' : pctTeam >= 70 ? 'var(--amber)' : 'var(--red)';
+    const teamPctClass = pctTeam >= 100 ? 't-green' : pctTeam >= 70 ? 't-amber' : 't-red';
+
+    const pctPassed = D.pct_month_passed != null ? Math.round(D.pct_month_passed) : 100;
+    const daysLeft = D.days_in_month - D.day_of_month;
+
+    // Board 1: Revenue
+    const revSorted = [...reps].sort((a,b) => b.revenue - a.revenue);
+    const b1 = revSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}${badge(r)}</td><td class="r">${fmt(r.revenue)}</td><td class="r">${quotaHTML(r)}</td></tr>`).join('');
+
+    // Board 2: Deals
+    const dealSorted = [...reps].sort((a,b) => b.deals - a.deals || b.revenue - a.revenue);
+    const b2 = dealSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.deals}</td><td class="r">${r.close_rate}%</td></tr>`).join('');
+
+    // Board 3: Meetings
+    const meetSorted = [...reps].sort((a,b) => b.booked - a.booked);
+    const b3 = meetSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.booked}</td><td class="r">${r.shown}</td><td class="r">${r.show_rate}%</td></tr>`).join('');
+
+    el.innerHTML = `
+      <div class="info-strip">
+        <table>
+          <tr><td>Day in the month</td><td>${D.day_of_month} / ${D.days_in_month}</td></tr>
+          <tr><td>Working days</td><td>${D.working_days_elapsed} / ${D.working_days_total}</td></tr>
+          <tr><td>% of month passed</td><td>${pctPassed}%</td></tr>
+        </table>
+      </div>
+
+      <div class="month-block">
+        <h1>${D.month_label}</h1>
+        <div class="ts">${toPST(D.updated_at)}</div>
+        <div class="snapshot-badge">📸 Archived Snapshot</div>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="label">TODAY'S REVENUE</div>
+          <div class="value">${fmt(D.today_revenue)}</div>
+          <div class="detail">${D.today_deals} deal${D.today_deals !== 1 ? 's' : ''} today</div>
+        </div>
+        <div class="kpi">
+          <div class="label">MTD REVENUE</div>
+          <div class="value">${fmt(D.total_revenue)}</div>
+          <div class="detail">${daysLeft} day${daysLeft !== 1 ? 's' : ''} left</div>
+        </div>
+      </div>
+
+      <div class="quota-strip">
+        <span class="ql">Team Quota</span>
+        <div class="bar-wrap">
+          <div class="bar-fill" style="width:${Math.min(pctTeam,100)}%; background:${teamBarColor}"></div>
+        </div>
+        <span class="qv ${teamPctClass}">${pctTeam}%</span>
+        <span class="qd">${fmt(D.total_revenue)} / ${fmt(D.team_quota)}</span>
+      </div>
+
+      <div class="boards">
+        <div class="board">
+          <div class="board-header">
+            <div class="board-title">Revenue Closed</div>
+            <div class="board-sub">Per rep · % to quota</div>
+          </div>
+          <table class="bt">
+            <thead><tr><th>Rep</th><th class="r">Revenue</th><th class="r">% Quota</th></tr></thead>
+            <tbody>${b1}</tbody>
+            <tfoot><tr><td>Team Total</td><td class="r">${fmt(D.total_revenue)}</td><td></td></tr></tfoot>
+          </table>
+        </div>
+        <div class="board">
+          <div class="board-header">
+            <div class="board-title">Opps Closed</div>
+            <div class="board-sub">Per rep · close rate</div>
+          </div>
+          <table class="bt">
+            <thead><tr><th>Rep</th><th class="r">Deals</th><th class="r">Close Rate</th></tr></thead>
+            <tbody>${b2}</tbody>
+            <tfoot><tr><td>Team Total</td><td class="r">${D.total_deals}</td><td class="r">${D.team_close_rate}%</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="board">
+          <div class="board-header">
+            <div class="board-title">Meetings</div>
+            <div class="board-sub">Booked · shown · show rate</div>
+          </div>
+          <table class="bt">
+            <thead><tr><th>Rep</th><th class="r">Booked</th><th class="r">Shown</th><th class="r">Show %</th></tr></thead>
+            <tbody>${b3}</tbody>
+            <tfoot><tr><td>Team Total</td><td class="r">${D.total_booked}</td><td class="r">${D.total_shown}</td><td class="r">${D.team_show_rate}%</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+    `;
+  }
+
+  // ─── Load a specific month ───
+  async function loadMonth(file) {
+    const el = document.getElementById('dashboard');
+    el.innerHTML = '<div class="loading">Loading data...</div>';
+    try {
+      const r = await fetch('archives/' + file + '?t=' + Date.now());
+      if (!r.ok) throw new Error('Not found');
+      const data = await r.json();
+      renderDashboard(data);
+    } catch (e) {
+      el.innerHTML = '<div class="error-msg">Could not load archive: ' + e.message + '</div>';
+    }
+  }
+
+  // ─── Init: load index, populate picker ───
+  async function init() {
+    const picker = document.getElementById('monthPicker');
+    const el = document.getElementById('dashboard');
+
+    try {
+      const r = await fetch('archives/index.json?t=' + Date.now());
+      if (!r.ok) throw new Error('No archives found');
+      const idx = await r.json();
+
+      if (!idx.months || idx.months.length === 0) {
+        picker.innerHTML = '<option value="">No archives yet</option>';
+        el.innerHTML = '<div class="loading">No monthly archives available yet. Archives are created automatically as the dashboard runs.</div>';
+        return;
+      }
+
+      picker.innerHTML = idx.months.map(m =>
+        `<option value="${m.file}">${monthLabel(m.key)}</option>`
+      ).join('');
+
+      // Check URL hash for specific month
+      const hash = window.location.hash.replace('#', '');
+      const target = idx.months.find(m => m.key === hash);
+      if (target) {
+        picker.value = target.file;
+        loadMonth(target.file);
+      } else {
+        loadMonth(idx.months[0].file);
+      }
+
+      picker.addEventListener('change', function() {
+        if (this.value) {
+          const key = this.value.replace('data_','').replace('.json','');
+          window.location.hash = key;
+          loadMonth(this.value);
+        }
+      });
+
+    } catch (e) {
+      picker.innerHTML = '<option value="">Error loading</option>';
+      el.innerHTML = '<div class="error-msg">Could not load archive index. Make sure archives/index.json exists.</div>';
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
