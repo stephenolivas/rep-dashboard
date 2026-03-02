@@ -420,6 +420,32 @@ if __name__ == "__main__":
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
 
+    # Auto-archive: save a snapshot for the current month
+    # The last run of each month becomes the final archive
+    archive_dir = os.path.join(repo_root, "archives")
+    os.makedirs(archive_dir, exist_ok=True)
+    from zoneinfo import ZoneInfo
+    pst_now = datetime.now(ZoneInfo("America/Los_Angeles"))
+    archive_name = f"data_{pst_now.strftime('%Y-%m')}.json"
+    archive_path = os.path.join(archive_dir, archive_name)
+    with open(archive_path, "w") as f:
+        json.dump(data, f, indent=2)
+    print(f"   Archive saved: archives/{archive_name}")
+
+    # Update archives/index.json with list of all available months
+    index_path = os.path.join(archive_dir, "index.json")
+    archive_files = sorted(
+        [f for f in os.listdir(archive_dir) if f.startswith("data_") and f.endswith(".json")],
+        reverse=True,
+    )
+    months = []
+    for af in archive_files:
+        ym = af.replace("data_", "").replace(".json", "")  # e.g. "2026-02"
+        months.append({"file": af, "key": ym})
+    with open(index_path, "w") as f:
+        json.dump({"months": months}, f, indent=2)
+    print(f"   Archive index updated: {len(months)} month(s)")
+
     print(f"\n=== Dashboard data written to {output_path} ===")
     print(f"   Month: {data['month_label']} (day {data['day_of_month']})")
     print(f"   Total Revenue: ${data['total_revenue']:,.2f}")
