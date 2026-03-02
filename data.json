@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-01 17:45:09 PST",
+  "updated_at": "2026-03-01 18:00:10 PST",
   "month_label": "March 2026",
   "day_of_month": 1,
   "days_in_month": 31,
@@ -10,57 +10,13 @@
   "pct_team_quota": 0.0,
   "total_revenue": 0,
   "total_deals": 0,
-  "total_booked": 83,
+  "total_booked": 85,
   "total_shown": 8,
   "team_close_rate": 0.0,
-  "team_show_rate": 9.6,
+  "team_show_rate": 9.4,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 4,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
-      "name": "Jake Skinner",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 4,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
-      "name": "Scott Seymour",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 4,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
-      "name": "Jason Aaron",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 6,
-      "shown": 1,
-      "close_rate": 0.0,
-      "show_rate": 16.7
-    },
     {
       "name": "Ategeka Musinguzi",
       "revenue": 0,
@@ -73,12 +29,12 @@
       "show_rate": 16.7
     },
     {
-      "name": "Chris Wanke",
+      "name": "Jake Skinner",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
-      "booked": 8,
+      "booked": 4,
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
@@ -95,28 +51,6 @@
       "show_rate": 27.3
     },
     {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 1,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
-      "name": "Robin Perkins",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 10,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 0,
       "deals": 0,
@@ -128,15 +62,37 @@
       "show_rate": 33.3
     },
     {
-      "name": "William Chase",
+      "name": "John Kirk",
       "revenue": 0,
       "deals": 0,
       "quota": 75000,
       "pct_to_quota": 0.0,
-      "booked": 4,
-      "shown": 1,
+      "booked": 1,
+      "shown": 0,
       "close_rate": 0.0,
-      "show_rate": 25.0
+      "show_rate": 0.0
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 5,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 1,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
     },
     {
       "name": "Eric Piccione",
@@ -161,12 +117,56 @@
       "show_rate": 0.0
     },
     {
-      "name": "John Kirk",
+      "name": "Robin Perkins",
       "revenue": 0,
       "deals": 0,
       "quota": 75000,
       "pct_to_quota": 0.0,
-      "booked": 1,
+      "booked": 11,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
+    },
+    {
+      "name": "Jason Aaron",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 7,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 14.3
+    },
+    {
+      "name": "Chris Wanke",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 8,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
+    },
+    {
+      "name": "Scott Seymour",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 4,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 4,
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
@@ -183,23 +183,23 @@
       "show_rate": 0.0
     },
     {
+      "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 4,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 25.0
+    },
+    {
       "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
       "quota": 0,
       "pct_to_quota": 0,
       "booked": 1,
-      "shown": 0,
-      "close_rate": 0.0,
-      "show_rate": 0.0
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 5,
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0
