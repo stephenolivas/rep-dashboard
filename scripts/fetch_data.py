@@ -47,7 +47,7 @@ CF_FIRST_CALL_SHOW_NAME   = "First Call Show Up (Opp)"
 CF_LEAD_OWNER_ID           = "cf_gOfS9pFwext58oberEegLyix8hZzeHrxhCZOVh3P3rd"
 CF_LEAD_OWNER_NAME         = "Lead Owner"
 
-TEAM_QUOTA = 900_000
+TEAM_QUOTA = 906_000
 
 REP_QUOTAS = {
     "Christian Hartwell": 100_000,
@@ -61,6 +61,12 @@ REP_QUOTAS = {
     "William Chase": 75_000,
     "Ryan Jones": 75_000,
     "John Kirk": 75_000,
+    "Jake Skinner": 75_000,
+    "Vince Bartolini": 50_000,
+    "Julia Scaroni": 50_000,
+    "Elvis Ellis": 50_000,
+    "Chris Wanke": 50_000,
+    "Andrea Shoop": 50_000,
 }
 
 EXCLUDE_USERS = {"Kristin Nelson", "Mallory Kent", "Unknown", "Ahmad Bukhari"}
