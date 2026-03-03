@@ -71,6 +71,9 @@ REP_QUOTAS = {
 
 EXCLUDE_USERS = {"Kristin Nelson", "Mallory Kent", "Unknown", "Ahmad Bukhari"}
 
+# Managers don't have quotas but shouldn't show "Ramping"
+MANAGER_USERS = {"Joe Dysert"}
+
 
 # --- API helpers ---
 
@@ -376,6 +379,7 @@ def build_dashboard_data():
             "shown": shown,
             "close_rate": close_rate,
             "show_rate": show_rate,
+            "is_manager": name in MANAGER_USERS,
         })
 
     # Step 5: Team totals
