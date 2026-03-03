@@ -407,7 +407,9 @@
   }
 
   function toPST(s) {
-    const d = new Date(s.replace(' UTC','Z').replace(' ','T'));
+    const cleaned = s.replace(' PST','-08:00').replace(' PDT','-07:00').replace(' UTC','Z').replace(' ','T');
+    const d = new Date(cleaned);
+    if (isNaN(d)) return s;
     return d.toLocaleString('en-US', {
       timeZone:'America/Los_Angeles',
       weekday:'long', year:'numeric', month:'long', day:'numeric',
