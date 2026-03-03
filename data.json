@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03 12:45:09 PST",
+  "updated_at": "2026-03-03 13:00:11 PST",
   "month_label": "March 2026",
   "day_of_month": 3,
   "days_in_month": 31,
@@ -66,15 +66,39 @@
       "is_manager": false
     },
     {
-      "name": "Elvis Ellis",
+      "name": "Jason Aaron",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 11,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 45.5,
+      "is_manager": false
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 4,
+      "shown": 2,
+      "close_rate": 0.0,
+      "show_rate": 50.0,
+      "is_manager": false
+    },
+    {
+      "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 3,
-      "shown": 0,
+      "booked": 12,
+      "shown": 1,
       "close_rate": 0.0,
-      "show_rate": 0.0,
+      "show_rate": 8.3,
       "is_manager": false
     },
     {
@@ -90,27 +114,27 @@
       "is_manager": false
     },
     {
-      "name": "Chris Wanke",
+      "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
-      "quota": 50000,
+      "quota": 75000,
       "pct_to_quota": 0.0,
-      "booked": 10,
+      "booked": 5,
       "shown": 2,
       "close_rate": 0.0,
-      "show_rate": 20.0,
+      "show_rate": 40.0,
       "is_manager": false
     },
     {
-      "name": "Ategeka Musinguzi",
+      "name": "William Chase",
       "revenue": 0,
       "deals": 0,
-      "quota": 100000,
+      "quota": 75000,
       "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 7,
+      "booked": 6,
+      "shown": 2,
       "close_rate": 0.0,
-      "show_rate": 63.6,
+      "show_rate": 33.3,
       "is_manager": false
     },
     {
@@ -123,6 +147,18 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 37.5,
+      "is_manager": false
+    },
+    {
+      "name": "Christian Hartwell",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 13,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 61.5,
       "is_manager": false
     },
     {
@@ -150,63 +186,27 @@
       "is_manager": true
     },
     {
-      "name": "Christian Hartwell",
+      "name": "Ategeka Musinguzi",
       "revenue": 0,
       "deals": 0,
       "quota": 100000,
       "pct_to_quota": 0.0,
-      "booked": 13,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 61.5,
-      "is_manager": false
-    },
-    {
-      "name": "William Chase",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 6,
-      "shown": 2,
-      "close_rate": 0.0,
-      "show_rate": 33.3,
-      "is_manager": false
-    },
-    {
-      "name": "Jason Aaron",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
       "booked": 11,
-      "shown": 5,
+      "shown": 7,
       "close_rate": 0.0,
-      "show_rate": 45.5,
+      "show_rate": 63.6,
       "is_manager": false
     },
     {
-      "name": "Vince Bartolini",
+      "name": "Chris Wanke",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 1,
-      "close_rate": 0.0,
-      "show_rate": 8.3,
-      "is_manager": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 5,
+      "booked": 10,
       "shown": 2,
       "close_rate": 0.0,
-      "show_rate": 40.0,
+      "show_rate": 20.0,
       "is_manager": false
     },
     {
@@ -222,15 +222,15 @@
       "is_manager": false
     },
     {
-      "name": "John Kirk",
+      "name": "Elvis Ellis",
       "revenue": 0,
       "deals": 0,
-      "quota": 75000,
+      "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 4,
-      "shown": 2,
+      "booked": 3,
+      "shown": 0,
       "close_rate": 0.0,
-      "show_rate": 50.0,
+      "show_rate": 0.0,
       "is_manager": false
     }
   ]
