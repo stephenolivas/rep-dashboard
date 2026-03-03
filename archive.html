@@ -327,6 +327,8 @@
     if (!r.quota) {
       if (r.deals > 0) {
         return `<div class="q-cell"><div class="q-bar"><div class="q-bar-fill bg-green" style="width:100%"></div></div><span class="pv t-green">N/A</span></div>`;
+      } else if (r.is_manager) {
+        return `<span class="pv" style="color:var(--text-faint)">N/A</span>`;
       } else {
         return `<span class="pv" style="color:var(--amber)">● Ramping</span>`;
       }
