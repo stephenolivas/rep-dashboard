@@ -55,7 +55,7 @@ REP_QUOTAS = {
     "Ategeka Musinguzi": 100_000,
     "Scott Seymour": 100_000,
     "Eric Piccione": 100_000,
-    "Jordan Humphrey": 75_000,
+    "Jordan Humphrey": 100_000,
     "Jason Aaron": 100_000,
     "Robin Perkins": 100_000,
     "William Chase": 100_000,
