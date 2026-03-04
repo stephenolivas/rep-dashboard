@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04 13:45:15 PST",
+  "updated_at": "2026-03-04 14:00:16 PST",
   "month_label": "March 2026",
   "day_of_month": 4,
   "days_in_month": 31,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 3,
   "pct_month_passed": 13.6,
   "team_quota": 906000,
-  "pct_team_quota": 11.9,
-  "total_revenue": 108061.0,
-  "total_deals": 13,
-  "total_booked": 156,
-  "total_shown": 69,
-  "team_close_rate": 8.3,
-  "team_show_rate": 44.2,
-  "today_revenue": 46085.0,
-  "today_deals": 5,
+  "pct_team_quota": 13.1,
+  "total_revenue": 119058.0,
+  "total_deals": 14,
+  "total_booked": 157,
+  "total_shown": 70,
+  "team_close_rate": 8.9,
+  "team_show_rate": 44.6,
+  "today_revenue": 57082.0,
+  "today_deals": 6,
   "reps": [
     {
       "name": "Robin Perkins",
@@ -35,10 +35,22 @@
       "deals": 2,
       "quota": 100000,
       "pct_to_quota": 20.0,
-      "booked": 8,
+      "booked": 9,
       "shown": 6,
-      "close_rate": 25.0,
-      "show_rate": 75.0,
+      "close_rate": 22.2,
+      "show_rate": 66.7,
+      "is_manager": false
+    },
+    {
+      "name": "Chris Wanke",
+      "revenue": 10997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 22.0,
+      "booked": 9,
+      "shown": 5,
+      "close_rate": 11.1,
+      "show_rate": 55.6,
       "is_manager": false
     },
     {
@@ -114,15 +126,27 @@
       "is_manager": false
     },
     {
-      "name": "Chris Wanke",
+      "name": "William Chase",
       "revenue": 0,
       "deals": 0,
-      "quota": 50000,
+      "quota": 100000,
       "pct_to_quota": 0.0,
-      "booked": 9,
-      "shown": 4,
+      "booked": 7,
+      "shown": 5,
       "close_rate": 0.0,
-      "show_rate": 44.4,
+      "show_rate": 71.4,
+      "is_manager": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 7,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 42.9,
       "is_manager": false
     },
     {
@@ -150,18 +174,6 @@
       "is_manager": false
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 9,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 44.4,
-      "is_manager": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
@@ -171,18 +183,6 @@
       "shown": 5,
       "close_rate": 0.0,
       "show_rate": 83.3,
-      "is_manager": false
-    },
-    {
-      "name": "Jake Skinner",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 7,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 42.9,
       "is_manager": false
     },
     {
@@ -210,15 +210,15 @@
       "is_manager": false
     },
     {
-      "name": "William Chase",
+      "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
-      "quota": 100000,
+      "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 7,
-      "shown": 5,
+      "booked": 9,
+      "shown": 4,
       "close_rate": 0.0,
-      "show_rate": 71.4,
+      "show_rate": 44.4,
       "is_manager": false
     }
   ]
