@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04 06:45:10 PST",
+  "updated_at": "2026-03-04 07:00:13 PST",
   "month_label": "March 2026",
   "day_of_month": 4,
   "days_in_month": 31,
@@ -54,18 +54,6 @@
       "is_manager": false
     },
     {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 75000,
-      "pct_to_quota": 8.0,
-      "booked": 13,
-      "shown": 5,
-      "close_rate": 7.7,
-      "show_rate": 38.5,
-      "is_manager": false
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
@@ -90,15 +78,15 @@
       "is_manager": false
     },
     {
-      "name": "William Chase",
-      "revenue": 0,
-      "deals": 0,
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
       "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 8,
+      "pct_to_quota": 8.0,
+      "booked": 13,
       "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 62.5,
+      "close_rate": 7.7,
+      "show_rate": 38.5,
       "is_manager": false
     },
     {
@@ -114,6 +102,54 @@
       "is_manager": false
     },
     {
+      "name": "Chris Wanke",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 33.3,
+      "is_manager": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 11,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 27.3,
+      "is_manager": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 6,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 66.7,
+      "is_manager": false
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 8,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 50.0,
+      "is_manager": false
+    },
+    {
       "name": "Jake Skinner",
       "revenue": 0,
       "deals": 0,
@@ -123,6 +159,18 @@
       "shown": 1,
       "close_rate": 0.0,
       "show_rate": 11.1,
+      "is_manager": false
+    },
+    {
+      "name": "Ryan Jones",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 11,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 36.4,
       "is_manager": false
     },
     {
@@ -150,30 +198,6 @@
       "is_manager": false
     },
     {
-      "name": "Chris Wanke",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 33.3,
-      "is_manager": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 6,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 66.7,
-      "is_manager": false
-    },
-    {
       "name": "Joe Dysert",
       "revenue": 0,
       "deals": 0,
@@ -186,39 +210,15 @@
       "is_manager": true
     },
     {
-      "name": "Ryan Jones",
+      "name": "William Chase",
       "revenue": 0,
       "deals": 0,
       "quota": 75000,
       "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 36.4,
-      "is_manager": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 27.3,
-      "is_manager": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
       "booked": 8,
-      "shown": 4,
+      "shown": 5,
       "close_rate": 0.0,
-      "show_rate": 50.0,
+      "show_rate": 62.5,
       "is_manager": false
     },
     {
