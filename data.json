@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03 17:45:10 PST",
+  "updated_at": "2026-03-03 18:00:13 PST",
   "month_label": "March 2026",
   "day_of_month": 3,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 6.8,
   "total_revenue": 61976.0,
   "total_deals": 8,
-  "total_booked": 165,
-  "total_shown": 66,
-  "team_close_rate": 4.8,
-  "team_show_rate": 40.0,
+  "total_booked": 164,
+  "total_shown": 67,
+  "team_close_rate": 4.9,
+  "team_show_rate": 40.9,
   "today_revenue": 46982.0,
   "today_deals": 6,
   "reps": [
@@ -66,18 +66,6 @@
       "is_manager": false
     },
     {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 75000,
-      "pct_to_quota": 8.0,
-      "booked": 12,
-      "shown": 5,
-      "close_rate": 8.3,
-      "show_rate": 41.7,
-      "is_manager": false
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
@@ -90,27 +78,15 @@
       "is_manager": false
     },
     {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
       "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 6,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 66.7,
-      "is_manager": false
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 5,
-      "shown": 2,
-      "close_rate": 0.0,
-      "show_rate": 40.0,
+      "pct_to_quota": 8.0,
+      "booked": 12,
+      "shown": 5,
+      "close_rate": 8.3,
+      "show_rate": 41.7,
       "is_manager": false
     },
     {
@@ -132,22 +108,34 @@
       "quota": 50000,
       "pct_to_quota": 0.0,
       "booked": 11,
-      "shown": 3,
+      "shown": 4,
       "close_rate": 0.0,
-      "show_rate": 27.3,
+      "show_rate": 36.4,
       "is_manager": false
     },
     {
-      "name": "Joe Dysert",
+      "name": "Ryan Jones",
       "revenue": 0,
       "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 2,
-      "shown": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 11,
+      "shown": 4,
       "close_rate": 0.0,
-      "show_rate": 0.0,
-      "is_manager": true
+      "show_rate": 36.4,
+      "is_manager": false
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 5,
+      "shown": 2,
+      "close_rate": 0.0,
+      "show_rate": 40.0,
+      "is_manager": false
     },
     {
       "name": "Vince Bartolini",
@@ -159,6 +147,18 @@
       "shown": 1,
       "close_rate": 0.0,
       "show_rate": 7.1,
+      "is_manager": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 5,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 80.0,
       "is_manager": false
     },
     {
@@ -186,6 +186,30 @@
       "is_manager": false
     },
     {
+      "name": "Jake Skinner",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 10,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 10.0,
+      "is_manager": false
+    },
+    {
+      "name": "Joe Dysert",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 2,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0,
+      "is_manager": true
+    },
+    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -207,30 +231,6 @@
       "shown": 5,
       "close_rate": 0.0,
       "show_rate": 71.4,
-      "is_manager": false
-    },
-    {
-      "name": "Ryan Jones",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 36.4,
-      "is_manager": false
-    },
-    {
-      "name": "Jake Skinner",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 10,
-      "shown": 1,
-      "close_rate": 0.0,
-      "show_rate": 10.0,
       "is_manager": false
     }
   ]
