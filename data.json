@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04 14:15:10 PST",
+  "updated_at": "2026-03-04 14:30:16 PST",
   "month_label": "March 2026",
   "day_of_month": 4,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 119058.0,
   "total_deals": 14,
   "total_booked": 156,
-  "total_shown": 70,
+  "total_shown": 72,
   "team_close_rate": 9.0,
-  "team_show_rate": 44.9,
+  "team_show_rate": 46.2,
   "today_revenue": 57082.0,
   "today_deals": 6,
   "reps": [
@@ -90,6 +90,18 @@
       "is_manager": false
     },
     {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 6,
+      "shown": 1,
+      "close_rate": 16.7,
+      "show_rate": 16.7,
+      "is_manager": false
+    },
+    {
       "name": "Eric Piccione",
       "revenue": 5997.0,
       "deals": 1,
@@ -108,21 +120,9 @@
       "quota": 100000,
       "pct_to_quota": 6.0,
       "booked": 11,
-      "shown": 4,
+      "shown": 5,
       "close_rate": 9.1,
-      "show_rate": 36.4,
-      "is_manager": false
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 6,
-      "shown": 1,
-      "close_rate": 16.7,
-      "show_rate": 16.7,
+      "show_rate": 45.5,
       "is_manager": false
     },
     {
@@ -132,9 +132,21 @@
       "quota": 100000,
       "pct_to_quota": 0.0,
       "booked": 8,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 62.5,
+      "is_manager": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 9,
       "shown": 4,
       "close_rate": 0.0,
-      "show_rate": 50.0,
+      "show_rate": 44.4,
       "is_manager": false
     },
     {
@@ -162,30 +174,6 @@
       "is_manager": false
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 9,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 44.4,
-      "is_manager": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 6,
-      "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 83.3,
-      "is_manager": false
-    },
-    {
       "name": "William Chase",
       "revenue": 0,
       "deals": 0,
@@ -207,6 +195,18 @@
       "shown": 2,
       "close_rate": 0.0,
       "show_rate": 28.6,
+      "is_manager": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 6,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 83.3,
       "is_manager": false
     },
     {
