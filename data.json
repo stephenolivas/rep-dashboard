@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03 16:15:10 PST",
+  "updated_at": "2026-03-03 16:30:09 PST",
   "month_label": "March 2026",
   "day_of_month": 3,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 5.2,
   "total_revenue": 46982.0,
   "total_deals": 6,
-  "total_booked": 160,
-  "total_shown": 64,
-  "team_close_rate": 3.8,
-  "team_show_rate": 40.0,
+  "total_booked": 162,
+  "total_shown": 65,
+  "team_close_rate": 3.7,
+  "team_show_rate": 40.1,
   "today_revenue": 31988.0,
   "today_deals": 4,
   "reps": [
@@ -24,9 +24,9 @@
       "quota": 100000,
       "pct_to_quota": 20.0,
       "booked": 7,
-      "shown": 3,
+      "shown": 4,
       "close_rate": 28.6,
-      "show_rate": 42.9,
+      "show_rate": 57.1,
       "is_manager": false
     },
     {
@@ -54,18 +54,6 @@
       "is_manager": false
     },
     {
-      "name": "Eric Piccione",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 8,
-      "shown": 5,
-      "close_rate": 12.5,
-      "show_rate": 62.5,
-      "is_manager": false
-    },
-    {
       "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
@@ -78,39 +66,15 @@
       "is_manager": false
     },
     {
-      "name": "Christian Hartwell",
-      "revenue": 0,
-      "deals": 0,
+      "name": "Eric Piccione",
+      "revenue": 5997.0,
+      "deals": 1,
       "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 14,
-      "shown": 9,
-      "close_rate": 0.0,
-      "show_rate": 64.3,
-      "is_manager": false
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 5,
-      "shown": 2,
-      "close_rate": 0.0,
-      "show_rate": 40.0,
-      "is_manager": false
-    },
-    {
-      "name": "Chris Wanke",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 27.3,
+      "pct_to_quota": 6.0,
+      "booked": 8,
+      "shown": 5,
+      "close_rate": 12.5,
+      "show_rate": 62.5,
       "is_manager": false
     },
     {
@@ -126,30 +90,6 @@
       "is_manager": false
     },
     {
-      "name": "Ryan Jones",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 36.4,
-      "is_manager": false
-    },
-    {
-      "name": "Ategeka Musinguzi",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 58.3,
-      "is_manager": false
-    },
-    {
       "name": "Joe Dysert",
       "revenue": 0,
       "deals": 0,
@@ -162,15 +102,51 @@
       "is_manager": true
     },
     {
-      "name": "Vince Bartolini",
+      "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 7,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 71.4,
+      "is_manager": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 9,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 11.1,
+      "is_manager": false
+    },
+    {
+      "name": "Chris Wanke",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 13,
-      "shown": 1,
+      "booked": 11,
+      "shown": 3,
       "close_rate": 0.0,
-      "show_rate": 7.7,
+      "show_rate": 27.3,
+      "is_manager": false
+    },
+    {
+      "name": "Ryan Jones",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 11,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 36.4,
       "is_manager": false
     },
     {
@@ -186,6 +162,18 @@
       "is_manager": false
     },
     {
+      "name": "Christian Hartwell",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 14,
+      "shown": 9,
+      "close_rate": 0.0,
+      "show_rate": 64.3,
+      "is_manager": false
+    },
+    {
       "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
@@ -198,30 +186,6 @@
       "is_manager": false
     },
     {
-      "name": "Jake Skinner",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 8,
-      "shown": 1,
-      "close_rate": 0.0,
-      "show_rate": 12.5,
-      "is_manager": false
-    },
-    {
-      "name": "William Chase",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 7,
-      "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 71.4,
-      "is_manager": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -231,6 +195,42 @@
       "shown": 4,
       "close_rate": 0.0,
       "show_rate": 50.0,
+      "is_manager": false
+    },
+    {
+      "name": "Ategeka Musinguzi",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 58.3,
+      "is_manager": false
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 75000,
+      "pct_to_quota": 0.0,
+      "booked": 5,
+      "shown": 2,
+      "close_rate": 0.0,
+      "show_rate": 40.0,
+      "is_manager": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 14,
+      "shown": 1,
+      "close_rate": 0.0,
+      "show_rate": 7.1,
       "is_manager": false
     }
   ]
