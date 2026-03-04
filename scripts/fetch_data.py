@@ -198,14 +198,13 @@ def resolve_owner_to_name(owner_raw, user_map, name_to_id):
     return owner_str if owner_str else "Unknown"
 
 
-def fetch_leads_with_calls_booked(year, month, user_map, name_to_id):
-    """Fetch leads with First Call Booked Date in the given month.
+def fetch_leads_with_calls_booked(year, month, today_str, user_map, name_to_id):
+    """Fetch leads with First Call Booked Date in the given month, up to today.
     
     Excludes leads in Canceled (by Lead) or Outside the US status.
     """
-    _, last_day = monthrange(year, month)
     date_gte = f"{year}-{month:02d}-01"
-    date_lte = f"{year}-{month:02d}-{last_day:02d}"
+    date_lte = today_str
 
     query_str = (
         f'"First Call Booked Date" >= "{date_gte}" '
@@ -346,7 +345,7 @@ def build_dashboard_data():
 
     # Step 3: Meetings booked / shown (excludes Canceled & Outside US leads)
     print("  Fetching meetings booked/shown...")
-    rep_booked, rep_shown = fetch_leads_with_calls_booked(year, month, user_map, name_to_id)
+    rep_booked, rep_shown = fetch_leads_with_calls_booked(year, month, today_str, user_map, name_to_id)
     print(f"  Meetings booked by {len(rep_booked)} reps, shown by {len(rep_shown)} reps.")
 
     # Step 4: Build per-rep data
