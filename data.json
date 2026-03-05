@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05 14:30:12 PST",
+  "updated_at": "2026-03-05 15:13:58 PST",
   "month_label": "March 2026",
   "day_of_month": 5,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 18.8,
   "total_revenue": 170040.0,
   "total_deals": 20,
-  "total_booked": 205,
+  "total_booked": 204,
   "total_shown": 102,
   "team_close_rate": 9.8,
-  "team_show_rate": 49.8,
+  "team_show_rate": 50.0,
   "today_revenue": 35988.0,
   "today_deals": 4,
   "reps": [
@@ -83,19 +83,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 9.1,
-      "show_rate": 27.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -109,6 +96,32 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 11,
+      "shown": 3,
+      "close_rate": 9.1,
+      "show_rate": 27.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 75000,
+      "pct_to_quota": 8.0,
+      "booked": 10,
+      "shown": 4,
+      "close_rate": 10.0,
+      "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Eric Piccione",
       "revenue": 5997.0,
       "deals": 1,
@@ -118,19 +131,6 @@
       "shown": 6,
       "close_rate": 11.1,
       "show_rate": 66.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 13,
-      "shown": 5,
-      "close_rate": 7.7,
-      "show_rate": 38.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -161,41 +161,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jake Skinner",
+      "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 75000,
-      "pct_to_quota": 8.0,
-      "booked": 10,
-      "shown": 4,
-      "close_rate": 10.0,
-      "show_rate": 40.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 13,
-      "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 38.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
       "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 8,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 75.0,
+      "pct_to_quota": 6.0,
+      "booked": 12,
+      "shown": 5,
+      "close_rate": 8.3,
+      "show_rate": 41.7,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,7 +187,46 @@
       "exclude_meetings": false
     },
     {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 25.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 13,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 38.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 8,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 75.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
       "quota": 100000,
@@ -235,19 +248,6 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 16.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 25.0,
       "is_manager": false,
       "exclude_meetings": false
     }
