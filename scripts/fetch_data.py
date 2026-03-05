@@ -69,7 +69,10 @@ REP_QUOTAS = {
     "Andrea Shoop": 50_000,
 }
 
-EXCLUDE_USERS = {"Kristin Nelson", "Mallory Kent", "Unknown", "Ahmad Bukhari"}
+EXCLUDE_USERS = {"Mallory Kent", "Unknown", "Ahmad Bukhari"}
+
+# Users who only appear on dashboard if they have closed deals that month
+DEALS_ONLY_USERS = {"Kristin Nelson"}
 
 # Managers don't have quotas but shouldn't show "Ramping"
 MANAGER_USERS = {"Joe Dysert"}
@@ -360,9 +363,16 @@ def build_dashboard_data():
     for name in all_rep_names:
         revenue = rep_revenue.get(name, 0)
         deals = rep_deals.get(name, 0)
-        booked = rep_booked.get(name, 0)
-        shown = rep_shown.get(name, 0)
         quota = REP_QUOTAS.get(name, 0)
+
+        # Deals-only users: skip entirely if they have no closed deals
+        is_deals_only = name in DEALS_ONLY_USERS
+        if is_deals_only and deals == 0:
+            continue
+
+        # Zero out meeting data for deals-only users
+        booked = 0 if is_deals_only else rep_booked.get(name, 0)
+        shown = 0 if is_deals_only else rep_shown.get(name, 0)
 
         pct_quota = round(revenue / quota * 100, 1) if quota > 0 else 0
         close_rate = round(deals / booked * 100, 1) if booked > 0 else 0
@@ -379,6 +389,7 @@ def build_dashboard_data():
             "close_rate": close_rate,
             "show_rate": show_rate,
             "is_manager": name in MANAGER_USERS,
+            "exclude_meetings": is_deals_only,
         })
 
     # Step 5: Team totals
