@@ -517,7 +517,7 @@
     const b2Rows = dealSorted.map((r,i) => `<tr>
       <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>
       <td>${r.deals}</td>
-      <td><span class="${rc(r.close_rate,20,10)}">${r.close_rate}%</span></td>
+      <td>${r.exclude_meetings ? '<span style="color:var(--text-faint)">N/A</span>' : `<span class="${rc(r.close_rate,20,10)}">${r.close_rate}%</span>`}</td>
     </tr>`).join('');
     const board2 = `
       <div class="board fade d2">
@@ -531,11 +531,12 @@
 
     // ── BOARD 3: Meetings Booked / Shown
     const mtgSorted = [...reps].sort((a,b) => b.booked - a.booked);
+    const na = '<span style="color:var(--text-faint)">N/A</span>';
     const b3Rows = mtgSorted.map((r,i) => `<tr>
       <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>
-      <td>${r.booked}</td>
-      <td>${r.shown}</td>
-      <td><span class="${rc(r.show_rate,65,45)}">${r.show_rate}%</span></td>
+      <td>${r.exclude_meetings ? na : r.booked}</td>
+      <td>${r.exclude_meetings ? na : r.shown}</td>
+      <td>${r.exclude_meetings ? na : `<span class="${rc(r.show_rate,65,45)}">${r.show_rate}%</span>`}</td>
     </tr>`).join('');
     const board3 = `
       <div class="board fade d2">
