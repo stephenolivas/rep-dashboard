@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05 07:45:09 PST",
+  "updated_at": "2026-03-05 08:00:12 PST",
   "month_label": "March 2026",
   "day_of_month": 5,
   "days_in_month": 31,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 4,
   "pct_month_passed": 18.2,
   "team_quota": 906000,
-  "pct_team_quota": 14.8,
-  "total_revenue": 134052.0,
-  "total_deals": 16,
-  "total_booked": 197,
-  "total_shown": 87,
-  "team_close_rate": 8.1,
-  "team_show_rate": 44.2,
-  "today_revenue": 0.0,
-  "today_deals": 0,
+  "pct_team_quota": 15.5,
+  "total_revenue": 140049.0,
+  "total_deals": 17,
+  "total_booked": 196,
+  "total_shown": 88,
+  "team_close_rate": 8.7,
+  "team_show_rate": 44.9,
+  "today_revenue": 5997.0,
+  "today_deals": 1,
   "reps": [
     {
       "name": "Robin Perkins",
@@ -23,10 +23,10 @@
       "deals": 5,
       "quota": 100000,
       "pct_to_quota": 44.0,
-      "booked": 17,
+      "booked": 16,
       "shown": 8,
-      "close_rate": 29.4,
-      "show_rate": 47.1,
+      "close_rate": 31.2,
+      "show_rate": 50.0,
       "is_manager": false
     },
     {
@@ -90,6 +90,42 @@
       "is_manager": false
     },
     {
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 13,
+      "shown": 5,
+      "close_rate": 7.7,
+      "show_rate": 38.5,
+      "is_manager": false
+    },
+    {
+      "name": "Eric Piccione",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 9,
+      "shown": 5,
+      "close_rate": 11.1,
+      "show_rate": 55.6,
+      "is_manager": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 75000,
+      "pct_to_quota": 8.0,
+      "booked": 10,
+      "shown": 4,
+      "close_rate": 10.0,
+      "show_rate": 40.0,
+      "is_manager": false
+    },
+    {
       "name": "Ategeka Musinguzi",
       "revenue": 5997.0,
       "deals": 1,
@@ -114,27 +150,39 @@
       "is_manager": false
     },
     {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
+      "name": "Ryan Jones",
+      "revenue": 0,
+      "deals": 0,
       "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 13,
-      "shown": 5,
-      "close_rate": 7.7,
-      "show_rate": 38.5,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 50.0,
       "is_manager": false
     },
     {
-      "name": "Eric Piccione",
-      "revenue": 5997.0,
-      "deals": 1,
+      "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
       "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 9,
-      "shown": 5,
-      "close_rate": 11.1,
-      "show_rate": 55.6,
+      "pct_to_quota": 0.0,
+      "booked": 8,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 75.0,
+      "is_manager": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 33.3,
       "is_manager": false
     },
     {
@@ -162,18 +210,6 @@
       "is_manager": false
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 33.3,
-      "is_manager": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
@@ -183,42 +219,6 @@
       "shown": 5,
       "close_rate": 0.0,
       "show_rate": 62.5,
-      "is_manager": false
-    },
-    {
-      "name": "Ryan Jones",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 50.0,
-      "is_manager": false
-    },
-    {
-      "name": "Jake Skinner",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 75000,
-      "pct_to_quota": 0.0,
-      "booked": 10,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 30.0,
-      "is_manager": false
-    },
-    {
-      "name": "William Chase",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 8,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 75.0,
       "is_manager": false
     }
   ]
