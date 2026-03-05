@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05 14:10:56 PST",
+  "updated_at": "2026-03-05 14:15:10 PST",
   "month_label": "March 2026",
   "day_of_month": 5,
   "days_in_month": 31,
@@ -122,15 +122,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ategeka Musinguzi",
+      "name": "Jake Skinner",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 13,
-      "shown": 9,
-      "close_rate": 7.7,
-      "show_rate": 69.2,
+      "quota": 75000,
+      "pct_to_quota": 8.0,
+      "booked": 10,
+      "shown": 4,
+      "close_rate": 10.0,
+      "show_rate": 40.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -161,41 +161,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jake Skinner",
+      "name": "Ategeka Musinguzi",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 75000,
-      "pct_to_quota": 8.0,
-      "booked": 10,
-      "shown": 4,
-      "close_rate": 10.0,
-      "show_rate": 40.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
       "booked": 13,
-      "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 38.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 27.3,
+      "shown": 9,
+      "close_rate": 7.7,
+      "show_rate": 69.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -226,6 +200,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 8,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 75.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Ryan Jones",
       "revenue": 0,
       "deals": 0,
@@ -239,15 +226,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "William Chase",
+      "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
-      "quota": 100000,
+      "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 8,
-      "shown": 6,
+      "booked": 11,
+      "shown": 3,
       "close_rate": 0.0,
-      "show_rate": 75.0,
+      "show_rate": 27.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 13,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 38.5,
       "is_manager": false,
       "exclude_meetings": false
     }
