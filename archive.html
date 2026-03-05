@@ -361,11 +361,12 @@
 
     // Board 2: Deals
     const dealSorted = [...reps].sort((a,b) => b.deals - a.deals || b.revenue - a.revenue);
-    const b2 = dealSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.deals}</td><td class="r">${r.close_rate}%</td></tr>`).join('');
+    const b2 = dealSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.deals}</td><td class="r">${r.exclude_meetings ? '<span style="color:var(--text-faint)">N/A</span>' : r.close_rate+'%'}</td></tr>`).join('');
 
     // Board 3: Meetings
     const meetSorted = [...reps].sort((a,b) => b.booked - a.booked);
-    const b3 = meetSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.booked}</td><td class="r">${r.shown}</td><td class="r">${r.show_rate}%</td></tr>`).join('');
+    const naA = '<span style="color:var(--text-faint)">N/A</span>';
+    const b3 = meetSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.exclude_meetings ? naA : r.booked}</td><td class="r">${r.exclude_meetings ? naA : r.shown}</td><td class="r">${r.exclude_meetings ? naA : r.show_rate+'%'}</td></tr>`).join('');
 
     el.innerHTML = `
       <div class="top-bar">
