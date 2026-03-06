@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05 16:45:09 PST",
+  "updated_at": "2026-03-05 17:00:09 PST",
   "month_label": "March 2026",
   "day_of_month": 5,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 170040.0,
   "total_deals": 20,
   "total_booked": 204,
-  "total_shown": 105,
+  "total_shown": 108,
   "team_close_rate": 9.8,
-  "team_show_rate": 51.5,
+  "team_show_rate": 52.9,
   "today_revenue": 35988.0,
   "today_deals": 4,
   "reps": [
@@ -76,9 +76,9 @@
       "quota": 50000,
       "pct_to_quota": 22.0,
       "booked": 14,
-      "shown": 7,
+      "shown": 9,
       "close_rate": 7.1,
-      "show_rate": 50.0,
+      "show_rate": 64.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -122,32 +122,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 12,
-      "shown": 5,
-      "close_rate": 8.3,
-      "show_rate": 41.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jake Skinner",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 75000,
-      "pct_to_quota": 8.0,
-      "booked": 10,
-      "shown": 4,
-      "close_rate": 10.0,
-      "show_rate": 40.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Eric Piccione",
       "revenue": 5997.0,
       "deals": 1,
@@ -174,6 +148,45 @@
       "exclude_meetings": false
     },
     {
+      "name": "Jake Skinner",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 75000,
+      "pct_to_quota": 8.0,
+      "booked": 10,
+      "shown": 4,
+      "close_rate": 10.0,
+      "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 12,
+      "shown": 5,
+      "close_rate": 8.3,
+      "show_rate": 41.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "William Chase",
       "revenue": 0,
       "deals": 0,
@@ -183,6 +196,19 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 75.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Ryan Jones",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 66.7,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -209,32 +235,6 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 16.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Ryan Jones",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 58.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
     },
