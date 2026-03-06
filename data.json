@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-06 14:15:09 PST",
+  "updated_at": "2026-03-06 14:30:10 PST",
   "month_label": "March 2026",
   "day_of_month": 6,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 179037.0,
   "total_deals": 21,
   "total_booked": 259,
-  "total_shown": 122,
+  "total_shown": 123,
   "team_close_rate": 8.1,
-  "team_show_rate": 47.1,
+  "team_show_rate": 47.5,
   "today_revenue": 8997.0,
   "today_deals": 1,
   "reps": [
@@ -122,6 +122,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 9,
+      "shown": 2,
+      "close_rate": 11.1,
+      "show_rate": 22.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Jake Skinner",
       "revenue": 5997.0,
       "deals": 1,
@@ -131,19 +144,6 @@
       "shown": 7,
       "close_rate": 7.1,
       "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Eric Piccione",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 12,
-      "shown": 8,
-      "close_rate": 8.3,
-      "show_rate": 66.7,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -161,67 +161,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
+      "name": "Eric Piccione",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 9,
-      "shown": 1,
-      "close_rate": 11.1,
-      "show_rate": 11.1,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Ryan Jones",
-      "revenue": 0,
-      "deals": 0,
       "quota": 100000,
-      "pct_to_quota": 0.0,
+      "pct_to_quota": 6.0,
       "booked": 12,
       "shown": 8,
-      "close_rate": 0.0,
+      "close_rate": 8.3,
       "show_rate": 66.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 15,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 40.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 21,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 14.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "William Chase",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 13,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 53.8,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -239,6 +187,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 15,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 0,
       "deals": 0,
@@ -252,15 +213,41 @@
       "exclude_meetings": false
     },
     {
-      "name": "Stephen Olivas",
+      "name": "Ryan Jones",
       "revenue": 0,
       "deals": 0,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 1,
-      "shown": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 8,
       "close_rate": 0.0,
-      "show_rate": 0.0,
+      "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 13,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 53.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 21,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 14.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -274,6 +261,19 @@
       "shown": 4,
       "close_rate": 0.0,
       "show_rate": 25.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Stephen Olivas",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 1,
+      "shown": 0,
+      "close_rate": 0.0,
+      "show_rate": 0.0,
       "is_manager": false,
       "exclude_meetings": false
     }
