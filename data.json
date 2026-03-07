@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 14:45:07 PST",
+  "updated_at": "2026-03-07 15:00:11 PST",
   "month_label": "March 2026",
   "day_of_month": 7,
   "days_in_month": 31,
@@ -135,6 +135,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
+    },
+    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -148,17 +161,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
       "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 9,
+      "shown": 3,
+      "close_rate": 11.1,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "Jason Aaron",
@@ -183,19 +196,6 @@
       "shown": 7,
       "close_rate": 7.1,
       "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 9,
-      "shown": 3,
-      "close_rate": 11.1,
-      "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
     },
