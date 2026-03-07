@@ -243,6 +243,7 @@
   .rank.r2 { background: var(--accent); }
   .rank.r3 { background: var(--amber); }
   .rank.rn { background: #d1d5db; color: #6b7280; }
+  .mgr-tag { font-size: 9px; font-weight: 600; color: var(--dim); margin-left: 4px; }
 
   .q-cell { display: flex; align-items: center; gap: 6px; justify-content: flex-end; }
   .q-bar { width: 70px; height: 5px; background: #e5e7eb; border-radius: 99px; overflow: hidden; }
@@ -342,6 +343,9 @@
   function badge(r) {
     return (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : '';
   }
+  function repLabel(r) {
+    return `${r.name}${r.is_manager ? '<span class="mgr-tag">(mgr)</span>' : ''}`;
+  }
 
   // ─── Render dashboard from data.json ───
   function renderDashboard(D) {
@@ -357,16 +361,16 @@
 
     // Board 1: Revenue
     const revSorted = [...reps].sort((a,b) => b.revenue - a.revenue);
-    const b1 = revSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}${badge(r)}</td><td class="r">${fmt(r.revenue)}</td><td class="r">${quotaHTML(r)}</td></tr>`).join('');
+    const b1 = revSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${repLabel(r)}${badge(r)}</td><td class="r">${fmt(r.revenue)}</td><td class="r">${quotaHTML(r)}</td></tr>`).join('');
 
     // Board 2: Deals
     const dealSorted = [...reps].sort((a,b) => b.deals - a.deals || b.revenue - a.revenue);
-    const b2 = dealSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.deals}</td><td class="r">${r.exclude_meetings ? '<span style="color:var(--text-faint)">N/A</span>' : r.close_rate+'%'}</td></tr>`).join('');
+    const b2 = dealSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${repLabel(r)}</td><td class="r">${r.deals}</td><td class="r">${r.exclude_meetings ? '<span style="color:var(--text-faint)">N/A</span>' : r.close_rate+'%'}</td></tr>`).join('');
 
     // Board 3: Meetings
     const meetSorted = [...reps].sort((a,b) => b.booked - a.booked);
     const naA = '<span style="color:var(--text-faint)">N/A</span>';
-    const b3 = meetSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${r.name}</td><td class="r">${r.exclude_meetings ? naA : r.booked}</td><td class="r">${r.exclude_meetings ? naA : r.shown}</td><td class="r">${r.exclude_meetings ? naA : r.show_rate+'%'}</td></tr>`).join('');
+    const b3 = meetSorted.map((r,i) => `<tr><td><span class="rank ${rc(i)}">${i+1}</span>${repLabel(r)}</td><td class="r">${r.exclude_meetings ? naA : r.booked}</td><td class="r">${r.exclude_meetings ? naA : r.shown}</td><td class="r">${r.exclude_meetings ? naA : r.show_rate+'%'}</td></tr>`).join('');
 
     el.innerHTML = `
       <div class="top-bar">
