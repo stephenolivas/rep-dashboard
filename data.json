@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 02:00:09 PST",
+  "updated_at": "2026-03-07 02:15:08 PST",
   "month_label": "March 2026",
   "day_of_month": 7,
   "days_in_month": 31,
@@ -109,19 +109,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 12,
-      "shown": 6,
-      "close_rate": 8.3,
-      "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
@@ -148,14 +135,14 @@
       "exclude_meetings": true
     },
     {
-      "name": "Jake Skinner",
-      "revenue": 5997.0,
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
       "deals": 1,
-      "quota": 75000,
-      "pct_to_quota": 8.0,
-      "booked": 14,
-      "shown": 7,
-      "close_rate": 7.1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 12,
+      "shown": 6,
+      "close_rate": 8.3,
       "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
@@ -170,6 +157,19 @@
       "shown": 5,
       "close_rate": 6.7,
       "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 75000,
+      "pct_to_quota": 8.0,
+      "booked": 14,
+      "shown": 7,
+      "close_rate": 7.1,
+      "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +200,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Andrea Shoop",
+      "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
-      "quota": 50000,
+      "quota": 100000,
       "pct_to_quota": 0.0,
-      "booked": 15,
+      "booked": 8,
       "shown": 6,
       "close_rate": 0.0,
-      "show_rate": 40.0,
+      "show_rate": 75.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -226,6 +226,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 15,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -235,19 +248,6 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 14.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 8,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 75.0,
       "is_manager": false,
       "exclude_meetings": false
     },
