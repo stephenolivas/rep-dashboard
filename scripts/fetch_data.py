@@ -69,10 +69,11 @@ REP_QUOTAS = {
     "Andrea Shoop": 50_000,
 }
 
-EXCLUDE_USERS = {"Mallory Kent", "Unknown", "Ahmad Bukhari"}
+EXCLUDE_USERS = {"Mallory Kent", "Unknown", "Ahmad Bukhari", "Stephen Olivas"}
 
 # Users who only appear on dashboard if they have closed deals that month
-DEALS_ONLY_USERS = {"Kristin Nelson"}
+# Their meeting data is N/A'd out — only show on Revenue Closed and Opps Closed
+DEALS_ONLY_USERS = {"Kristin Nelson", "Joe Dysert"}
 
 # Managers don't have quotas but shouldn't show "Ramping"
 MANAGER_USERS = {"Joe Dysert"}
