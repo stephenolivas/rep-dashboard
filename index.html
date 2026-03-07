@@ -279,6 +279,7 @@
   .rk-2, .rk-3 { background: var(--green-bg); color: var(--green); }
 
   .rep-name { font-weight: 600; vertical-align: middle; }
+  .mgr-tag { font-size: 9px; font-weight: 600; color: var(--text-muted); margin-left: 4px; vertical-align: middle; }
 
   /* Goal badge */
   .goal-badge {
@@ -433,6 +434,9 @@
     if (i<3) return 'rk rk-'+( i+1);
     return 'rk';
   }
+  function repLabel(r) {
+    return `<span class="rep-name">${r.name}</span>${r.is_manager ? '<span class="mgr-tag">(mgr)</span>' : ''}`;
+  }
 
   function render(D) {
     const reps = D.reps || [];
@@ -496,7 +500,7 @@
       }
       const badge = (r.quota && r.pct_to_quota >= 100) ? '<span class="goal-badge">At Goal</span>' : '';
       return `<tr>
-        <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span>${badge}</td>
+        <td><span class="${rkC(i)}">${i+1}</span>${repLabel(r)}${badge}</td>
         <td>${fmt$(r.revenue)}</td>
         <td>${qH}</td>
       </tr>`;
@@ -515,7 +519,7 @@
     // ── BOARD 2: Opps Closed
     const dealSorted = [...reps].sort((a,b) => b.deals - a.deals);
     const b2Rows = dealSorted.map((r,i) => `<tr>
-      <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>
+      <td><span class="${rkC(i)}">${i+1}</span>${repLabel(r)}</td>
       <td>${r.deals}</td>
       <td>${r.exclude_meetings ? '<span style="color:var(--text-faint)">N/A</span>' : `<span class="${rc(r.close_rate,20,10)}">${r.close_rate}%</span>`}</td>
     </tr>`).join('');
@@ -533,7 +537,7 @@
     const mtgSorted = [...reps].sort((a,b) => b.booked - a.booked);
     const na = '<span style="color:var(--text-faint)">N/A</span>';
     const b3Rows = mtgSorted.map((r,i) => `<tr>
-      <td><span class="${rkC(i)}">${i+1}</span><span class="rep-name">${r.name}</span></td>
+      <td><span class="${rkC(i)}">${i+1}</span>${repLabel(r)}</td>
       <td>${r.exclude_meetings ? na : r.booked}</td>
       <td>${r.exclude_meetings ? na : r.shown}</td>
       <td>${r.exclude_meetings ? na : `<span class="${rc(r.show_rate,65,45)}">${r.show_rate}%</span>`}</td>
