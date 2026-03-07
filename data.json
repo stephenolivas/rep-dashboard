@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 03:45:08 PST",
+  "updated_at": "2026-03-07 04:00:08 PST",
   "month_label": "March 2026",
   "day_of_month": 7,
   "days_in_month": 31,
@@ -122,19 +122,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 15,
-      "shown": 5,
-      "close_rate": 6.7,
-      "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -148,14 +135,14 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
+      "name": "John Kirk",
+      "revenue": 8997.0,
       "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 9,
-      "shown": 3,
-      "close_rate": 11.1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 15,
+      "shown": 5,
+      "close_rate": 6.7,
       "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
@@ -187,6 +174,32 @@
       "exclude_meetings": false
     },
     {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 9,
+      "shown": 3,
+      "close_rate": 11.1,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "William Chase",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 16,
+      "shown": 9,
+      "close_rate": 0.0,
+      "show_rate": 56.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Ryan Jones",
       "revenue": 0,
       "deals": 0,
@@ -213,6 +226,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 15,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -235,32 +261,6 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 75.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 15,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 40.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "William Chase",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 16,
-      "shown": 9,
-      "close_rate": 0.0,
-      "show_rate": 56.2,
       "is_manager": false,
       "exclude_meetings": false
     }
