@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08 16:15:08 PST",
+  "updated_at": "2026-03-08 16:30:08 PST",
   "month_label": "March 2026",
   "day_of_month": 8,
   "days_in_month": 31,
@@ -200,32 +200,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 20,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 15.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 16,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 25.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -248,6 +222,32 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 20,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 15.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 16,
+      "shown": 4,
+      "close_rate": 0.0,
+      "show_rate": 25.0,
       "is_manager": false,
       "exclude_meetings": false
     },
