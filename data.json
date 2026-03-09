@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09 08:15:10 PST",
+  "updated_at": "2026-03-09 08:30:12 PST",
   "month_label": "March 2026",
   "day_of_month": 9,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 24.9,
   "total_revenue": 225525.0,
   "total_deals": 26,
-  "total_booked": 299,
+  "total_booked": 300,
   "total_shown": 137,
   "team_close_rate": 8.7,
-  "team_show_rate": 45.8,
+  "team_show_rate": 45.7,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -122,19 +122,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -161,28 +148,28 @@
       "exclude_meetings": false
     },
     {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
+    },
+    {
       "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
       "quota": 50000,
       "pct_to_quota": 12.0,
-      "booked": 10,
+      "booked": 11,
       "shown": 3,
-      "close_rate": 10.0,
-      "show_rate": 30.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 20,
-      "shown": 6,
-      "close_rate": 5.0,
-      "show_rate": 30.0,
+      "close_rate": 9.1,
+      "show_rate": 27.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +187,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
-      "revenue": 0,
-      "deals": 0,
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
       "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 14,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 57.1,
+      "pct_to_quota": 6.0,
+      "booked": 20,
+      "shown": 6,
+      "close_rate": 5.0,
+      "show_rate": 30.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -226,19 +213,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 23,
-      "shown": 3,
-      "close_rate": 0.0,
-      "show_rate": 13.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -252,6 +226,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 23,
+      "shown": 3,
+      "close_rate": 0.0,
+      "show_rate": 13.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 37.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Ryan Jones",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 14,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 57.1,
       "is_manager": false,
       "exclude_meetings": false
     }
