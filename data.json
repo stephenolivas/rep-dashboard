@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09 06:30:12 PST",
+  "updated_at": "2026-03-09 06:45:10 PST",
   "month_label": "March 2026",
   "day_of_month": 9,
   "days_in_month": 31,
@@ -109,6 +109,32 @@
       "exclude_meetings": false
     },
     {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 13,
+      "shown": 6,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 5,
+      "close_rate": 5.6,
+      "show_rate": 27.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "William Chase",
       "revenue": 8997.0,
       "deals": 1,
@@ -135,32 +161,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 5,
-      "close_rate": 5.6,
-      "show_rate": 27.8,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 13,
-      "shown": 6,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
@@ -169,6 +169,19 @@
       "booked": 10,
       "shown": 3,
       "close_rate": 10.0,
+      "show_rate": 30.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 20,
+      "shown": 6,
+      "close_rate": 5.0,
       "show_rate": 30.0,
       "is_manager": false,
       "exclude_meetings": false
@@ -187,15 +200,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 20,
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 16,
       "shown": 6,
-      "close_rate": 5.0,
-      "show_rate": 30.0,
+      "close_rate": 0.0,
+      "show_rate": 37.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,15 +226,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Andrea Shoop",
+      "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 16,
-      "shown": 6,
+      "booked": 17,
+      "shown": 4,
       "close_rate": 0.0,
-      "show_rate": 37.5,
+      "show_rate": 23.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -248,19 +261,6 @@
       "shown": 3,
       "close_rate": 0.0,
       "show_rate": 13.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 17,
-      "shown": 4,
-      "close_rate": 0.0,
-      "show_rate": 23.5,
       "is_manager": false,
       "exclude_meetings": false
     }
