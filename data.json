@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09 14:00:11 PDT",
+  "updated_at": "2026-03-09 14:01:06 PDT",
   "month_label": "March 2026",
   "day_of_month": 9,
   "days_in_month": 31,
@@ -122,6 +122,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 13,
+      "shown": 6,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -157,19 +170,6 @@
       "shown": 6,
       "close_rate": 5.6,
       "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 13,
-      "shown": 6,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -226,19 +226,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 22,
-      "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 22.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 7,
       "close_rate": 0.0,
       "show_rate": 43.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 22,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 22.7,
       "is_manager": false,
       "exclude_meetings": false
     }
