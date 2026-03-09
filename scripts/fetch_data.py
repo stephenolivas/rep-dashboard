@@ -306,7 +306,7 @@ def build_dashboard_data():
     today_str = now.strftime("%Y-%m-%d")
     _, last_day = monthrange(year, month)
 
-    print(f"Fetching data for {year}-{month:02d} (day {today_day}, PST)...")
+    print(f"Fetching data for {year}-{month:02d} (day {today_day}, {now.strftime('%Z')})...")
 
     # Step 1: User map
     print("  Fetching org users...")
@@ -410,7 +410,7 @@ def build_dashboard_data():
     reps.sort(key=lambda r: r["revenue"], reverse=True)
 
     return {
-        "updated_at": now.strftime("%Y-%m-%d %H:%M:%S PST"),
+        "updated_at": now.strftime("%Y-%m-%d %H:%M:%S %Z"),
         "month_label": now.strftime("%B %Y"),
         "day_of_month": today_day,
         "days_in_month": last_day,
