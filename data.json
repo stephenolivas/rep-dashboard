@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10 13:30:11 PDT",
+  "updated_at": "2026-03-10 13:45:08 PDT",
   "month_label": "March 2026",
   "day_of_month": 10,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 28.4,
   "total_revenue": 257510.0,
   "total_deals": 31,
-  "total_booked": 342,
-  "total_shown": 172,
-  "team_close_rate": 9.1,
-  "team_show_rate": 50.3,
+  "total_booked": 343,
+  "total_shown": 174,
+  "team_close_rate": 9.0,
+  "team_show_rate": 50.7,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "William Chase",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 13,
-      "close_rate": 5.6,
-      "show_rate": 72.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -172,6 +159,19 @@
       "show_rate": 0,
       "is_manager": true,
       "exclude_meetings": true
+    },
+    {
+      "name": "William Chase",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 13,
+      "close_rate": 5.6,
+      "show_rate": 72.2,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "Elvis Ellis",
@@ -213,41 +213,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 10,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 60.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 17,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 41.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
       "booked": 25,
-      "shown": 7,
+      "shown": 8,
       "close_rate": 0.0,
-      "show_rate": 28.0,
+      "show_rate": 32.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -261,6 +235,32 @@
       "shown": 5,
       "close_rate": 0.0,
       "show_rate": 26.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 18,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 44.4,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 10,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 60.0,
       "is_manager": false,
       "exclude_meetings": false
     }
