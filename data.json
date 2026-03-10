@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10 09:15:15 PDT",
+  "updated_at": "2026-03-10 09:30:12 PDT",
   "month_label": "March 2026",
   "day_of_month": 10,
   "days_in_month": 31,
@@ -122,6 +122,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 16,
+      "shown": 6,
+      "close_rate": 6.2,
+      "show_rate": 37.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -133,6 +146,19 @@
       "show_rate": 0,
       "is_manager": true,
       "exclude_meetings": true
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 19,
+      "shown": 6,
+      "close_rate": 5.3,
+      "show_rate": 31.6,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "William Chase",
@@ -148,54 +174,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 16,
-      "shown": 6,
-      "close_rate": 6.2,
-      "show_rate": 37.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 6,
-      "close_rate": 5.6,
-      "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 6.0,
-      "booked": 23,
+      "booked": 24,
       "shown": 9,
-      "close_rate": 4.3,
-      "show_rate": 39.1,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Ryan Jones",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 17,
-      "shown": 10,
-      "close_rate": 5.9,
-      "show_rate": 58.8,
+      "close_rate": 4.2,
+      "show_rate": 37.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -209,6 +196,19 @@
       "shown": 3,
       "close_rate": 9.1,
       "show_rate": 27.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Ryan Jones",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 17,
+      "shown": 10,
+      "close_rate": 5.9,
+      "show_rate": 58.8,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -244,10 +244,10 @@
       "deals": 0,
       "quota": 100000,
       "pct_to_quota": 0.0,
-      "booked": 12,
+      "booked": 10,
       "shown": 6,
       "close_rate": 0.0,
-      "show_rate": 50.0,
+      "show_rate": 60.0,
       "is_manager": false,
       "exclude_meetings": false
     },
