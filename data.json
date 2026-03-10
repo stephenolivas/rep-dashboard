@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10 05:00:11 PDT",
+  "updated_at": "2026-03-10 05:15:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 10,
   "days_in_month": 31,
@@ -122,32 +122,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "William Chase",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 12,
-      "close_rate": 5.6,
-      "show_rate": 66.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,6 +148,32 @@
       "exclude_meetings": false
     },
     {
+      "name": "William Chase",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 12,
+      "close_rate": 5.6,
+      "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
+    },
+    {
       "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
@@ -183,6 +183,19 @@
       "shown": 10,
       "close_rate": 5.9,
       "show_rate": 58.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 11,
+      "shown": 3,
+      "close_rate": 9.1,
+      "show_rate": 27.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +213,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 9.1,
-      "show_rate": 27.3,
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -235,19 +248,6 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 27.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
     },
