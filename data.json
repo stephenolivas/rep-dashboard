@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10 07:15:12 PDT",
+  "updated_at": "2026-03-10 07:30:12 PDT",
   "month_label": "March 2026",
   "day_of_month": 10,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 257510.0,
   "total_deals": 31,
   "total_booked": 336,
-  "total_shown": 159,
+  "total_shown": 160,
   "team_close_rate": 9.2,
-  "team_show_rate": 47.3,
+  "team_show_rate": 47.6,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -76,9 +76,9 @@
       "quota": 100000,
       "pct_to_quota": 18.5,
       "booked": 18,
-      "shown": 10,
+      "shown": 11,
       "close_rate": 11.1,
-      "show_rate": 55.6,
+      "show_rate": 61.1,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -135,15 +135,15 @@
       "exclude_meetings": true
     },
     {
-      "name": "John Kirk",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 9.0,
-      "booked": 18,
+      "booked": 16,
       "shown": 6,
-      "close_rate": 5.6,
-      "show_rate": 33.3,
+      "close_rate": 6.2,
+      "show_rate": 37.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -161,15 +161,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 9.0,
-      "booked": 16,
+      "booked": 18,
       "shown": 6,
-      "close_rate": 6.2,
-      "show_rate": 37.5,
+      "close_rate": 5.6,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 11,
+      "shown": 3,
+      "close_rate": 9.1,
+      "show_rate": 27.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,19 +213,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 9.1,
-      "show_rate": 27.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -226,19 +226,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 23,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 26.1,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -248,6 +235,19 @@
       "shown": 7,
       "close_rate": 0.0,
       "show_rate": 41.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 23,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 26.1,
       "is_manager": false,
       "exclude_meetings": false
     },
