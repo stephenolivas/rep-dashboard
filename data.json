@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09 20:15:09 PDT",
+  "updated_at": "2026-03-09 20:30:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 9,
   "days_in_month": 31,
@@ -135,6 +135,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 6,
+      "close_rate": 5.6,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "William Chase",
       "revenue": 8997.0,
       "deals": 1,
@@ -159,19 +172,6 @@
       "show_rate": 0,
       "is_manager": true,
       "exclude_meetings": true
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 6,
-      "close_rate": 5.6,
-      "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
     },
     {
       "name": "Elvis Ellis",
@@ -213,15 +213,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Andrea Shoop",
+      "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 16,
-      "shown": 7,
+      "booked": 22,
+      "shown": 6,
       "close_rate": 0.0,
-      "show_rate": 43.8,
+      "show_rate": 27.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -239,19 +239,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 22,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 27.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 50.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 16,
+      "shown": 7,
+      "close_rate": 0.0,
+      "show_rate": 43.8,
       "is_manager": false,
       "exclude_meetings": false
     }
