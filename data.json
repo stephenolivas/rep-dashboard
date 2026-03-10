@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10 04:45:11 PDT",
+  "updated_at": "2026-03-10 05:00:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 10,
   "days_in_month": 31,
@@ -135,19 +135,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 6,
-      "close_rate": 5.6,
-      "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,15 +161,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 6,
+      "close_rate": 5.6,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 9.1,
-      "show_rate": 27.3,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 17,
+      "shown": 10,
+      "close_rate": 5.9,
+      "show_rate": 58.8,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +200,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
+      "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 17,
-      "shown": 10,
-      "close_rate": 5.9,
-      "show_rate": 58.8,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 11,
+      "shown": 3,
+      "close_rate": 9.1,
+      "show_rate": 27.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 19,
+      "shown": 5,
+      "close_rate": 0.0,
+      "show_rate": 26.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -235,19 +248,6 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 19,
-      "shown": 5,
-      "close_rate": 0.0,
-      "show_rate": 26.3,
       "is_manager": false,
       "exclude_meetings": false
     },
