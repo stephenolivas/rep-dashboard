@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09 18:00:10 PDT",
+  "updated_at": "2026-03-09 18:15:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 9,
   "days_in_month": 31,
@@ -122,15 +122,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 9.0,
-      "booked": 14,
+      "booked": 18,
       "shown": 6,
-      "close_rate": 7.1,
-      "show_rate": 42.9,
+      "close_rate": 5.6,
+      "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -148,19 +148,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 6,
-      "close_rate": 5.6,
-      "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "William Chase",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,15 +161,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 14,
+      "shown": 6,
+      "close_rate": 7.1,
+      "show_rate": 42.9,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 11,
-      "shown": 3,
-      "close_rate": 9.1,
-      "show_rate": 27.3,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 15,
+      "shown": 10,
+      "close_rate": 6.7,
+      "show_rate": 66.7,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +200,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
+      "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 15,
-      "shown": 10,
-      "close_rate": 6.7,
-      "show_rate": 66.7,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 11,
+      "shown": 3,
+      "close_rate": 9.1,
+      "show_rate": 27.3,
       "is_manager": false,
       "exclude_meetings": false
     },
