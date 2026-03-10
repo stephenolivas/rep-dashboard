@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10 06:00:11 PDT",
+  "updated_at": "2026-03-10 06:15:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 10,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 28.4,
   "total_revenue": 257510.0,
   "total_deals": 31,
-  "total_booked": 334,
+  "total_booked": 335,
   "total_shown": 159,
   "team_close_rate": 9.3,
-  "team_show_rate": 47.6,
+  "team_show_rate": 47.5,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -75,10 +75,10 @@
       "deals": 2,
       "quota": 100000,
       "pct_to_quota": 18.5,
-      "booked": 17,
+      "booked": 18,
       "shown": 10,
-      "close_rate": 11.8,
-      "show_rate": 58.8,
+      "close_rate": 11.1,
+      "show_rate": 55.6,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -122,6 +122,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 6,
+      "close_rate": 5.6,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -144,19 +157,6 @@
       "shown": 12,
       "close_rate": 5.6,
       "show_rate": 66.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 6,
-      "close_rate": 5.6,
-      "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
     },
