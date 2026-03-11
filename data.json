@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11 07:30:10 PDT",
+  "updated_at": "2026-03-11 07:45:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 11,
   "days_in_month": 31,
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 8,
-      "close_rate": 5.6,
-      "show_rate": 44.4,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,15 +161,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 8,
+      "close_rate": 5.6,
+      "show_rate": 44.4,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 13,
-      "shown": 4,
-      "close_rate": 7.7,
-      "show_rate": 30.8,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 26,
+      "shown": 12,
+      "close_rate": 3.8,
+      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +200,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jason Aaron",
+      "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 26,
-      "shown": 12,
-      "close_rate": 3.8,
-      "show_rate": 46.2,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 13,
+      "shown": 4,
+      "close_rate": 7.7,
+      "show_rate": 30.8,
       "is_manager": false,
       "exclude_meetings": false
     },
