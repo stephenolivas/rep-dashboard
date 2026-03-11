@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11 11:15:09 PDT",
+  "updated_at": "2026-03-11 11:30:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 11,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 29.5,
   "total_revenue": 267007.0,
   "total_deals": 33,
-  "total_booked": 373,
-  "total_shown": 199,
-  "team_close_rate": 8.8,
-  "team_show_rate": 53.4,
+  "total_booked": 372,
+  "total_shown": 200,
+  "team_close_rate": 8.9,
+  "team_show_rate": 53.8,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -24,9 +24,9 @@
       "quota": 100000,
       "pct_to_quota": 56.0,
       "booked": 27,
-      "shown": 15,
+      "shown": 16,
       "close_rate": 25.9,
-      "show_rate": 55.6,
+      "show_rate": 59.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -122,17 +122,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 18,
-      "shown": 8,
-      "close_rate": 5.6,
-      "show_rate": 44.4,
-      "is_manager": false,
-      "exclude_meetings": false
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "William Chase",
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
       "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,28 +161,28 @@
       "exclude_meetings": false
     },
     {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 18,
+      "shown": 8,
+      "close_rate": 5.6,
+      "show_rate": 44.4,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 6.0,
-      "booked": 19,
+      "booked": 18,
       "shown": 12,
-      "close_rate": 5.3,
-      "show_rate": 63.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jason Aaron",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 27,
-      "shown": 13,
-      "close_rate": 3.7,
-      "show_rate": 48.1,
+      "close_rate": 5.6,
+      "show_rate": 66.7,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,6 +200,32 @@
       "exclude_meetings": false
     },
     {
+      "name": "Jason Aaron",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 27,
+      "shown": 13,
+      "close_rate": 3.7,
+      "show_rate": 48.1,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 11,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 54.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -222,19 +235,6 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 30.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 25,
-      "shown": 9,
-      "close_rate": 0.0,
-      "show_rate": 36.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -252,15 +252,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jordan Humphrey",
+      "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
-      "quota": 100000,
+      "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 11,
-      "shown": 6,
+      "booked": 25,
+      "shown": 9,
       "close_rate": 0.0,
-      "show_rate": 54.5,
+      "show_rate": 36.0,
       "is_manager": false,
       "exclude_meetings": false
     }
