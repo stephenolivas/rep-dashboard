@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11 10:15:11 PDT",
+  "updated_at": "2026-03-11 10:30:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 11,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 267007.0,
   "total_deals": 33,
   "total_booked": 372,
-  "total_shown": 196,
+  "total_shown": 198,
   "team_close_rate": 8.9,
-  "team_show_rate": 52.7,
+  "team_show_rate": 53.2,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -50,9 +50,9 @@
       "quota": 100000,
       "pct_to_quota": 35.0,
       "booked": 27,
-      "shown": 18,
+      "shown": 19,
       "close_rate": 14.8,
-      "show_rate": 66.7,
+      "show_rate": 70.4,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -187,19 +187,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 13,
-      "shown": 5,
-      "close_rate": 7.7,
-      "show_rate": 38.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
@@ -209,6 +196,19 @@
       "shown": 13,
       "close_rate": 3.8,
       "show_rate": 50.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 13,
+      "shown": 5,
+      "close_rate": 7.7,
+      "show_rate": 38.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -226,6 +226,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 25,
+      "shown": 9,
+      "close_rate": 0.0,
+      "show_rate": 36.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Jordan Humphrey",
       "revenue": 0,
       "deals": 0,
@@ -235,19 +248,6 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 54.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 25,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 32.0,
       "is_manager": false,
       "exclude_meetings": false
     },
