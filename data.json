@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 01:30:09 PDT",
+  "updated_at": "2026-03-12 01:45:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -135,19 +135,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 21,
-      "shown": 10,
-      "close_rate": 4.8,
-      "show_rate": 47.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -172,6 +159,19 @@
       "show_rate": 0,
       "is_manager": true,
       "exclude_meetings": true
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 21,
+      "shown": 10,
+      "close_rate": 4.8,
+      "show_rate": 47.6,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "Ryan Jones",
@@ -213,19 +213,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 12,
-      "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -235,6 +222,19 @@
       "shown": 9,
       "close_rate": 0.0,
       "show_rate": 39.1,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 12,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
     },
