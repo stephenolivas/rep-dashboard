@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11 16:52:27 PDT",
+  "updated_at": "2026-03-11 17:00:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 11,
   "days_in_month": 31,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 8,
   "pct_month_passed": 36.4,
   "team_quota": 906000,
-  "pct_team_quota": 31.7,
-  "total_revenue": 286971.0,
-  "total_deals": 35,
+  "pct_team_quota": 33.2,
+  "total_revenue": 300968.0,
+  "total_deals": 36,
   "total_booked": 381,
   "total_shown": 216,
-  "team_close_rate": 9.2,
+  "team_close_rate": 9.4,
   "team_show_rate": 56.7,
-  "today_revenue": 19964.0,
-  "today_deals": 2,
+  "today_revenue": 33961.0,
+  "today_deals": 3,
   "reps": [
     {
       "name": "Robin Perkins",
@@ -31,6 +31,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Scott Seymour",
+      "revenue": 48985.0,
+      "deals": 5,
+      "quota": 100000,
+      "pct_to_quota": 49.0,
+      "booked": 27,
+      "shown": 20,
+      "close_rate": 18.5,
+      "show_rate": 74.1,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Christian Hartwell",
       "revenue": 37088.0,
       "deals": 4,
@@ -40,19 +53,6 @@
       "shown": 22,
       "close_rate": 13.3,
       "show_rate": 73.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Scott Seymour",
-      "revenue": 34988.0,
-      "deals": 4,
-      "quota": 100000,
-      "pct_to_quota": 35.0,
-      "booked": 27,
-      "shown": 20,
-      "close_rate": 14.8,
-      "show_rate": 74.1,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 19,
-      "shown": 10,
-      "close_rate": 5.3,
-      "show_rate": 52.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -172,6 +159,19 @@
       "show_rate": 0,
       "is_manager": true,
       "exclude_meetings": true
+    },
+    {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 19,
+      "shown": 10,
+      "close_rate": 5.3,
+      "show_rate": 52.6,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "Jason Aaron",
@@ -226,19 +226,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 30,
-      "shown": 11,
-      "close_rate": 0.0,
-      "show_rate": 36.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 9,
       "close_rate": 0.0,
       "show_rate": 39.1,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 30,
+      "shown": 11,
+      "close_rate": 0.0,
+      "show_rate": 36.7,
       "is_manager": false,
       "exclude_meetings": false
     }
