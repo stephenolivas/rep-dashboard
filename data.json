@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 13:45:09 PDT",
+  "updated_at": "2026-03-12 14:00:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 324956.0,
   "total_deals": 40,
   "total_booked": 413,
-  "total_shown": 228,
+  "total_shown": 230,
   "team_close_rate": 9.7,
-  "team_show_rate": 55.2,
+  "team_show_rate": 55.7,
   "today_revenue": 23988.0,
   "today_deals": 4,
   "reps": [
@@ -102,9 +102,9 @@
       "quota": 100000,
       "pct_to_quota": 15.0,
       "booked": 19,
-      "shown": 14,
+      "shown": 15,
       "close_rate": 10.5,
-      "show_rate": 73.7,
+      "show_rate": 78.9,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -135,6 +135,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
+    },
+    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -157,32 +170,6 @@
       "shown": 10,
       "close_rate": 4.8,
       "show_rate": 47.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 15,
-      "shown": 5,
-      "close_rate": 6.7,
-      "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,28 +200,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
       "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 32,
-      "shown": 12,
-      "close_rate": 0.0,
-      "show_rate": 37.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 13,
+      "pct_to_quota": 12.0,
+      "booked": 15,
       "shown": 6,
-      "close_rate": 0.0,
-      "show_rate": 46.2,
+      "close_rate": 6.7,
+      "show_rate": 40.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -261,6 +235,32 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 13,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 46.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 32,
+      "shown": 12,
+      "close_rate": 0.0,
+      "show_rate": 37.5,
       "is_manager": false,
       "exclude_meetings": false
     }
