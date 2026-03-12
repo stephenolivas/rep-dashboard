@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11 20:15:10 PDT",
+  "updated_at": "2026-03-11 20:30:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 11,
   "days_in_month": 31,
@@ -213,19 +213,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 18,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 44.4,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 54.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 18,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 44.4,
       "is_manager": false,
       "exclude_meetings": false
     }
