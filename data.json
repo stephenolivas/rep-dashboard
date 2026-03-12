@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 16:00:11 PDT",
+  "updated_at": "2026-03-12 16:15:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -135,6 +135,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 21,
+      "shown": 11,
+      "close_rate": 4.8,
+      "show_rate": 52.4,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -157,19 +170,6 @@
       "shown": 10,
       "close_rate": 4.8,
       "show_rate": 47.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 21,
-      "shown": 11,
-      "close_rate": 4.8,
-      "show_rate": 52.4,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,19 +213,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 32,
-      "shown": 12,
-      "close_rate": 0.0,
-      "show_rate": 37.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 8,
       "close_rate": 0.0,
       "show_rate": 40.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 32,
+      "shown": 12,
+      "close_rate": 0.0,
+      "show_rate": 37.5,
       "is_manager": false,
       "exclude_meetings": false
     }
