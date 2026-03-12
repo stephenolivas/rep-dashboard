@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 07:45:11 PDT",
+  "updated_at": "2026-03-12 08:00:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -135,6 +135,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 21,
+      "shown": 10,
+      "close_rate": 4.8,
+      "show_rate": 47.6,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -149,19 +162,6 @@
     },
     {
       "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 21,
-      "shown": 10,
-      "close_rate": 4.8,
-      "show_rate": 47.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -213,28 +213,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Vince Bartolini",
+      "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 31,
-      "shown": 12,
+      "booked": 23,
+      "shown": 9,
       "close_rate": 0.0,
-      "show_rate": 38.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 18,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 44.4,
+      "show_rate": 39.1,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -252,15 +239,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Julia Scaroni",
+      "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 23,
-      "shown": 9,
+      "booked": 18,
+      "shown": 8,
       "close_rate": 0.0,
-      "show_rate": 39.1,
+      "show_rate": 44.4,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Vince Bartolini",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 31,
+      "shown": 12,
+      "close_rate": 0.0,
+      "show_rate": 38.7,
       "is_manager": false,
       "exclude_meetings": false
     }
