@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 12:15:10 PDT",
+  "updated_at": "2026-03-12 12:30:12 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -148,7 +148,7 @@
       "exclude_meetings": true
     },
     {
-      "name": "John Kirk",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -161,7 +161,7 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
