@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 10:30:11 PDT",
+  "updated_at": "2026-03-12 10:45:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 35.2,
   "total_revenue": 318959.0,
   "total_deals": 39,
-  "total_booked": 413,
-  "total_shown": 223,
+  "total_booked": 415,
+  "total_shown": 225,
   "team_close_rate": 9.4,
-  "team_show_rate": 54.0,
+  "team_show_rate": 54.2,
   "today_revenue": 17991.0,
   "today_deals": 3,
   "reps": [
@@ -50,9 +50,9 @@
       "quota": 100000,
       "pct_to_quota": 37.1,
       "booked": 32,
-      "shown": 22,
+      "shown": 23,
       "close_rate": 12.5,
-      "show_rate": 68.8,
+      "show_rate": 71.9,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -135,19 +135,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 21,
-      "shown": 10,
-      "close_rate": 4.8,
-      "show_rate": 47.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,15 +161,15 @@
       "exclude_meetings": true
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
+      "name": "John Kirk",
+      "revenue": 8997.0,
       "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 14,
-      "shown": 5,
-      "close_rate": 7.1,
-      "show_rate": 35.7,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 21,
+      "shown": 10,
+      "close_rate": 4.8,
+      "show_rate": 47.6,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,6 +187,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 15,
+      "shown": 5,
+      "close_rate": 6.7,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
@@ -209,6 +209,19 @@
       "shown": 13,
       "close_rate": 3.4,
       "show_rate": 44.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 13,
+      "shown": 6,
+      "close_rate": 0.0,
+      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -226,19 +239,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 28,
-      "shown": 10,
-      "close_rate": 0.0,
-      "show_rate": 35.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 0,
       "deals": 0,
@@ -252,15 +252,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jordan Humphrey",
+      "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
-      "quota": 100000,
+      "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 13,
-      "shown": 6,
+      "booked": 29,
+      "shown": 11,
       "close_rate": 0.0,
-      "show_rate": 46.2,
+      "show_rate": 37.9,
       "is_manager": false,
       "exclude_meetings": false
     }
