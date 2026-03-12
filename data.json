@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 05:30:10 PDT",
+  "updated_at": "2026-03-12 05:45:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 306965.0,
   "total_deals": 37,
   "total_booked": 400,
-  "total_shown": 219,
+  "total_shown": 220,
   "team_close_rate": 9.2,
-  "team_show_rate": 54.8,
+  "team_show_rate": 55.0,
   "today_revenue": 5997.0,
   "today_deals": 1,
   "reps": [
@@ -89,9 +89,9 @@
       "quota": 100000,
       "pct_to_quota": 18.5,
       "booked": 26,
-      "shown": 15,
+      "shown": 16,
       "close_rate": 7.7,
-      "show_rate": 57.7,
+      "show_rate": 61.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -135,6 +135,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 21,
+      "shown": 10,
+      "close_rate": 4.8,
+      "show_rate": 47.6,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -161,28 +174,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 21,
-      "shown": 10,
-      "close_rate": 4.8,
-      "show_rate": 47.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jason Aaron",
+      "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 6.0,
-      "booked": 27,
-      "shown": 13,
-      "close_rate": 3.7,
-      "show_rate": 48.1,
+      "booked": 20,
+      "shown": 12,
+      "close_rate": 5.0,
+      "show_rate": 60.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -200,15 +200,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
+      "name": "Jason Aaron",
       "revenue": 5997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 6.0,
-      "booked": 20,
-      "shown": 12,
-      "close_rate": 5.0,
-      "show_rate": 60.0,
+      "booked": 27,
+      "shown": 13,
+      "close_rate": 3.7,
+      "show_rate": 48.1,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -222,6 +222,19 @@
       "shown": 6,
       "close_rate": 0.0,
       "show_rate": 50.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 23,
+      "shown": 9,
+      "close_rate": 0.0,
+      "show_rate": 39.1,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -248,19 +261,6 @@
       "shown": 12,
       "close_rate": 0.0,
       "show_rate": 38.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 23,
-      "shown": 9,
-      "close_rate": 0.0,
-      "show_rate": 39.1,
       "is_manager": false,
       "exclude_meetings": false
     }
