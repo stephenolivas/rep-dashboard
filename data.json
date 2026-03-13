@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 15:45:07 PDT",
+  "updated_at": "2026-03-13 15:59:58 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 381938.0,
   "total_deals": 46,
   "total_booked": 436,
-  "total_shown": 255,
+  "total_shown": 256,
   "team_close_rate": 10.6,
-  "team_show_rate": 58.5,
+  "team_show_rate": 58.7,
   "today_revenue": 28991.0,
   "today_deals": 3,
   "reps": [
@@ -50,9 +50,9 @@
       "quota": 100000,
       "pct_to_quota": 46.1,
       "booked": 37,
-      "shown": 26,
+      "shown": 27,
       "close_rate": 13.5,
-      "show_rate": 70.3,
+      "show_rate": 73.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 25,
-      "shown": 12,
-      "close_rate": 4.0,
-      "show_rate": 48.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -172,6 +159,19 @@
       "show_rate": 0,
       "is_manager": true,
       "exclude_meetings": true
+    },
+    {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 25,
+      "shown": 12,
+      "close_rate": 4.0,
+      "show_rate": 48.0,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "Lyle Hubbard",
@@ -200,19 +200,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 16,
-      "shown": 8,
-      "close_rate": 6.2,
-      "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
@@ -222,6 +209,19 @@
       "shown": 14,
       "close_rate": 5.0,
       "show_rate": 70.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 16,
+      "shown": 8,
+      "close_rate": 6.2,
+      "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
     },
