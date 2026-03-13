@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 05:30:10 PDT",
+  "updated_at": "2026-03-13 05:45:08 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 39.0,
   "total_revenue": 352947.0,
   "total_deals": 43,
-  "total_booked": 446,
+  "total_booked": 447,
   "total_shown": 235,
   "team_close_rate": 9.6,
-  "team_show_rate": 52.7,
+  "team_show_rate": 52.6,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -148,7 +148,7 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -161,7 +161,7 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -187,19 +187,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "Ryan Jones",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 22,
-      "shown": 14,
-      "close_rate": 4.5,
-      "show_rate": 63.6,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Elvis Ellis",
       "revenue": 5997.0,
       "deals": 1,
@@ -213,15 +200,28 @@
       "exclude_meetings": false
     },
     {
+      "name": "Ryan Jones",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 22,
+      "shown": 14,
+      "close_rate": 4.5,
+      "show_rate": 63.6,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Vince Bartolini",
       "revenue": 4997.0,
       "deals": 1,
       "quota": 50000,
       "pct_to_quota": 10.0,
-      "booked": 31,
+      "booked": 32,
       "shown": 11,
-      "close_rate": 3.2,
-      "show_rate": 35.5,
+      "close_rate": 3.1,
+      "show_rate": 34.4,
       "is_manager": false,
       "exclude_meetings": false
     },
