@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 10:53:19 PDT",
+  "updated_at": "2026-03-13 11:00:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -7,15 +7,15 @@
   "working_days_elapsed": 10,
   "pct_month_passed": 45.5,
   "team_quota": 906000,
-  "pct_team_quota": 39.9,
-  "total_revenue": 361944.0,
-  "total_deals": 44,
+  "pct_team_quota": 41.5,
+  "total_revenue": 375941.0,
+  "total_deals": 45,
   "total_booked": 454,
-  "total_shown": 245,
-  "team_close_rate": 9.7,
-  "team_show_rate": 54.0,
-  "today_revenue": 8997.0,
-  "today_deals": 1,
+  "total_shown": 246,
+  "team_close_rate": 9.9,
+  "team_show_rate": 54.2,
+  "today_revenue": 22994.0,
+  "today_deals": 2,
   "reps": [
     {
       "name": "Robin Perkins",
@@ -57,6 +57,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Chris Wanke",
+      "revenue": 34491.0,
+      "deals": 4,
+      "quota": 50000,
+      "pct_to_quota": 69.0,
+      "booked": 38,
+      "shown": 24,
+      "close_rate": 10.5,
+      "show_rate": 63.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Ategeka Musinguzi",
       "revenue": 26988.0,
       "deals": 4,
@@ -79,19 +92,6 @@
       "shown": 19,
       "close_rate": 10.3,
       "show_rate": 65.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Chris Wanke",
-      "revenue": 20494.0,
-      "deals": 3,
-      "quota": 50000,
-      "pct_to_quota": 41.0,
-      "booked": 38,
-      "shown": 23,
-      "close_rate": 7.9,
-      "show_rate": 60.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -148,6 +148,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "John Kirk",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 24,
+      "shown": 11,
+      "close_rate": 4.2,
+      "show_rate": 45.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
@@ -170,19 +183,6 @@
       "shown": 12,
       "close_rate": 4.2,
       "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "John Kirk",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 24,
-      "shown": 11,
-      "close_rate": 4.2,
-      "show_rate": 45.8,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -239,19 +239,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 24,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 33.3,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 10,
       "close_rate": 0.0,
       "show_rate": 34.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 24,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 33.3,
       "is_manager": false,
       "exclude_meetings": false
     }
