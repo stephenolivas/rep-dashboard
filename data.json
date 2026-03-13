@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 01:00:10 PDT",
+  "updated_at": "2026-03-13 01:15:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -148,7 +148,7 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -174,7 +174,7 @@
       "exclude_meetings": true
     },
     {
-      "name": "John Kirk",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -239,19 +239,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Andrea Shoop",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 21,
-      "shown": 8,
-      "close_rate": 0.0,
-      "show_rate": 38.1,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Julia Scaroni",
       "revenue": 0,
       "deals": 0,
@@ -261,6 +248,19 @@
       "shown": 11,
       "close_rate": 0.0,
       "show_rate": 37.9,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Andrea Shoop",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 21,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 38.1,
       "is_manager": false,
       "exclude_meetings": false
     }
