@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 14:15:22 PDT",
+  "updated_at": "2026-03-13 14:30:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 25,
-      "shown": 13,
-      "close_rate": 4.0,
-      "show_rate": 52.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
@@ -187,6 +174,32 @@
       "exclude_meetings": true
     },
     {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 25,
+      "shown": 13,
+      "close_rate": 4.0,
+      "show_rate": 52.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 16,
+      "shown": 10,
+      "close_rate": 6.2,
+      "show_rate": 62.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Ryan Jones",
       "revenue": 5997.0,
       "deals": 1,
@@ -209,19 +222,6 @@
       "shown": 8,
       "close_rate": 6.2,
       "show_rate": 50.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 16,
-      "shown": 10,
-      "close_rate": 6.2,
-      "show_rate": 62.5,
       "is_manager": false,
       "exclude_meetings": false
     },
