@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 12:45:09 PDT",
+  "updated_at": "2026-03-13 12:47:01 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -148,6 +148,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
+    },
+    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -174,32 +187,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 16,
-      "shown": 7,
-      "close_rate": 6.2,
-      "show_rate": 43.8,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 5997.0,
       "deals": 1,
@@ -222,6 +209,19 @@
       "shown": 14,
       "close_rate": 4.8,
       "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 16,
+      "shown": 7,
+      "close_rate": 6.2,
+      "show_rate": 43.8,
       "is_manager": false,
       "exclude_meetings": false
     },
