@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 20:15:09 PDT",
+  "updated_at": "2026-03-12 20:30:08 PDT",
   "month_label": "March 2026",
   "day_of_month": 12,
   "days_in_month": 31,
@@ -148,17 +148,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 21,
+      "shown": 11,
+      "close_rate": 4.8,
+      "show_rate": 52.4,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "John Kirk",
@@ -174,17 +174,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 21,
-      "shown": 11,
-      "close_rate": 4.8,
-      "show_rate": 52.4,
-      "is_manager": false,
-      "exclude_meetings": false
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "Elvis Ellis",
