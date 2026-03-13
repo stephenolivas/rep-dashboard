@@ -63,13 +63,12 @@ REP_QUOTAS = {
     "John Kirk": 100_000,
     "Jake Skinner": 75_000,
     "Vince Bartolini": 50_000,
-    "Julia Scaroni": 50_000,
     "Elvis Ellis": 50_000,
     "Chris Wanke": 50_000,
     "Andrea Shoop": 50_000,
 }
 
-EXCLUDE_USERS = {"Mallory Kent", "Unknown", "Ahmad Bukhari", "Stephen Olivas"}
+EXCLUDE_USERS = {"Mallory Kent", "Unknown", "Ahmad Bukhari", "Stephen Olivas", "Julia Scaroni"}
 
 # Users who only appear on dashboard if they have closed deals that month
 # Their meeting data is N/A'd out — only show on Revenue Closed and Opps Closed
