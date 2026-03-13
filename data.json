@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 16:45:09 PDT",
+  "updated_at": "2026-03-13 16:55:43 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -161,17 +161,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
+      "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 25,
-      "shown": 12,
-      "close_rate": 4.0,
-      "show_rate": 48.0,
-      "is_manager": false,
-      "exclude_meetings": false
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "Lyle Hubbard",
@@ -187,28 +187,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
-      "name": "Jordan Humphrey",
-      "revenue": 5997.0,
-      "deals": 1,
       "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 16,
-      "shown": 10,
-      "close_rate": 6.2,
-      "show_rate": 62.5,
+      "pct_to_quota": 9.0,
+      "booked": 25,
+      "shown": 12,
+      "close_rate": 4.0,
+      "show_rate": 48.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -222,6 +209,19 @@
       "shown": 8,
       "close_rate": 6.2,
       "show_rate": 50.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 16,
+      "shown": 10,
+      "close_rate": 6.2,
+      "show_rate": 62.5,
       "is_manager": false,
       "exclude_meetings": false
     },
