@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 12:47:01 PDT",
+  "updated_at": "2026-03-13 13:00:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 381938.0,
   "total_deals": 46,
   "total_booked": 453,
-  "total_shown": 248,
+  "total_shown": 249,
   "team_close_rate": 10.2,
-  "team_show_rate": 54.7,
+  "team_show_rate": 55.0,
   "today_revenue": 28991.0,
   "today_deals": 3,
   "reps": [
@@ -166,10 +166,10 @@
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 9.0,
-      "booked": 24,
-      "shown": 12,
-      "close_rate": 4.2,
-      "show_rate": 50.0,
+      "booked": 25,
+      "shown": 13,
+      "close_rate": 4.0,
+      "show_rate": 52.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -183,6 +183,19 @@
       "shown": 11,
       "close_rate": 4.2,
       "show_rate": 45.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 15,
+      "shown": 6,
+      "close_rate": 6.7,
+      "show_rate": 40.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,19 +226,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 16,
-      "shown": 7,
-      "close_rate": 6.2,
-      "show_rate": 43.8,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 4997.0,
       "deals": 1,
@@ -239,28 +239,28 @@
       "exclude_meetings": false
     },
     {
-      "name": "Julia Scaroni",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 50000,
-      "pct_to_quota": 0.0,
-      "booked": 19,
-      "shown": 7,
-      "close_rate": 0.0,
-      "show_rate": 36.8,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Andrea Shoop",
       "revenue": 0,
       "deals": 0,
       "quota": 50000,
       "pct_to_quota": 0.0,
-      "booked": 34,
+      "booked": 33,
       "shown": 11,
       "close_rate": 0.0,
-      "show_rate": 32.4,
+      "show_rate": 33.3,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Julia Scaroni",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 50000,
+      "pct_to_quota": 0.0,
+      "booked": 20,
+      "shown": 8,
+      "close_rate": 0.0,
+      "show_rate": 40.0,
       "is_manager": false,
       "exclude_meetings": false
     }
