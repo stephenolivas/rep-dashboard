@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 03:30:10 PDT",
+  "updated_at": "2026-03-13 03:45:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -148,7 +148,7 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -174,7 +174,7 @@
       "exclude_meetings": true
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
@@ -183,19 +183,6 @@
       "shown": 11,
       "close_rate": 4.2,
       "show_rate": 45.8,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Elvis Ellis",
-      "revenue": 5997.0,
-      "deals": 1,
-      "quota": 50000,
-      "pct_to_quota": 12.0,
-      "booked": 16,
-      "shown": 7,
-      "close_rate": 6.2,
-      "show_rate": 43.8,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -209,6 +196,19 @@
       "shown": 14,
       "close_rate": 4.5,
       "show_rate": 63.6,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Elvis Ellis",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 50000,
+      "pct_to_quota": 12.0,
+      "booked": 16,
+      "shown": 7,
+      "close_rate": 6.2,
+      "show_rate": 43.8,
       "is_manager": false,
       "exclude_meetings": false
     },
