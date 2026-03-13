@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 03:45:09 PDT",
+  "updated_at": "2026-03-13 04:00:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -161,19 +161,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
       "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
@@ -187,17 +174,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
-      "revenue": 5997.0,
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 6.0,
-      "booked": 22,
-      "shown": 14,
-      "close_rate": 4.5,
-      "show_rate": 63.6,
-      "is_manager": false,
-      "exclude_meetings": false
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "Elvis Ellis",
@@ -209,6 +196,19 @@
       "shown": 7,
       "close_rate": 6.2,
       "show_rate": 43.8,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Ryan Jones",
+      "revenue": 5997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 6.0,
+      "booked": 22,
+      "shown": 14,
+      "close_rate": 4.5,
+      "show_rate": 63.6,
       "is_manager": false,
       "exclude_meetings": false
     },
