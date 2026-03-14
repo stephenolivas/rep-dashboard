@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 08:30:12 PDT",
+  "updated_at": "2026-03-14 08:45:08 PDT",
   "month_label": "March 2026",
   "day_of_month": 14,
   "days_in_month": 31,
@@ -135,19 +135,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "Jake Skinner",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 75000,
-      "pct_to_quota": 16.0,
-      "booked": 26,
-      "shown": 12,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Ryan Jones",
       "revenue": 11994.0,
       "deals": 2,
@@ -157,6 +144,19 @@
       "shown": 14,
       "close_rate": 9.5,
       "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 75000,
+      "pct_to_quota": 16.0,
+      "booked": 26,
+      "shown": 12,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
