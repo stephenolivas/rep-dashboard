@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 22:45:08 PDT",
+  "updated_at": "2026-03-13 23:00:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 13,
   "days_in_month": 31,
@@ -200,19 +200,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "Lyle Hubbard",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 25,
-      "shown": 14,
-      "close_rate": 4.0,
-      "show_rate": 56.0,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
@@ -222,6 +209,19 @@
       "shown": 12,
       "close_rate": 4.0,
       "show_rate": 48.0,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Lyle Hubbard",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 25,
+      "shown": 14,
+      "close_rate": 4.0,
+      "show_rate": 56.0,
       "is_manager": false,
       "exclude_meetings": false
     },
