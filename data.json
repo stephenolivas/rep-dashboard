@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 12:30:09 PDT",
+  "updated_at": "2026-03-14 12:45:08 PDT",
   "month_label": "March 2026",
   "day_of_month": 14,
   "days_in_month": 31,
@@ -10,10 +10,10 @@
   "pct_team_quota": 44.8,
   "total_revenue": 405926.0,
   "total_deals": 50,
-  "total_booked": 437,
+  "total_booked": 438,
   "total_shown": 259,
   "team_close_rate": 11.4,
-  "team_show_rate": 59.3,
+  "team_show_rate": 59.1,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -101,10 +101,10 @@
       "deals": 3,
       "quota": 100000,
       "pct_to_quota": 21.0,
-      "booked": 30,
+      "booked": 31,
       "shown": 16,
-      "close_rate": 10.0,
-      "show_rate": 53.3,
+      "close_rate": 9.7,
+      "show_rate": 51.6,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -135,6 +135,19 @@
       "exclude_meetings": true
     },
     {
+      "name": "Ryan Jones",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 100000,
+      "pct_to_quota": 12.0,
+      "booked": 21,
+      "shown": 14,
+      "close_rate": 9.5,
+      "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Jake Skinner",
       "revenue": 11994.0,
       "deals": 2,
@@ -161,19 +174,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 100000,
-      "pct_to_quota": 12.0,
-      "booked": 21,
-      "shown": 14,
-      "close_rate": 9.5,
-      "show_rate": 66.7,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Vince Bartolini",
       "revenue": 10994.0,
       "deals": 2,
@@ -187,15 +187,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "John Kirk",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 9.0,
       "booked": 25,
-      "shown": 12,
+      "shown": 14,
       "close_rate": 4.0,
-      "show_rate": 48.0,
+      "show_rate": 56.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -213,15 +213,15 @@
       "exclude_meetings": true
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "John Kirk",
       "revenue": 8997.0,
       "deals": 1,
       "quota": 100000,
       "pct_to_quota": 9.0,
       "booked": 25,
-      "shown": 14,
+      "shown": 12,
       "close_rate": 4.0,
-      "show_rate": 56.0,
+      "show_rate": 48.0,
       "is_manager": false,
       "exclude_meetings": false
     },
