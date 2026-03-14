@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 08:45:08 PDT",
+  "updated_at": "2026-03-14 09:00:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 14,
   "days_in_month": 31,
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jake Skinner",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 75000,
-      "pct_to_quota": 16.0,
-      "booked": 26,
-      "shown": 12,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 11994.0,
       "deals": 2,
@@ -170,6 +157,19 @@
       "shown": 10,
       "close_rate": 12.5,
       "show_rate": 62.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 75000,
+      "pct_to_quota": 16.0,
+      "booked": 26,
+      "shown": 12,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -187,17 +187,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
+      "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
+      "quota": 100000,
+      "pct_to_quota": 9.0,
+      "booked": 25,
+      "shown": 14,
+      "close_rate": 4.0,
+      "show_rate": 56.0,
+      "is_manager": false,
+      "exclude_meetings": false
     },
     {
       "name": "John Kirk",
@@ -213,17 +213,17 @@
       "exclude_meetings": false
     },
     {
-      "name": "Lyle Hubbard",
+      "name": "Joe Dysert",
       "revenue": 8997.0,
       "deals": 1,
-      "quota": 100000,
-      "pct_to_quota": 9.0,
-      "booked": 25,
-      "shown": 14,
-      "close_rate": 4.0,
-      "show_rate": 56.0,
-      "is_manager": false,
-      "exclude_meetings": false
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "Elvis Ellis",
