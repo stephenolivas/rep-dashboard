@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15 03:00:10 PDT",
+  "updated_at": "2026-03-15 03:15:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 15,
   "days_in_month": 31,
@@ -135,19 +135,6 @@
       "exclude_meetings": true
     },
     {
-      "name": "Jake Skinner",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 75000,
-      "pct_to_quota": 16.0,
-      "booked": 26,
-      "shown": 12,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Ryan Jones",
       "revenue": 11994.0,
       "deals": 2,
@@ -174,6 +161,19 @@
       "exclude_meetings": false
     },
     {
+      "name": "Jake Skinner",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 75000,
+      "pct_to_quota": 16.0,
+      "booked": 26,
+      "shown": 12,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Vince Bartolini",
       "revenue": 10994.0,
       "deals": 2,
@@ -185,6 +185,19 @@
       "show_rate": 36.4,
       "is_manager": false,
       "exclude_meetings": false
+    },
+    {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "Lyle Hubbard",
@@ -211,19 +224,6 @@
       "show_rate": 48.0,
       "is_manager": false,
       "exclude_meetings": false
-    },
-    {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
     },
     {
       "name": "Elvis Ellis",
