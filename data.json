@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 21:00:09 PDT",
+  "updated_at": "2026-03-14 21:15:08 PDT",
   "month_label": "March 2026",
   "day_of_month": 14,
   "days_in_month": 31,
@@ -62,10 +62,10 @@
       "deals": 4,
       "quota": 50000,
       "pct_to_quota": 69.0,
-      "booked": 37,
-      "shown": 26,
-      "close_rate": 10.8,
-      "show_rate": 70.3,
+      "booked": 38,
+      "shown": 27,
+      "close_rate": 10.5,
+      "show_rate": 71.1,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -101,10 +101,10 @@
       "deals": 3,
       "quota": 100000,
       "pct_to_quota": 21.0,
-      "booked": 31,
-      "shown": 16,
-      "close_rate": 9.7,
-      "show_rate": 51.6,
+      "booked": 30,
+      "shown": 15,
+      "close_rate": 10.0,
+      "show_rate": 50.0,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jordan Humphrey",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 100000,
-      "pct_to_quota": 12.0,
-      "booked": 16,
-      "shown": 10,
-      "close_rate": 12.5,
-      "show_rate": 62.5,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jake Skinner",
       "revenue": 11994.0,
       "deals": 2,
@@ -170,6 +157,19 @@
       "shown": 12,
       "close_rate": 7.7,
       "show_rate": 46.2,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jordan Humphrey",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 100000,
+      "pct_to_quota": 12.0,
+      "booked": 16,
+      "shown": 10,
+      "close_rate": 12.5,
+      "show_rate": 62.5,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -187,19 +187,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
-    },
-    {
       "name": "Lyle Hubbard",
       "revenue": 8997.0,
       "deals": 1,
@@ -211,6 +198,19 @@
       "show_rate": 56.0,
       "is_manager": false,
       "exclude_meetings": false
+    },
+    {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "John Kirk",
