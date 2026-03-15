@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15 08:15:08 PDT",
+  "updated_at": "2026-03-15 08:30:10 PDT",
   "month_label": "March 2026",
   "day_of_month": 15,
   "days_in_month": 31,
@@ -148,19 +148,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Jake Skinner",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 75000,
-      "pct_to_quota": 16.0,
-      "booked": 26,
-      "shown": 12,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Jordan Humphrey",
       "revenue": 11994.0,
       "deals": 2,
@@ -170,6 +157,19 @@
       "shown": 10,
       "close_rate": 12.5,
       "show_rate": 62.5,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Jake Skinner",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 75000,
+      "pct_to_quota": 16.0,
+      "booked": 26,
+      "shown": 12,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
