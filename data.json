@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14 17:15:07 PDT",
+  "updated_at": "2026-03-14 17:30:09 PDT",
   "month_label": "March 2026",
   "day_of_month": 14,
   "days_in_month": 31,
@@ -11,9 +11,9 @@
   "total_revenue": 405926.0,
   "total_deals": 50,
   "total_booked": 437,
-  "total_shown": 259,
+  "total_shown": 260,
   "team_close_rate": 11.4,
-  "team_show_rate": 59.3,
+  "team_show_rate": 59.5,
   "today_revenue": 0.0,
   "today_deals": 0,
   "reps": [
@@ -115,9 +115,9 @@
       "quota": 100000,
       "pct_to_quota": 15.0,
       "booked": 21,
-      "shown": 15,
+      "shown": 16,
       "close_rate": 9.5,
-      "show_rate": 71.4,
+      "show_rate": 76.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -135,15 +135,15 @@
       "exclude_meetings": true
     },
     {
-      "name": "Jake Skinner",
+      "name": "Ryan Jones",
       "revenue": 11994.0,
       "deals": 2,
-      "quota": 75000,
-      "pct_to_quota": 16.0,
-      "booked": 26,
-      "shown": 12,
-      "close_rate": 7.7,
-      "show_rate": 46.2,
+      "quota": 100000,
+      "pct_to_quota": 12.0,
+      "booked": 21,
+      "shown": 14,
+      "close_rate": 9.5,
+      "show_rate": 66.7,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -161,15 +161,15 @@
       "exclude_meetings": false
     },
     {
-      "name": "Ryan Jones",
+      "name": "Jake Skinner",
       "revenue": 11994.0,
       "deals": 2,
-      "quota": 100000,
-      "pct_to_quota": 12.0,
-      "booked": 21,
-      "shown": 14,
-      "close_rate": 9.5,
-      "show_rate": 66.7,
+      "quota": 75000,
+      "pct_to_quota": 16.0,
+      "booked": 26,
+      "shown": 12,
+      "close_rate": 7.7,
+      "show_rate": 46.2,
       "is_manager": false,
       "exclude_meetings": false
     },
@@ -185,6 +185,19 @@
       "show_rate": 36.4,
       "is_manager": false,
       "exclude_meetings": false
+    },
+    {
+      "name": "Joe Dysert",
+      "revenue": 8997.0,
+      "deals": 1,
+      "quota": 0,
+      "pct_to_quota": 0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
+      "is_manager": true,
+      "exclude_meetings": true
     },
     {
       "name": "John Kirk",
@@ -211,19 +224,6 @@
       "show_rate": 56.0,
       "is_manager": false,
       "exclude_meetings": false
-    },
-    {
-      "name": "Joe Dysert",
-      "revenue": 8997.0,
-      "deals": 1,
-      "quota": 0,
-      "pct_to_quota": 0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": true,
-      "exclude_meetings": true
     },
     {
       "name": "Elvis Ellis",
