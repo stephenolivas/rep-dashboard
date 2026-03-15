@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15 06:45:08 PDT",
+  "updated_at": "2026-03-15 07:00:11 PDT",
   "month_label": "March 2026",
   "day_of_month": 15,
   "days_in_month": 31,
@@ -135,6 +135,19 @@
       "exclude_meetings": true
     },
     {
+      "name": "Ryan Jones",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 100000,
+      "pct_to_quota": 12.0,
+      "booked": 21,
+      "shown": 14,
+      "close_rate": 9.5,
+      "show_rate": 66.7,
+      "is_manager": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Jordan Humphrey",
       "revenue": 11994.0,
       "deals": 2,
@@ -157,19 +170,6 @@
       "shown": 12,
       "close_rate": 7.7,
       "show_rate": 46.2,
-      "is_manager": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Ryan Jones",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 100000,
-      "pct_to_quota": 12.0,
-      "booked": 21,
-      "shown": 14,
-      "close_rate": 9.5,
-      "show_rate": 66.7,
       "is_manager": false,
       "exclude_meetings": false
     },
