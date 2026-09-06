@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 07:15:14 PDT",
+  "updated_at": "2026-09-06 07:30:16 PDT",
   "month_label": "September 2026",
   "day_of_month": 6,
   "days_in_month": 30,
@@ -61,20 +61,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Christian Hartwell",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 100000,
-      "pct_to_quota": 12.0,
-      "booked": 18,
-      "shown": 13,
-      "close_rate": 11.1,
-      "show_rate": 72.2,
-      "is_manager": false,
-      "is_lead": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Luke Herman",
       "revenue": 11994.0,
       "deals": 2,
@@ -84,6 +70,20 @@
       "shown": 11,
       "close_rate": 7.4,
       "show_rate": 40.7,
+      "is_manager": false,
+      "is_lead": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Christian Hartwell",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 100000,
+      "pct_to_quota": 12.0,
+      "booked": 18,
+      "shown": 13,
+      "close_rate": 11.1,
+      "show_rate": 72.2,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
