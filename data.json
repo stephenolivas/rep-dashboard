@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 12:45:13 PDT",
+  "updated_at": "2026-09-06 13:00:20 PDT",
   "month_label": "September 2026",
   "day_of_month": 6,
   "days_in_month": 30,
@@ -10,10 +10,10 @@
   "pct_team_quota": 11.6,
   "total_revenue": 87017.0,
   "total_deals": 12,
-  "total_booked": 103,
-  "total_shown": 58,
-  "team_close_rate": 11.7,
-  "team_show_rate": 56.3,
+  "total_booked": 102,
+  "total_shown": 59,
+  "team_close_rate": 11.8,
+  "team_show_rate": 57.8,
   "today_revenue": 6897.0,
   "today_deals": 1,
   "today_closers": [
@@ -44,10 +44,10 @@
       "deals": 3,
       "quota": 100000,
       "pct_to_quota": 18.9,
-      "booked": 27,
-      "shown": 13,
-      "close_rate": 11.1,
-      "show_rate": 48.1,
+      "booked": 26,
+      "shown": 14,
+      "close_rate": 11.5,
+      "show_rate": 53.8,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
@@ -109,20 +109,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Scott Seymour",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": false,
-      "is_lead": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Robin Perkins",
       "revenue": 0,
       "deals": 0,
@@ -132,6 +118,20 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0,
+      "is_manager": false,
+      "is_lead": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Scott Seymour",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
