@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 09:15:13 PDT",
+  "updated_at": "2026-09-06 09:30:17 PDT",
   "month_label": "September 2026",
   "day_of_month": 6,
   "days_in_month": 30,
@@ -11,9 +11,9 @@
   "total_revenue": 87017.0,
   "total_deals": 12,
   "total_booked": 103,
-  "total_shown": 56,
+  "total_shown": 57,
   "team_close_rate": 11.7,
-  "team_show_rate": 54.4,
+  "team_show_rate": 55.3,
   "today_revenue": 6897.0,
   "today_deals": 1,
   "today_closers": [
@@ -31,9 +31,9 @@
       "quota": 100000,
       "pct_to_quota": 21.3,
       "booked": 21,
-      "shown": 7,
+      "shown": 8,
       "close_rate": 14.3,
-      "show_rate": 33.3,
+      "show_rate": 38.1,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
