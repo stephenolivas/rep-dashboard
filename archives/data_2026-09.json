@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-05 23:45:14 PDT",
+  "updated_at": "2026-09-06 00:00:20 PDT",
   "month_label": "September 2026",
-  "day_of_month": 5,
+  "day_of_month": 6,
   "days_in_month": 30,
   "working_days_total": 22,
   "working_days_elapsed": 4,
@@ -10,19 +10,13 @@
   "pct_team_quota": 10.7,
   "total_revenue": 80120.0,
   "total_deals": 11,
-  "total_booked": 93,
-  "total_shown": 55,
-  "team_close_rate": 11.8,
-  "team_show_rate": 59.1,
-  "today_revenue": 5997.0,
-  "today_deals": 1,
-  "today_closers": [
-    {
-      "name": "Luke Herman",
-      "deals": 1,
-      "total": 5997.0
-    }
-  ],
+  "total_booked": 104,
+  "total_shown": 56,
+  "team_close_rate": 10.6,
+  "team_show_rate": 53.8,
+  "today_revenue": 0.0,
+  "today_deals": 0,
+  "today_closers": [],
   "reps": [
     {
       "name": "Joe Vaughan",
@@ -30,10 +24,10 @@
       "deals": 3,
       "quota": 100000,
       "pct_to_quota": 21.3,
-      "booked": 17,
+      "booked": 21,
       "shown": 7,
-      "close_rate": 17.6,
-      "show_rate": 41.2,
+      "close_rate": 14.3,
+      "show_rate": 33.3,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
@@ -58,24 +52,10 @@
       "deals": 2,
       "quota": 100000,
       "pct_to_quota": 12.9,
-      "booked": 14,
-      "shown": 12,
-      "close_rate": 14.3,
-      "show_rate": 85.7,
-      "is_manager": false,
-      "is_lead": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Luke Herman",
-      "revenue": 11994.0,
-      "deals": 2,
-      "quota": 100000,
-      "pct_to_quota": 12.0,
-      "booked": 21,
-      "shown": 11,
-      "close_rate": 9.5,
-      "show_rate": 52.4,
+      "booked": 15,
+      "shown": 13,
+      "close_rate": 13.3,
+      "show_rate": 86.7,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
@@ -95,6 +75,20 @@
       "exclude_meetings": false
     },
     {
+      "name": "Luke Herman",
+      "revenue": 11994.0,
+      "deals": 2,
+      "quota": 100000,
+      "pct_to_quota": 12.0,
+      "booked": 27,
+      "shown": 11,
+      "close_rate": 7.4,
+      "show_rate": 40.7,
+      "is_manager": false,
+      "is_lead": false,
+      "exclude_meetings": false
+    },
+    {
       "name": "Eric Piccione",
       "revenue": 6897.0,
       "deals": 1,
@@ -109,20 +103,6 @@
       "exclude_meetings": false
     },
     {
-      "name": "Scott Seymour",
-      "revenue": 0,
-      "deals": 0,
-      "quota": 100000,
-      "pct_to_quota": 0.0,
-      "booked": 0,
-      "shown": 0,
-      "close_rate": 0,
-      "show_rate": 0,
-      "is_manager": false,
-      "is_lead": false,
-      "exclude_meetings": false
-    },
-    {
       "name": "Robin Perkins",
       "revenue": 0,
       "deals": 0,
@@ -132,6 +112,20 @@
       "shown": 0,
       "close_rate": 0.0,
       "show_rate": 0.0,
+      "is_manager": false,
+      "is_lead": false,
+      "exclude_meetings": false
+    },
+    {
+      "name": "Scott Seymour",
+      "revenue": 0,
+      "deals": 0,
+      "quota": 100000,
+      "pct_to_quota": 0.0,
+      "booked": 0,
+      "shown": 0,
+      "close_rate": 0,
+      "show_rate": 0,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
