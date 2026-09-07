@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 18:30:17 PDT",
+  "updated_at": "2026-09-06 18:45:13 PDT",
   "month_label": "September 2026",
   "day_of_month": 6,
   "days_in_month": 30,
@@ -7,23 +7,37 @@
   "working_days_elapsed": 4,
   "pct_month_passed": 18.2,
   "team_quota": 750000,
-  "pct_team_quota": 11.6,
-  "total_revenue": 87017.0,
-  "total_deals": 12,
+  "pct_team_quota": 12.4,
+  "total_revenue": 93014.0,
+  "total_deals": 13,
   "total_booked": 102,
   "total_shown": 59,
-  "team_close_rate": 11.8,
+  "team_close_rate": 12.7,
   "team_show_rate": 57.8,
-  "today_revenue": 6897.0,
-  "today_deals": 1,
+  "today_revenue": 12894.0,
+  "today_deals": 2,
   "today_closers": [
     {
       "name": "Luke Herman",
-      "deals": 1,
-      "total": 6897.0
+      "deals": 2,
+      "total": 12894.0
     }
   ],
   "reps": [
+    {
+      "name": "Luke Herman",
+      "revenue": 24888.0,
+      "deals": 4,
+      "quota": 100000,
+      "pct_to_quota": 24.9,
+      "booked": 26,
+      "shown": 14,
+      "close_rate": 15.4,
+      "show_rate": 53.8,
+      "is_manager": false,
+      "is_lead": false,
+      "exclude_meetings": false
+    },
     {
       "name": "Joe Vaughan",
       "revenue": 21344.0,
@@ -34,20 +48,6 @@
       "shown": 8,
       "close_rate": 14.3,
       "show_rate": 38.1,
-      "is_manager": false,
-      "is_lead": false,
-      "exclude_meetings": false
-    },
-    {
-      "name": "Luke Herman",
-      "revenue": 18891.0,
-      "deals": 3,
-      "quota": 100000,
-      "pct_to_quota": 18.9,
-      "booked": 26,
-      "shown": 14,
-      "close_rate": 11.5,
-      "show_rate": 53.8,
       "is_manager": false,
       "is_lead": false,
       "exclude_meetings": false
